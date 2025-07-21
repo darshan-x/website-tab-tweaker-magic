@@ -4,41 +4,48 @@
 @tailwind utilities;
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
 
-/* GigaRev Design System - Light Theme Only */
+/* Project 5 Design System - Exact Colors */
 @layer base {
   :root {
-    /* Primary Brand Color - Red */
-    --primary: 239 68 68; /* #EF4444 */
-    --primary-foreground: 255 255 255; /* White text on red */
+    /* Electric Indigo Brand Colors */
+    --electric-indigo: 80 70 255; /* #5046FF */
+    --cerulean-glow: 18 194 255; /* #12C2FF */
+    --signal-lime: 165 255 67; /* #A5FF43 */
+    --neutral-dark: 14 14 19; /* #0E0E13 */
+    --neutral-light: 249 250 251; /* #F9FAFB */
+
+    /* Updated shadcn colors for electric theme */
+    --primary: 239 152 52; /* Electric orange #EF9834 */
+    --primary-foreground: 255 255 255;
 
     /* Background Colors */
-    --background: 253 253 253; /* #FDFDFD */
-    --foreground: 1 1 1; /* #010101 */
+    --background: 14 14 19; /* Dark background */
+    --foreground: 249 250 251; /* Light text */
 
     /* Card and Surface Colors */
-    --card: 253 253 253; /* #FDFDFD */
-    --card-foreground: 1 1 1; /* #010101 */
-    --popover: 255 255 255; /* Pure white for popovers */
-    --popover-foreground: 1 1 1; /* #010101 */
+    --card: 20 20 25; /* #141419 */
+    --card-foreground: 249 250 251;
+    --popover: 20 20 25;
+    --popover-foreground: 249 250 251;
 
     /* Secondary Colors */
-    --secondary: 248 250 252; /* Light gray */
-    --secondary-foreground: 1 1 1; /* #010101 */
-    --muted: 248 250 252; /* Light gray */
-    --muted-foreground: 100 116 139; /* Medium gray */
-    --accent: 248 250 252; /* Light gray */
-    --accent-foreground: 1 1 1; /* #010101 */
+    --secondary: 30 30 35; /* #1E1E23 */
+    --secondary-foreground: 249 250 251;
+    --muted: 40 40 45; /* #28282D */
+    --muted-foreground: 160 160 170; /* #A0A0AA */
+    --accent: 30 30 35;
+    --accent-foreground: 249 250 251;
 
     /* Status Colors */
-    --destructive: 239 68 68; /* Use primary red for destructive */
-    --destructive-foreground: 255 255 255; /* White on red */
+    --destructive: 239 68 68;
+    --destructive-foreground: 255 255 255;
 
     /* Border and Input */
-    --border: 226 232 240; /* Light gray border */
-    --input: 226 232 240; /* Light gray input border */
-    --ring: 239 68 68; /* Red focus ring */
+    --border: 40 40 45; /* #28282D */
+    --input: 40 40 45;
+    --ring: 80 70 255; /* Electric indigo focus ring */
     --radius: 0.75rem;
   }
 }
@@ -58,17 +65,17 @@
   }
 }
 
-/* Custom Design System Utilities */
+/* Project 5 Exact Utility Classes */
 @layer utilities {
-  /* Red Primary Gradient Text */
+  /* Electric Gradient Text */
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-red-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-electric-indigo to-cerulean-glow bg-clip-text text-transparent;
   }
 
-  /* Glass Effect */
+  /* Glass Effect - Exact from Project 5 */
   .glass {
-    @apply backdrop-blur-xl bg-white/90 border border-white/20;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    @apply backdrop-blur-xl bg-white/5 border border-white/10;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   }
 
   /* Pill Button */
@@ -94,9 +101,62 @@
   .animate-pulse-glow {
     animation: pulse-glow 3s ease-in-out infinite;
   }
+
+  /* Noise Overlay - Exact from Project 5 */
+  .noise-overlay {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.06'/%3E%3C/svg%3E");
+  }
+
+  /* Card Flip Animation - Exact from Project 5 */
+  .card-flip {
+    perspective: 1000px;
+  }
+
+  .card-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .card-flip:hover .card-flip-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-flip-front, .card-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+
+  .card-flip-back {
+    transform: rotateY(180deg);
+  }
+
+  /* Angled Divider */
+  .angled-divider {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .angled-divider::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgb(var(--electric-indigo)), transparent);
+    transform: skewY(-1deg);
+  }
 }
 
-/* Keyframes */
+/* Keyframes - Exact from Project 5 */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
@@ -104,11 +164,11 @@
 
 @keyframes pulse-glow {
   0%, 100% { 
-    box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
+    box-shadow: 0 0 20px rgba(80, 70, 255, 0.2);
     transform: scale(1);
   }
   50% { 
-    box-shadow: 0 0 40px rgba(239, 68, 68, 0.4);
+    box-shadow: 0 0 40px rgba(80, 70, 255, 0.4);
     transform: scale(1.02);
   }
 }
@@ -120,5 +180,55 @@ html {
 
 /* Focus styles */
 *:focus-visible {
-  @apply outline-none ring-2 ring-primary ring-offset-2;
+  @apply outline-none ring-2 ring-ring ring-offset-2;
+}
+
+/* Markdown Content Styles - From Project 5 */
+.markdown-content {
+  @apply text-neutral-light leading-relaxed;
+}
+
+.markdown-content h1 {
+  @apply text-4xl font-sora font-bold mb-6 gradient-text;
+}
+
+.markdown-content h2 {
+  @apply text-3xl font-sora font-semibold mb-4 text-neutral-light;
+}
+
+.markdown-content h3 {
+  @apply text-2xl font-sora font-semibold mb-3 text-neutral-light;
+}
+
+.markdown-content p {
+  @apply mb-4 text-neutral-light/80;
+}
+
+.markdown-content ul {
+  @apply mb-4 space-y-2;
+}
+
+.markdown-content li {
+  @apply flex items-start space-x-2;
+}
+
+.markdown-content li::before {
+  content: "→";
+  @apply text-signal-lime font-bold flex-shrink-0 mt-0.5;
+}
+
+.markdown-content blockquote {
+  @apply border-l-4 border-electric-indigo pl-4 italic text-neutral-light/70 my-6;
+}
+
+.markdown-content code {
+  @apply bg-neutral-dark/50 px-2 py-1 rounded text-sm font-mono text-signal-lime;
+}
+
+.markdown-content pre {
+  @apply bg-neutral-dark p-4 rounded-lg overflow-x-auto my-4;
+}
+
+.markdown-content pre code {
+  @apply bg-transparent p-0 text-neutral-light;
 }
