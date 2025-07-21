@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,7 +19,16 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'sora': ['Sora', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
+				'electric-indigo': 'rgb(var(--electric-indigo) / <alpha-value>)',
+				'cerulean-glow': 'rgb(var(--cerulean-glow) / <alpha-value>)',
+				'signal-lime': 'rgb(var(--signal-lime) / <alpha-value>)',
+				'neutral-dark': 'rgb(var(--neutral-dark) / <alpha-value>)',
+				'neutral-light': 'rgb(var(--neutral-light) / <alpha-value>)',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
