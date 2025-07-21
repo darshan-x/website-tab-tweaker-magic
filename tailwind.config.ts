@@ -24,11 +24,11 @@ export default {
 				'inter': ['Inter', 'sans-serif'],
 			},
 			colors: {
-				'electric-indigo': 'rgb(80 70 255 / <alpha-value>)',
-				'cerulean-glow': 'rgb(18 194 255 / <alpha-value>)',
-				'signal-lime': 'rgb(165 255 67 / <alpha-value>)',
-				'neutral-dark': 'rgb(14 14 19 / <alpha-value>)',
-				'neutral-light': 'rgb(249 250 251 / <alpha-value>)',
+				// New color system - Primary: #EF4444, Secondary: #030303, Background: #FDFCFD
+				'primary-red': '#EF4444',
+				'secondary-dark': '#030303',
+				'background-light': '#FDFCFD',
+				
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -101,20 +101,27 @@ export default {
 				},
 				'pulse-glow': {
 					'0%, 100%': { 
-						boxShadow: '0 0 20px rgba(80, 70, 255, 0.2)',
+						boxShadow: '0 0 20px rgba(239, 68, 68, 0.2)',
 						transform: 'scale(1)'
 					},
 					'50%': { 
-						boxShadow: '0 0 40px rgba(80, 70, 255, 0.4)',
+						boxShadow: '0 0 40px rgba(239, 68, 68, 0.4)',
 						transform: 'scale(1.02)'
 					}
+				},
+				'flow-particle': {
+					'0%': { opacity: '0' },
+					'10%': { opacity: '1' },
+					'90%': { opacity: '1' },
+					'100%': { opacity: '0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 3s ease-in-out infinite'
+				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+				'flow-particle': 'flow-particle 3s ease-in-out infinite'
 			}
 		}
 	},
