@@ -31,13 +31,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with noise overlay */}
-      <div className="absolute inset-0 noise-overlay" />
-      
-      {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-neutral-light/50 to-background" />
-
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       <div className="container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -52,10 +46,10 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center space-x-2 bg-electric-indigo/10 border border-electric-indigo/20 rounded-full px-4 py-2"
+              className="inline-flex items-center space-x-2 bg-red-50 border border-red-200 rounded-full px-4 py-2"
             >
-              <CheckCircle className="w-4 h-4 text-electric-indigo" />
-              <span className="text-sm font-medium text-electric-indigo">
+              <CheckCircle className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-primary">
                 Trusted by 200+ SMBs
               </span>
             </motion.div>
@@ -85,7 +79,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="text-lg lg:text-xl text-muted-foreground max-w-2xl"
+                className="text-lg lg:text-xl text-muted-foreground max-w-2xl leading-relaxed"
               >
                 Transform your business with AI implementation, rapid prototyping, and revenue acceleration. 
                 From strategy to execution, we deliver results that matter.
@@ -99,20 +93,20 @@ const HeroSection = () => {
               transition={{ delay: 0.5 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button asChild size="lg" className="pill-button bg-gradient-to-r from-electric-indigo to-cerulean-glow text-white group">
+              <Button asChild size="lg" className="pill-button bg-primary hover:bg-red-600 text-white group">
                 <Link to="/contact">
                   Start Your AI Journey
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
 
-              <Button asChild variant="outline" size="lg" className="pill-button group">
+              <Button asChild variant="outline" size="lg" className="pill-button group border-border">
                 <Link to="/case-studies">
                   <Play className="w-5 h-5 mr-2" />
                   View Success Stories
                 </Link>
               </Button>
-            </motion.div>
+            </div>
 
             {/* Social Proof */}
             <motion.div
@@ -144,7 +138,7 @@ const HeroSection = () => {
             </div>
 
             {/* Background glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-electric-indigo/20 to-cerulean-glow/20 rounded-full blur-3xl opacity-30" />
+            <div className="absolute inset-0 bg-gradient-to-r from-red-100/50 to-red-50/50 rounded-full blur-3xl opacity-30" />
           </motion.div>
         </div>
 
@@ -170,7 +164,7 @@ const HeroSection = () => {
               <div className="text-sm text-muted-foreground">{stat.description}</div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

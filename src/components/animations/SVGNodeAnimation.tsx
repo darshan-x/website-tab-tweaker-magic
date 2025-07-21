@@ -16,28 +16,28 @@ const nodes: Node[] = [
     label: 'Discovery & Analysis',
     x: 100,
     y: 50,
-    color: '#6633EE'
+    color: '#EF4444'
   },
   {
     id: 'strategy',
     label: 'Strategy & Planning',
     x: 200,
     y: 100,
-    color: '#3B82F6'
+    color: '#DC2626'
   },
   {
     id: 'implementation',
     label: 'Implementation',
     x: 150,
     y: 180,
-    color: '#84CC16'
+    color: '#B91C1C'
   },
   {
     id: 'optimization',
     label: 'Optimization',
     x: 50,
     y: 130,
-    color: '#EF4444'
+    color: '#991B1B'
   }
 ];
 
@@ -71,7 +71,7 @@ export default function SVGNodeAnimation() {
               y1={fromNode.y}
               x2={toNode.x}
               y2={toNode.y}
-              stroke="url(#gradient)"
+              stroke="url(#redGradient)"
               strokeWidth="2"
               strokeDasharray="8 4"
               initial={{ strokeDashoffset: 100 }}
@@ -97,7 +97,7 @@ export default function SVGNodeAnimation() {
             <motion.circle
               key={`dot-${connection.from}-${connection.to}`}
               r="3"
-              fill="#6633EE"
+              fill="#EF4444"
               initial={{ 
                 cx: fromNode.x, 
                 cy: fromNode.y,
@@ -121,10 +121,10 @@ export default function SVGNodeAnimation() {
 
         {/* Gradient definitions */}
         <defs>
-          <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#6633EE" stopOpacity="0.8" />
-            <stop offset="50%" stopColor="#3B82F6" stopOpacity="0.6" />
-            <stop offset="100%" stopColor="#84CC16" stopOpacity="0.4" />
+          <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#EF4444" stopOpacity="0.8" />
+            <stop offset="50%" stopColor="#DC2626" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="#B91C1C" stopOpacity="0.4" />
           </linearGradient>
           <filter id="glow">
             <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
@@ -182,7 +182,7 @@ export default function SVGNodeAnimation() {
             
             {/* Glow effect */}
             <div
-              className="absolute inset-0 w-12 h-12 rounded-full opacity-30 animate-pulse"
+              className="absolute inset-0 w-12 h-12 rounded-full opacity-20 animate-pulse"
               style={{ 
                 backgroundColor: node.color,
                 filter: 'blur(8px)',
@@ -198,7 +198,7 @@ export default function SVGNodeAnimation() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.2 + 0.5 }}
           >
-            <span className="text-xs font-medium text-foreground bg-white/90 px-2 py-1 rounded-md shadow-sm whitespace-nowrap">
+            <span className="text-xs font-medium text-foreground bg-white/95 px-2 py-1 rounded-md shadow-sm whitespace-nowrap border">
               {node.label}
             </span>
           </motion.div>

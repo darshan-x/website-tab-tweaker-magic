@@ -3,36 +3,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
 /* GigaRev Design System - Light Theme Only */
 @layer base {
   :root {
-    /* Core Brand Colors */
-    --electric-indigo: 102 51 238;
-    --cerulean-glow: 59 130 246;
-    --signal-lime: 132 204 22;
-    --neutral-dark: 15 23 42;
-    --neutral-light: 248 250 252;
+    /* Primary Brand Color - Red */
+    --primary: 239 68 68; /* #EF4444 */
+    --primary-foreground: 255 255 255; /* White text on red */
 
-    /* Theme Colors (Light only) */
-    --background: 255 255 255;
-    --foreground: 15 23 42;
-    --card: 255 255 255;
-    --card-foreground: 15 23 42;
-    --popover: 255 255 255;
-    --popover-foreground: 15 23 42;
-    --primary: 102 51 238;
-    --primary-foreground: 255 255 255;
-    --secondary: 241 245 249;
-    --secondary-foreground: 15 23 42;
-    --muted: 248 250 252;
-    --muted-foreground: 100 116 139;
-    --accent: 241 245 249;
-    --accent-foreground: 15 23 42;
-    --destructive: 239 68 68;
-    --destructive-foreground: 255 255 255;
-    --border: 226 232 240;
-    --input: 226 232 240;
-    --ring: 102 51 238;
+    /* Background Colors */
+    --background: 253 253 253; /* #FDFDFD */
+    --foreground: 1 1 1; /* #010101 */
+
+    /* Card and Surface Colors */
+    --card: 253 253 253; /* #FDFDFD */
+    --card-foreground: 1 1 1; /* #010101 */
+    --popover: 255 255 255; /* Pure white for popovers */
+    --popover-foreground: 1 1 1; /* #010101 */
+
+    /* Secondary Colors */
+    --secondary: 248 250 252; /* Light gray */
+    --secondary-foreground: 1 1 1; /* #010101 */
+    --muted: 248 250 252; /* Light gray */
+    --muted-foreground: 100 116 139; /* Medium gray */
+    --accent: 248 250 252; /* Light gray */
+    --accent-foreground: 1 1 1; /* #010101 */
+
+    /* Status Colors */
+    --destructive: 239 68 68; /* Use primary red for destructive */
+    --destructive-foreground: 255 255 255; /* White on red */
+
+    /* Border and Input */
+    --border: 226 232 240; /* Light gray border */
+    --input: 226 232 240; /* Light gray input border */
+    --ring: 239 68 68; /* Red focus ring */
     --radius: 0.75rem;
   }
 }
@@ -54,23 +60,15 @@
 
 /* Custom Design System Utilities */
 @layer utilities {
-  /* Gradient Text */
+  /* Red Primary Gradient Text */
   .gradient-text {
-    @apply bg-gradient-to-r from-electric-indigo via-cerulean-glow to-signal-lime bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-red-600 bg-clip-text text-transparent;
   }
 
   /* Glass Effect */
   .glass {
-    @apply backdrop-blur-xl bg-white/80 border border-white/20;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  }
-
-  /* Noise Overlay */
-  .noise-overlay {
-    background-image: 
-      radial-gradient(circle at 25% 25%, rgba(102, 51, 238, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 75% 75%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-      url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    @apply backdrop-blur-xl bg-white/90 border border-white/20;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
   }
 
   /* Pill Button */
@@ -78,43 +76,14 @@
     @apply px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95;
   }
 
-  /* Card Flip Animation */
-  .card-flip {
-    @apply perspective-1000 transform-style-3d transition-transform duration-700;
-  }
-
-  .card-flip:hover {
-    @apply rotate-y-3;
-  }
-
-  /* Angled Divider */
-  .angled-divider::before {
-    content: '';
-    @apply absolute top-0 left-0 w-full h-full bg-gradient-to-r from-electric-indigo/10 to-cerulean-glow/10;
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
-  }
-
   /* Section Padding */
   .section-padding {
-    @apply py-20 lg:py-32;
+    @apply py-16 lg:py-24;
   }
 
   /* Container */
   .container {
     @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
-  }
-
-  /* Perspective Utilities */
-  .perspective-1000 {
-    perspective: 1000px;
-  }
-  
-  .transform-style-3d {
-    transform-style: preserve-3d;
-  }
-  
-  .rotate-y-3 {
-    transform: rotateY(3deg);
   }
 
   /* Animation Utilities */
@@ -124,10 +93,6 @@
 
   .animate-pulse-glow {
     animation: pulse-glow 3s ease-in-out infinite;
-  }
-
-  .animate-draw-line {
-    animation: draw-line 2s ease-in-out infinite;
   }
 }
 
@@ -139,18 +104,13 @@
 
 @keyframes pulse-glow {
   0%, 100% { 
-    box-shadow: 0 0 20px rgba(102, 51, 238, 0.3);
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
     transform: scale(1);
   }
   50% { 
-    box-shadow: 0 0 40px rgba(102, 51, 238, 0.6);
-    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(239, 68, 68, 0.4);
+    transform: scale(1.02);
   }
-}
-
-@keyframes draw-line {
-  0% { stroke-dashoffset: 1000; }
-  100% { stroke-dashoffset: 0; }
 }
 
 /* Smooth scrolling */
