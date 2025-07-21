@@ -1,76 +1,89 @@
 
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ChevronDown, Menu, X, Zap, Code, Rocket, TrendingUp, Users, Brain, Building, Factory, Smartphone, Globe } from 'lucide-react';
+import { 
+  Menu, 
+  X, 
+  ChevronDown, 
+  Gift,
+  Brain,
+  Code,
+  TrendingUp,
+  Building,
+  Globe,
+  Smartphone,
+  Factory,
+  BookOpen,
+  FileText,
+  Users,
+  MessageSquare
+} from 'lucide-react';
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const location = useLocation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const servicesDropdown = {
-    techServices: [
-      { icon: Rocket, title: 'Rapid Prototyping', description: 'Fast MVP development', href: '/services/rapid-prototyping' },
-      { icon: Brain, title: 'AI Implementation', description: 'Custom AI solutions', href: '/services/ai-implementation' },
-      { icon: Code, title: 'Full-Stack Development', description: 'End-to-end development', href: '/services/full-stack-development' }
-    ],
-    revenueServices: [
-      { icon: TrendingUp, title: 'Sales AI', description: 'Accelerate sales processes', href: '/services/sales-ai' },
-      { icon: Zap, title: 'Marketing AI', description: 'Automated marketing', href: '/services/marketing-ai' },
-      { icon: Users, title: 'Customer Support AI', description: '24/7 intelligent support', href: '/services/customer-support-ai' }
-    ]
-  };
-
-  const industriesDropdown = [
-    { icon: Building, title: 'Field Sales', href: '/verticals/field-sales' },
-    { icon: Globe, title: 'AdTech', href: '/verticals/adtech' },
-    { icon: TrendingUp, title: 'MarTech', href: '/verticals/martech' },
-    { icon: Smartphone, title: 'Telecom', href: '/verticals/telecom' },
-    { icon: Code, title: 'Tech SMB', href: '/verticals/tech-smb' },
-    { icon: Factory, title: 'Mid-Market', href: '/verticals/mid-market' }
+  const services = [
+    {
+      category: 'Tech Services',
+      items: [
+        { name: 'Rapid Prototyping', href: '/services/rapid-prototyping', icon: Code, description: 'Fast MVP development' },
+        { name: 'AI Implementation', href: '/services/ai-implementation', icon: Brain, description: 'Custom AI solutions' },
+        { name: 'Full-Stack Development', href: '/services/full-stack-development', icon: Code, description: 'Complete web apps' }
+      ]
+    },
+    {
+      category: 'Revenue Services',
+      items: [
+        { name: 'Sales AI', href: '/services/sales-ai', icon: TrendingUp, description: 'Automate your sales' },
+        { name: 'Marketing AI', href: '/services/marketing-ai', icon: TrendingUp, description: 'Intelligent marketing' },
+        { name: 'Customer Support AI', href: '/services/customer-support-ai', icon: MessageSquare, description: '24/7 AI support' }
+      ]
+    }
   ];
 
-  const resourcesDropdown = [
-    { title: 'Blog', href: '/blog' },
-    { title: 'Case Studies', href: '/case-studies' },
-    { title: 'Implementation Playbooks', href: '/playbooks' },
-    { title: 'Webinars', href: '/webinars' },
-    { title: 'AI Use Cases', href: '/ai-use-cases' }
+  const industries = [
+    { name: 'Field Sales', href: '/verticals/field-sales', icon: Building },
+    { name: 'AdTech', href: '/verticals/adtech', icon: Globe },
+    { name: 'MarTech', href: '/verticals/martech', icon: TrendingUp },
+    { name: 'Telecom/Fibre', href: '/verticals/telecom', icon: Smartphone },
+    { name: 'Tech SMB', href: '/verticals/tech-smb', icon: Code },
+    { name: 'Mid-Market', href: '/verticals/mid-market', icon: Factory }
+  ];
+
+  const resources = [
+    { name: 'Case Studies', href: '/case-studies', icon: FileText },
+    { name: 'Webinars', href: '/webinars', icon: Users },
+    { name: 'Implementation Playbooks', href: '/playbooks', icon: BookOpen },
+    { name: 'AI Use Cases', href: '/ai-use-cases', icon: Brain }
   ];
 
   return (
     <>
       {/* Announcement Bar */}
-      <div className="bg-gradient-to-r from-electric-indigo to-cerulean-glow text-white py-2 text-center text-sm">
-        <Link to="/special-offer" className="hover:underline">
-          🚀 Limited Time: Free AI Assessment for SMBs - Book Your Strategy Call
-        </Link>
+      <div className="bg-destructive text-destructive-foreground py-2 px-4 text-center text-sm">
+        <div className="container flex items-center justify-center gap-2">
+          <Gift className="w-4 h-4" />
+          <span>
+            <strong>Special Offer:</strong> Book a strategy session this month and get 20% off implementation -{' '}
+            <Link to="/special-offer" className="underline font-medium hover:no-underline">
+              Claim Now
+            </Link>
+          </span>
+        </div>
       </div>
 
       {/* Main Navbar */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-lg shadow-lg' : 'bg-transparent'
-      }`}>
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+      <nav className="bg-background/95 backdrop-blur-lg border-b border-border sticky top-0 z-50">
+        <div className="container">
+          <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-electric-indigo to-cerulean-glow rounded-lg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <span className="font-sora font-bold text-xl text-foreground">GigaRev</span>
+              <span className="text-2xl font-sora font-bold">
+                Giga<span className="text-destructive">Rev</span>
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -81,57 +94,46 @@ const Navbar = () => {
                 onMouseEnter={() => setActiveDropdown('services')}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center space-x-1 text-foreground hover:text-primary transition-colors">
+                <button className="flex items-center space-x-1 text-foreground hover:text-electric-indigo transition-colors">
                   <span>Services</span>
                   <ChevronDown className="w-4 h-4" />
                 </button>
-
+                
                 <AnimatePresence>
                   {activeDropdown === 'services' && (
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      className="absolute top-full left-0 mt-2 w-96 bg-white rounded-lg shadow-xl border border-border p-6"
+                      className="absolute top-full left-0 mt-2 w-[600px] glass rounded-lg p-6 shadow-xl"
                     >
-                      <div className="grid grid-cols-1 gap-6">
-                        <div>
-                          <h3 className="font-semibold text-sm text-muted-foreground mb-3">Tech Services Hub</h3>
-                          <div className="space-y-2">
-                            {servicesDropdown.techServices.map((service) => (
-                              <Link
-                                key={service.href}
-                                to={service.href}
-                                className="flex items-start space-x-3 p-2 rounded-lg hover:bg-muted transition-colors"
-                              >
-                                <service.icon className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                                <div>
-                                  <div className="font-medium text-foreground">{service.title}</div>
-                                  <div className="text-sm text-muted-foreground">{service.description}</div>
-                                </div>
-                              </Link>
-                            ))}
+                      <div className="grid grid-cols-2 gap-6">
+                        {services.map((category) => (
+                          <div key={category.category}>
+                            <h3 className="font-sora font-semibold text-electric-indigo mb-3">
+                              {category.category}
+                            </h3>
+                            <div className="space-y-2">
+                              {category.items.map((service) => (
+                                <Link
+                                  key={service.name}
+                                  to={service.href}
+                                  className="flex items-start space-x-3 p-2 rounded-lg hover:bg-muted/50 transition-colors group"
+                                >
+                                  <service.icon className="w-5 h-5 text-cerulean-glow mt-0.5" />
+                                  <div>
+                                    <div className="font-medium text-foreground group-hover:text-electric-indigo transition-colors">
+                                      {service.name}
+                                    </div>
+                                    <div className="text-sm text-muted-foreground">
+                                      {service.description}
+                                    </div>
+                                  </div>
+                                </Link>
+                              ))}
+                            </div>
                           </div>
-                        </div>
-
-                        <div>
-                          <h3 className="font-semibold text-sm text-muted-foreground mb-3">Revenue Services Hub</h3>
-                          <div className="space-y-2">
-                            {servicesDropdown.revenueServices.map((service) => (
-                              <Link
-                                key={service.href}
-                                to={service.href}
-                                className="flex items-start space-x-3 p-2 rounded-lg hover:bg-muted transition-colors"
-                              >
-                                <service.icon className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                                <div>
-                                  <div className="font-medium text-foreground">{service.title}</div>
-                                  <div className="text-sm text-muted-foreground">{service.description}</div>
-                                </div>
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
+                        ))}
                       </div>
                     </motion.div>
                   )}
@@ -144,28 +146,30 @@ const Navbar = () => {
                 onMouseEnter={() => setActiveDropdown('industries')}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center space-x-1 text-foreground hover:text-primary transition-colors">
+                <button className="flex items-center space-x-1 text-foreground hover:text-electric-indigo transition-colors">
                   <span>Industries</span>
                   <ChevronDown className="w-4 h-4" />
                 </button>
-
+                
                 <AnimatePresence>
                   {activeDropdown === 'industries' && (
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl border border-border p-4"
+                      className="absolute top-full left-0 mt-2 w-64 glass rounded-lg p-4 shadow-xl"
                     >
-                      <div className="grid grid-cols-2 gap-2">
-                        {industriesDropdown.map((industry) => (
+                      <div className="space-y-1">
+                        {industries.map((industry) => (
                           <Link
-                            key={industry.href}
+                            key={industry.name}
                             to={industry.href}
-                            className="flex items-center space-x-2 p-2 rounded-lg hover:bg-muted transition-colors"
+                            className="flex items-center space-x-3 p-2 rounded-lg hover:bg-muted/50 transition-colors group"
                           >
-                            <industry.icon className="w-4 h-4 text-primary" />
-                            <span className="text-sm font-medium">{industry.title}</span>
+                            <industry.icon className="w-4 h-4 text-signal-lime" />
+                            <span className="text-foreground group-hover:text-electric-indigo transition-colors">
+                              {industry.name}
+                            </span>
                           </Link>
                         ))}
                       </div>
@@ -180,34 +184,42 @@ const Navbar = () => {
                 onMouseEnter={() => setActiveDropdown('resources')}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
-                <button className="flex items-center space-x-1 text-foreground hover:text-primary transition-colors">
+                <button className="flex items-center space-x-1 text-foreground hover:text-electric-indigo transition-colors">
                   <span>Resources</span>
                   <ChevronDown className="w-4 h-4" />
                 </button>
-
+                
                 <AnimatePresence>
                   {activeDropdown === 'resources' && (
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl border border-border p-2"
+                      className="absolute top-full left-0 mt-2 w-64 glass rounded-lg p-4 shadow-xl"
                     >
-                      {resourcesDropdown.map((resource) => (
-                        <Link
-                          key={resource.href}
-                          to={resource.href}
-                          className="block px-3 py-2 rounded-lg hover:bg-muted transition-colors text-sm font-medium"
-                        >
-                          {resource.title}
-                        </Link>
-                      ))}
+                      <div className="space-y-1">
+                        {resources.map((resource) => (
+                          <Link
+                            key={resource.name}
+                            to={resource.href}
+                            className="flex items-center space-x-3 p-2 rounded-lg hover:bg-muted/50 transition-colors group"
+                          >
+                            <resource.icon className="w-4 h-4 text-cerulean-glow" />
+                            <span className="text-foreground group-hover:text-electric-indigo transition-colors">
+                              {resource.name}
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
 
-              <Link to="/about" className="text-foreground hover:text-primary transition-colors">
+              <Link to="/blog" className="text-foreground hover:text-electric-indigo transition-colors">
+                Blog
+              </Link>
+              <Link to="/about" className="text-foreground hover:text-electric-indigo transition-colors">
                 About
               </Link>
             </div>
@@ -219,7 +231,7 @@ const Navbar = () => {
               </Button>
             </div>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile menu button */}
             <button
               className="lg:hidden p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -236,23 +248,81 @@ const Navbar = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-white border-t border-border"
+              className="lg:hidden bg-background border-t border-border"
             >
-              <div className="container mx-auto px-4 py-4 space-y-4">
-                <Link to="/services" className="block py-2 text-foreground hover:text-primary">
-                  Services
-                </Link>
-                <Link to="/industries" className="block py-2 text-foreground hover:text-primary">
-                  Industries
-                </Link>
-                <Link to="/blog" className="block py-2 text-foreground hover:text-primary">
-                  Blog
-                </Link>
-                <Link to="/about" className="block py-2 text-foreground hover:text-primary">
-                  About
-                </Link>
+              <div className="container py-4 space-y-4">
+                <div className="space-y-2">
+                  <h3 className="font-sora font-semibold text-electric-indigo">Services</h3>
+                  {services.map((category) => (
+                    <div key={category.category} className="ml-4 space-y-1">
+                      <div className="text-sm font-medium text-muted-foreground">{category.category}</div>
+                      {category.items.map((service) => (
+                        <Link
+                          key={service.name}
+                          to={service.href}
+                          className="block py-1 text-foreground hover:text-electric-indigo transition-colors"
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          {service.name}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+
+                <div className="space-y-2">
+                  <h3 className="font-sora font-semibold text-electric-indigo">Industries</h3>
+                  <div className="ml-4 space-y-1">
+                    {industries.map((industry) => (
+                      <Link
+                        key={industry.name}
+                        to={industry.href}
+                        className="block py-1 text-foreground hover:text-electric-indigo transition-colors"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {industry.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <h3 className="font-sora font-semibold text-electric-indigo">Resources</h3>
+                  <div className="ml-4 space-y-1">
+                    {resources.map((resource) => (
+                      <Link
+                        key={resource.name}
+                        to={resource.href}
+                        className="block py-1 text-foreground hover:text-electric-indigo transition-colors"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                      >
+                        {resource.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="space-y-1 border-t border-border pt-4">
+                  <Link
+                    to="/blog"
+                    className="block py-2 text-foreground hover:text-electric-indigo transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Blog
+                  </Link>
+                  <Link
+                    to="/about"
+                    className="block py-2 text-foreground hover:text-electric-indigo transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    About
+                  </Link>
+                </div>
+
                 <Button asChild className="w-full pill-button bg-gradient-to-r from-electric-indigo to-cerulean-glow text-white">
-                  <Link to="/contact">Get Started</Link>
+                  <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+                    Get Started
+                  </Link>
                 </Button>
               </div>
             </motion.div>

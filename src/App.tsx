@@ -42,7 +42,7 @@ const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
       staleTime: 5 * 60 * 1000, // 5 minutes
-      gcTime: 10 * 60 * 1000, // 10 minutes (updated from cacheTime)
+      gcTime: 10 * 60 * 1000, // 10 minutes
     },
   },
 });
@@ -53,7 +53,7 @@ const LoadingSpinner = () => (
     <motion.div
       animate={{ rotate: 360 }}
       transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
-      className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full"
+      className="w-8 h-8 border-2 border-electric-indigo border-t-transparent rounded-full"
     />
   </div>
 );

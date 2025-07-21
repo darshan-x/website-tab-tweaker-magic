@@ -156,23 +156,6 @@
   }
 }
 
-/* Keyframes - Exact from Project 5 */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-@keyframes pulse-glow {
-  0%, 100% { 
-    box-shadow: 0 0 20px rgba(80, 70, 255, 0.2);
-    transform: scale(1);
-  }
-  50% { 
-    box-shadow: 0 0 40px rgba(80, 70, 255, 0.4);
-    transform: scale(1.02);
-  }
-}
-
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
