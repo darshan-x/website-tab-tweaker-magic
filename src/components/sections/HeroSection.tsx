@@ -106,7 +106,7 @@ const HeroSection = () => {
                   View Success Stories
                 </Link>
               </Button>
-            </div>
+            </motion.div>
 
             {/* Social Proof */}
             <motion.div
@@ -164,7 +164,7 @@ const HeroSection = () => {
               <div className="text-sm text-muted-foreground">{stat.description}</div>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
