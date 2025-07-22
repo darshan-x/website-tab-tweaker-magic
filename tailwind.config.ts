@@ -24,10 +24,22 @@ export default {
 				'inter': ['Inter', 'sans-serif'],
 			},
 			colors: {
-				// Updated color system - Primary: #FF4444, Secondary: #030303, Background: #FDFCFD
-				'primary-red': '#FF4444',
-				'secondary-dark': '#030303',
-				'background-light': '#FDFCFD',
+				// Updated color system per prompt - Primary: #4A90E2 (blue/purple), Accent: #FF6B6B (red/coral)
+				'primary-blue': '#4A90E2',
+				'accent-coral': '#FF6B6B',
+				'background-light': '#FFFFFF',
+				'background-alt': '#F8F9FA',
+				
+				// Navigation color-coded tags
+				'nav-services': '#F39C12', // yellow/amber
+				'nav-industries': '#9B59B6', // purple
+				'nav-resources': '#4ECDC4', // teal
+				'nav-blog': '#E91E63', // pink
+				'nav-about': '#9B59B6', // purple
+				
+				// CTA colors
+				'cta-green': '#2ECC71',
+				'cta-coral': '#FF6B6B',
 				
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -101,11 +113,11 @@ export default {
 				},
 				'pulse-glow': {
 					'0%, 100%': { 
-						boxShadow: '0 0 20px rgba(255, 68, 68, 0.2)',
+						boxShadow: '0 0 20px rgba(74, 144, 226, 0.2)',
 						transform: 'scale(1)'
 					},
 					'50%': { 
-						boxShadow: '0 0 40px rgba(255, 68, 68, 0.4)',
+						boxShadow: '0 0 40px rgba(74, 144, 226, 0.4)',
 						transform: 'scale(1.02)'
 					}
 				},
@@ -114,6 +126,12 @@ export default {
 					'10%': { opacity: '1' },
 					'90%': { opacity: '1' },
 					'100%': { opacity: '0' }
+				},
+				'text-rotation': {
+					'0%': { opacity: '1' },
+					'33%': { opacity: '0' },
+					'66%': { opacity: '0' },
+					'100%': { opacity: '1' }
 				}
 			},
 			animation: {
@@ -121,7 +139,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
 				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
-				'flow-particle': 'flow-particle 3s ease-in-out infinite'
+				'flow-particle': 'flow-particle 3s ease-in-out infinite',
+				'text-rotation': 'text-rotation 4s ease-in-out infinite'
 			}
 		}
 	},

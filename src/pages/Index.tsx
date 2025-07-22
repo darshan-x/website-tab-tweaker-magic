@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/layout/Navbar';
 import HeroSection from '@/components/sections/HeroSection';
+import KeyMetricsSection from '@/components/sections/KeyMetricsSection';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -24,7 +24,10 @@ import {
   Play,
   BarChart,
   Target,
-  Shield
+  Shield,
+  Settings,
+  Brackets,
+  Headphones
 } from 'lucide-react';
 
 const Index = () => {
@@ -36,7 +39,7 @@ const Index = () => {
       description: 'Custom AI solutions that integrate seamlessly with your existing workflow.',
       features: ['Custom AI models', 'Workflow automation', 'Performance optimization'],
       href: '/services/ai-implementation',
-      gradient: 'from-electric-indigo to-cerulean-glow'
+      gradient: 'from-primary-blue to-blue-600'
     },
     {
       icon: Code,
@@ -44,7 +47,7 @@ const Index = () => {
       description: 'End-to-end development with modern technologies and best practices.',
       features: ['Modern tech stack', 'Scalable architecture', 'CI/CD pipelines'],
       href: '/services/full-stack-development',
-      gradient: 'from-cerulean-glow to-signal-lime'
+      gradient: 'from-primary-blue to-teal-500'
     },
     {
       icon: TrendingUp,
@@ -52,7 +55,7 @@ const Index = () => {
       description: 'AI-powered solutions to accelerate your revenue growth and optimization.',
       features: ['Sales automation', 'Marketing AI', 'Support optimization'],
       href: '/services/sales-ai',
-      gradient: 'from-signal-lime to-electric-indigo'
+      gradient: 'from-accent-coral to-primary-blue'
     }
   ];
 
@@ -136,6 +139,9 @@ const Index = () => {
       {/* Hero Section */}
       <HeroSection />
 
+      {/* Key Metrics Section */}
+      <KeyMetricsSection />
+
       {/* Services Section with Flip Cards */}
       <section className="section-padding">
         <div className="container">
@@ -146,10 +152,10 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-neutral-light">
+            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-foreground">
               Our <span className="gradient-text">Core Services</span>
             </h2>
-            <p className="text-lg text-neutral-light/70 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               We specialize in three key areas that drive business transformation and growth
             </p>
           </motion.div>
@@ -170,25 +176,25 @@ const Index = () => {
                     <div className={`w-16 h-16 bg-gradient-to-r ${service.gradient} rounded-lg flex items-center justify-center mb-6`}>
                       <service.icon className="w-8 h-8 text-white" />
                     </div>
-                    <CardTitle className="text-xl font-sora text-neutral-light mb-3">{service.title}</CardTitle>
-                    <CardDescription className="text-neutral-light/70">{service.description}</CardDescription>
+                    <CardTitle className="text-xl font-sora text-foreground mb-3">{service.title}</CardTitle>
+                    <CardDescription className="text-muted-foreground">{service.description}</CardDescription>
                   </Card>
 
                   {/* Back */}
                   <Card className="card-flip-back glass h-full p-6 flex flex-col">
                     <CardHeader className="pb-4">
-                      <CardTitle className="text-lg font-sora text-neutral-light">{service.title}</CardTitle>
+                      <CardTitle className="text-lg font-sora text-foreground">{service.title}</CardTitle>
                     </CardHeader>
                     <CardContent className="flex-1 space-y-4 p-0">
                       <ul className="space-y-2">
                         {service.features.map((feature) => (
                           <li key={feature} className="flex items-center space-x-2">
-                            <CheckCircle className="w-4 h-4 text-signal-lime" />
-                            <span className="text-sm text-neutral-light/80">{feature}</span>
+                            <CheckCircle className="w-4 h-4 text-cta-green" />
+                            <span className="text-sm text-muted-foreground">{feature}</span>
                           </li>
                         ))}
                       </ul>
-                      <Button asChild variant="outline" className="w-full mt-auto">
+                      <Button asChild variant="outline" className="w-full mt-auto border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white">
                         <Link to={service.href}>
                           Learn More
                           <ArrowRight className="w-4 h-4 ml-2" />
@@ -213,10 +219,10 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-neutral-light">
+            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-foreground">
               <span className="gradient-text">Tech Services</span> Hub
             </h2>
-            <p className="text-lg text-neutral-light/70 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Cutting-edge technology solutions for modern businesses
             </p>
           </motion.div>
@@ -240,14 +246,14 @@ const Index = () => {
                   <div className="lg:col-span-2">
                     <Card className="glass h-full">
                       <CardHeader>
-                        <CardTitle className="text-2xl font-sora text-neutral-light">{service.title}</CardTitle>
-                        <CardDescription className="text-base text-neutral-light/70">{service.description}</CardDescription>
+                        <CardTitle className="text-2xl font-sora text-foreground">{service.title}</CardTitle>
+                        <CardDescription className="text-base text-muted-foreground">{service.description}</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <div className="grid grid-cols-2 gap-4 mb-6">
                           {service.features.map((feature) => (
                             <div key={feature} className="text-center p-3 bg-card/30 rounded-lg">
-                              <div className="font-medium text-sm text-neutral-light">{feature}</div>
+                              <div className="font-medium text-sm text-foreground">{feature}</div>
                             </div>
                           ))}
                         </div>
@@ -263,9 +269,9 @@ const Index = () => {
                   </div>
                   <div className="space-y-4">
                     <Card className="glass p-6 text-center">
-                      <div className="text-sm text-neutral-light/60 mb-2">{service.metrics.label}</div>
+                      <div className="text-sm text-muted-foreground mb-2">{service.metrics.label}</div>
                       <div className="text-3xl font-bold gradient-text">{service.metrics.value}</div>
-                      <div className="text-xs text-neutral-light/60 mt-1">average improvement</div>
+                      <div className="text-xs text-muted-foreground mt-1">average improvement</div>
                     </Card>
                   </div>
                 </div>
@@ -285,10 +291,10 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-neutral-light">
+            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-foreground">
               <span className="gradient-text">Revenue Services</span> Hub
             </h2>
-            <p className="text-lg text-neutral-light/70 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               AI-powered solutions to accelerate your revenue growth
             </p>
           </motion.div>
@@ -306,14 +312,14 @@ const Index = () => {
                   <div className="lg:col-span-2">
                     <Card className="glass h-full">
                       <CardHeader>
-                        <CardTitle className="text-2xl font-sora text-neutral-light">{service.title}</CardTitle>
-                        <CardDescription className="text-base text-neutral-light/70">{service.description}</CardDescription>
+                        <CardTitle className="text-2xl font-sora text-foreground">{service.title}</CardTitle>
+                        <CardDescription className="text-base text-muted-foreground">{service.description}</CardDescription>
                       </CardHeader>
                       <CardContent>
                         <div className="grid grid-cols-2 gap-4">
                           {service.features.map((feature) => (
                             <div key={feature} className="text-center p-3 bg-card/30 rounded-lg">
-                              <div className="font-medium text-sm text-neutral-light">{feature}</div>
+                              <div className="font-medium text-sm text-foreground">{feature}</div>
                             </div>
                           ))}
                         </div>
@@ -322,9 +328,9 @@ const Index = () => {
                   </div>
                   <div className="space-y-4">
                     <Card className="glass p-6 text-center">
-                      <div className="text-sm text-neutral-light/60 mb-2">KPI Impact</div>
+                      <div className="text-sm text-muted-foreground mb-2">KPI Impact</div>
                       <div className="text-2xl font-bold gradient-text">{service.kpiImpact.increase}</div>
-                      <div className="text-xs text-neutral-light/60 mt-1">{service.kpiImpact.metric}</div>
+                      <div className="text-xs text-muted-foreground mt-1">{service.kpiImpact.metric}</div>
                     </Card>
                   </div>
                 </div>
@@ -335,7 +341,7 @@ const Index = () => {
       </section>
 
       {/* Industries Section */}
-      <section className="section-padding angled-divider">
+      <section className="section-padding bg-background-alt">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -344,10 +350,10 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-neutral-light">
+            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-foreground">
               Industries We <span className="gradient-text">Serve</span>
             </h2>
-            <p className="text-lg text-neutral-light/70 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Specialized solutions for various industry verticals
             </p>
           </motion.div>
@@ -362,11 +368,11 @@ const Index = () => {
                 viewport={{ once: true }}
               >
                 <Link to={industry.href}>
-                  <Card className="text-center glass hover:shadow-xl transition-all duration-300 group cursor-pointer">
+                  <Card className="text-center glass hover:shadow-xl transition-all duration-300 group cursor-pointer border-primary-blue/20 hover:border-primary-blue/50">
                     <CardContent className="p-6">
-                      <industry.icon className="w-12 h-12 mx-auto mb-4 text-electric-indigo group-hover:scale-110 transition-transform" />
-                      <h3 className="font-sora font-semibold mb-2 text-neutral-light">{industry.title}</h3>
-                      <p className="text-sm text-neutral-light/60">{industry.count}</p>
+                      <industry.icon className="w-12 h-12 mx-auto mb-4 text-primary-blue group-hover:scale-110 transition-transform" />
+                      <h3 className="font-sora font-semibold mb-2 text-foreground">{industry.title}</h3>
+                      <p className="text-sm text-muted-foreground">{industry.count}</p>
                     </CardContent>
                   </Card>
                 </Link>
@@ -386,10 +392,10 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-neutral-light">
+            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-foreground">
               Upcoming <span className="gradient-text">Webinars</span>
             </h2>
-            <p className="text-lg text-neutral-light/70 max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               Join our expert-led sessions and learn about AI implementation
             </p>
           </motion.div>
@@ -407,8 +413,8 @@ const Index = () => {
                   <CardHeader>
                     <div className="flex items-start justify-between">
                       <div>
-                        <CardTitle className="text-xl font-sora mb-2 text-neutral-light">{webinar.title}</CardTitle>
-                        <div className="flex items-center space-x-4 text-sm text-neutral-light/60">
+                        <CardTitle className="text-xl font-sora mb-2 text-foreground">{webinar.title}</CardTitle>
+                        <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                           <div className="flex items-center space-x-1">
                             <Calendar className="w-4 h-4" />
                             <span>{webinar.date}</span>
@@ -418,12 +424,12 @@ const Index = () => {
                       </div>
                       <div className="text-right">
                         <div className="text-2xl font-bold text-electric-indigo">{webinar.attendees}</div>
-                        <div className="text-xs text-neutral-light/60">registered</div>
+                        <div className="text-xs text-muted-foreground">registered</div>
                       </div>
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-neutral-light/70 mb-4">{webinar.description}</p>
+                    <p className="text-muted-foreground mb-4">{webinar.description}</p>
                     <Button asChild className="w-full bg-gradient-to-r from-electric-indigo to-cerulean-glow">
                       <Link to="/webinars">
                         <Play className="w-4 h-4 mr-2" />
@@ -448,20 +454,20 @@ const Index = () => {
             viewport={{ once: true }}
             className="text-center max-w-4xl mx-auto"
           >
-            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-neutral-light">
+            <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-foreground">
               Ready to <span className="gradient-text">Transform</span> Your Business?
             </h2>
-            <p className="text-lg text-neutral-light/70 mb-8">
+            <p className="text-lg text-muted-foreground mb-8">
               Join 200+ SMBs that have accelerated their growth with our AI solutions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="pill-button bg-gradient-to-r from-electric-indigo to-cerulean-glow text-white">
+              <Button asChild size="lg" className="pill-button bg-cta-green hover:bg-cta-green/90 text-white">
                 <Link to="/contact">
-                  Start Your AI Journey
+                  Talk to an AI Advisor
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="pill-button">
+              <Button asChild variant="outline" size="lg" className="pill-button border-primary-blue text-primary-blue hover:bg-primary-blue hover:text-white">
                 <Link to="/case-studies">View Success Stories</Link>
               </Button>
             </div>

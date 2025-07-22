@@ -6,39 +6,39 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
 
-/* Updated Color System - Primary: #FF4444, Secondary: #030303, Background: #FDFCFD */
+/* Updated Color System - Primary: #4A90E2 (blue/purple), Accent: #FF6B6B (red/coral), Background: #FFFFFF/#F8F9FA */
 @layer base {
   :root {
-    /* Primary Red - #FF4444 converted to HSL: 0° 100% 63% */
-    --primary: 0 100% 63%;
+    /* Primary Blue/Purple - #4A90E2 converted to HSL: 211° 65% 53% */
+    --primary: 211 65% 53%;
     --primary-foreground: 0 0% 100%;
 
-    /* Background Light - #FDFCFD */
-    --background: 0 7% 99%;
-    --foreground: 0 0% 1%; /* Secondary Dark #030303 */
+    /* Background Light - #FFFFFF and #F8F9FA */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 1%;
 
     /* Card and Surface Colors */
-    --card: 0 7% 99%;
+    --card: 210 20% 98%;
     --card-foreground: 0 0% 1%;
-    --popover: 0 7% 99%;
+    --popover: 0 0% 100%;
     --popover-foreground: 0 0% 1%;
 
     /* Secondary Colors */
-    --secondary: 0 0% 96%;
+    --secondary: 210 20% 96%;
     --secondary-foreground: 0 0% 1%;
-    --muted: 0 0% 96%;
+    --muted: 210 20% 96%;
     --muted-foreground: 0 0% 45%;
-    --accent: 0 0% 96%;
+    --accent: 210 20% 96%;
     --accent-foreground: 0 0% 1%;
 
     /* Status Colors */
-    --destructive: 0 100% 63%;
+    --destructive: 0 84% 70%; /* #FF6B6B coral accent */
     --destructive-foreground: 0 0% 100%;
 
     /* Border and Input */
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 100% 63%; /* Primary red focus ring */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 211 65% 53%; /* Primary blue focus ring */
     --radius: 0.75rem;
   }
 }
@@ -60,9 +60,9 @@
 
 /* Updated Utility Classes with New Color System */
 @layer utilities {
-  /* Red Gradient Text */
+  /* Blue Gradient Text */
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-red to-red-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-blue to-blue-600 bg-clip-text text-transparent;
   }
 
   /* Glass Effect - Updated for light background */
@@ -130,6 +130,36 @@
   .card-flip-back {
     transform: rotateY(180deg);
   }
+
+  /* Rotating Text Animation */
+  .rotating-text {
+    animation: text-rotation 4s ease-in-out infinite;
+  }
+
+  /* Navigation Tags */
+  .nav-tag {
+    @apply px-2 py-1 rounded-md text-xs font-medium text-white;
+  }
+
+  .nav-tag-services {
+    background-color: #F39C12;
+  }
+
+  .nav-tag-industries {
+    background-color: #9B59B6;
+  }
+
+  .nav-tag-resources {
+    background-color: #4ECDC4;
+  }
+
+  .nav-tag-blog {
+    background-color: #E91E63;
+  }
+
+  .nav-tag-about {
+    background-color: #9B59B6;
+  }
 }
 
 /* Smooth scrolling */
@@ -173,7 +203,7 @@ html {
 
 .markdown-content li::before {
   content: "→";
-  @apply text-primary-red font-bold flex-shrink-0 mt-0.5;
+  @apply text-primary-blue font-bold flex-shrink-0 mt-0.5;
 }
 
 .markdown-content blockquote {
@@ -181,7 +211,7 @@ html {
 }
 
 .markdown-content code {
-  @apply bg-muted px-2 py-1 rounded text-sm font-mono text-primary-red;
+  @apply bg-muted px-2 py-1 rounded text-sm font-mono text-primary-blue;
 }
 
 .markdown-content pre {
