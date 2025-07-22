@@ -24,8 +24,8 @@ export default {
 				'inter': ['Inter', 'sans-serif'],
 			},
 			colors: {
-				// New color system - Primary: #EF4444, Secondary: #030303, Background: #FDFCFD
-				'primary-red': '#EF4444',
+				// Updated color system - Primary: #FF4444, Secondary: #030303, Background: #FDFCFD
+				'primary-red': '#FF4444',
 				'secondary-dark': '#030303',
 				'background-light': '#FDFCFD',
 				
@@ -101,11 +101,11 @@ export default {
 				},
 				'pulse-glow': {
 					'0%, 100%': { 
-						boxShadow: '0 0 20px rgba(239, 68, 68, 0.2)',
+						boxShadow: '0 0 20px rgba(255, 68, 68, 0.2)',
 						transform: 'scale(1)'
 					},
 					'50%': { 
-						boxShadow: '0 0 40px rgba(239, 68, 68, 0.4)',
+						boxShadow: '0 0 40px rgba(255, 68, 68, 0.4)',
 						transform: 'scale(1.02)'
 					}
 				},

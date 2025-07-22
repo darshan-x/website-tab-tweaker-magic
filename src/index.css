@@ -6,11 +6,11 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
 
-/* New Color System - Primary: #EF4444, Secondary: #030303, Background: #FDFCFD */
+/* Updated Color System - Primary: #FF4444, Secondary: #030303, Background: #FDFCFD */
 @layer base {
   :root {
-    /* Primary Red - #EF4444 converted to HSL: 0° 84% 60% */
-    --primary: 0 84% 60%;
+    /* Primary Red - #FF4444 converted to HSL: 0° 100% 63% */
+    --primary: 0 100% 63%;
     --primary-foreground: 0 0% 100%;
 
     /* Background Light - #FDFCFD */
@@ -32,13 +32,13 @@
     --accent-foreground: 0 0% 1%;
 
     /* Status Colors */
-    --destructive: 0 84% 60%;
+    --destructive: 0 100% 63%;
     --destructive-foreground: 0 0% 100%;
 
     /* Border and Input */
     --border: 0 0% 90%;
     --input: 0 0% 90%;
-    --ring: 0 84% 60%; /* Primary red focus ring */
+    --ring: 0 100% 63%; /* Primary red focus ring */
     --radius: 0.75rem;
   }
 }
