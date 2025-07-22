@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 interface Node {
   id: string;
   label: string;
-  x: number;
+  x: number;  
   y: number;
   color: string;
 }
@@ -16,28 +16,28 @@ const nodes: Node[] = [
     label: 'Discovery & Analysis',
     x: 25,
     y: 25,
-    color: '#FF4444'
+    color: 'hsl(var(--primary))'
   },
   {
     id: 'strategy', 
     label: 'Strategy & Planning',
     x: 75,
     y: 25,
-    color: '#FF4444'
+    color: 'hsl(var(--primary))'
   },
   {
     id: 'results',
     label: 'Results & Scaling',
     x: 75,
     y: 75,
-    color: '#FF4444'
+    color: 'hsl(var(--primary))'
   },
   {
     id: 'implementation',
     label: 'Implementation & Optimization', 
     x: 25,
     y: 75,
-    color: '#FF4444'
+    color: 'hsl(var(--primary))'
   }
 ];
 
@@ -57,7 +57,6 @@ export default function SVGNodeAnimation() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        {/* Background glow effect */}
         <defs>
           <filter id="glow">
             <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
@@ -67,10 +66,10 @@ export default function SVGNodeAnimation() {
             </feMerge>
           </filter>
           <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#FF4444" stopOpacity="0.8" />
-            <stop offset="25%" stopColor="#FF4444" stopOpacity="0.6" />
-            <stop offset="50%" stopColor="#FF4444" stopOpacity="0.6" />
-            <stop offset="100%" stopColor="#FF4444" stopOpacity="0.8" />
+            <stop offset="0%" stopColor="hsl(var(--primary))" stopOpacity="0.8" />
+            <stop offset="25%" stopColor="hsl(var(--primary))" stopOpacity="0.6" />
+            <stop offset="50%" stopColor="hsl(var(--primary))" stopOpacity="0.6" />
+            <stop offset="100%" stopColor="hsl(var(--primary))" stopOpacity="0.8" />
           </linearGradient>
         </defs>
 
@@ -88,7 +87,6 @@ export default function SVGNodeAnimation() {
           
           return (
             <g key={`${connection.from}-${connection.to}`}>
-              {/* Connection line */}
               <motion.line
                 x1={x1}
                 y1={y1}
@@ -107,22 +105,21 @@ export default function SVGNodeAnimation() {
                 }}
                 transition={{
                   pathLength: {
-                    duration: 2,
-                    delay: index * 0.3 + 1,
+                    duration: 1.5,
+                    delay: index * 0.2 + 0.5,
                     ease: "easeInOut"
                   },
                   opacity: {
                     duration: 0.3,
-                    delay: index * 0.3 + 1
+                    delay: index * 0.2 + 0.5
                   }
                 }}
                 filter="url(#glow)"
               />
               
-              {/* Flowing particles */}
               <motion.circle
                 r="0.8"
-                fill="#FF4444"
+                fill="hsl(var(--primary))"
                 filter="url(#glow)"
                 initial={{ 
                   cx: x1, 
@@ -135,8 +132,8 @@ export default function SVGNodeAnimation() {
                   opacity: [0, 1, 1, 0] 
                 }}
                 transition={{
-                  duration: 2.5,
-                  delay: index * 0.4 + 1.5,
+                  duration: 2,
+                  delay: index * 0.3 + 1,
                   repeat: Infinity,
                   repeatType: "loop",
                   ease: "easeInOut"
@@ -153,12 +150,11 @@ export default function SVGNodeAnimation() {
           
           return (
             <g key={node.id}>
-              {/* Node glow with floating animation */}
               <motion.circle
                 cx={x}
                 cy={y}
                 r="6"
-                fill={node.color}
+                fill="hsl(var(--primary))"
                 opacity="0.3"
                 filter="url(#glow)"
                 initial={{ 
@@ -166,24 +162,24 @@ export default function SVGNodeAnimation() {
                   opacity: 0
                 }}
                 animate={{ 
-                  scale: [1, 1.1, 1],
-                  opacity: [0.3, 0.5, 0.3],
-                  y: [0, -0.8, 0]
+                  scale: [1, 1.05, 1],
+                  opacity: [0.3, 0.4, 0.3],
+                  y: [0, -0.5, 0]
                 }}
                 transition={{
                   scale: { 
-                    duration: 0.6, 
-                    delay: index * 0.15 
+                    duration: 0.4, 
+                    delay: index * 0.1 
                   },
                   opacity: {
-                    duration: 3,
-                    delay: index * 0.2,
+                    duration: 2,
+                    delay: index * 0.15,
                     repeat: Infinity,
                     repeatType: "loop"
                   },
                   y: {
-                    duration: 4,
-                    delay: index * 0.3,
+                    duration: 3,
+                    delay: index * 0.2,
                     repeat: Infinity,
                     repeatType: "loop",
                     ease: "easeInOut"
@@ -191,12 +187,11 @@ export default function SVGNodeAnimation() {
                 }}
               />
               
-              {/* Main node circle with floating animation */}
               <motion.circle
                 cx={x}
                 cy={y}
                 r="4.5"
-                fill={node.color}
+                fill="hsl(var(--primary))"
                 initial={{ 
                   scale: 0, 
                   opacity: 0 
@@ -204,36 +199,35 @@ export default function SVGNodeAnimation() {
                 animate={{ 
                   scale: 1, 
                   opacity: 1,
-                  y: [0, -0.8, 0]
+                  y: [0, -0.5, 0]
                 }}
                 transition={{
                   scale: {
-                    duration: 0.6,
-                    delay: index * 0.15,
+                    duration: 0.4,
+                    delay: index * 0.1,
                     type: "spring",
                     stiffness: 200
                   },
                   opacity: {
-                    duration: 0.3,
-                    delay: index * 0.15
+                    duration: 0.2,
+                    delay: index * 0.1
                   },
                   y: {
-                    duration: 4,
-                    delay: index * 0.3,
+                    duration: 3,
+                    delay: index * 0.2,
                     repeat: Infinity,
                     repeatType: "loop",
                     ease: "easeInOut"
                   }
                 }}
                 whileHover={{ 
-                  scale: 1.2,
+                  scale: 1.1,
                   transition: { duration: 0.2 }
                 }}
                 className="cursor-pointer"
                 filter="url(#glow)"
               />
               
-              {/* Node number with floating animation */}
               <motion.text
                 x={x}
                 y={y + 1.5}
@@ -243,15 +237,15 @@ export default function SVGNodeAnimation() {
                 initial={{ opacity: 0 }}
                 animate={{ 
                   opacity: 1,
-                  y: [0, -0.8, 0]
+                  y: [0, -0.5, 0]
                 }}
                 transition={{ 
                   opacity: {
-                    delay: index * 0.15 + 0.3 
+                    delay: index * 0.1 + 0.2 
                   },
                   y: {
-                    duration: 4,
-                    delay: index * 0.3,
+                    duration: 3,
+                    delay: index * 0.2,
                     repeat: Infinity,
                     repeatType: "loop",
                     ease: "easeInOut"
@@ -261,7 +255,6 @@ export default function SVGNodeAnimation() {
                 {index + 1}
               </motion.text>
               
-              {/* Node label with floating animation */}
               <motion.text
                 x={x}
                 y={node.y < 50 ? y + 12 : y - 8}
@@ -277,17 +270,17 @@ export default function SVGNodeAnimation() {
                   opacity: 1, 
                   y: [
                     node.y < 50 ? y + 12 : y - 8,
-                    node.y < 50 ? y + 11.2 : y - 8.8,
+                    node.y < 50 ? y + 11.5 : y - 8.5,
                     node.y < 50 ? y + 12 : y - 8
                   ]
                 }}
                 transition={{ 
                   opacity: {
-                    delay: index * 0.15 + 0.5 
+                    delay: index * 0.1 + 0.3 
                   },
                   y: {
-                    duration: 4,
-                    delay: index * 0.3,
+                    duration: 3,
+                    delay: index * 0.2,
                     repeat: Infinity,
                     repeatType: "loop",
                     ease: "easeInOut"
