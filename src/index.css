@@ -6,40 +6,40 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
 
-/* Updated Color System - Primary: #4A90E2 (blue/purple), Accent: #FF6B6B (red/coral), Background: #FFFFFF/#F8F9FA */
+/* Updated Color System - Red: #FF4444, Black: #000000, White: #FFFFFF */
 @layer base {
   :root {
-    /* Primary Blue/Purple - #4A90E2 converted to HSL: 211° 65% 53% */
-    --primary: 211 65% 53%;
+    /* Universal Red - #FF4444 converted to HSL: 355° 100% 63% */
+    --primary: 355 100% 63%;
     --primary-foreground: 0 0% 100%;
 
     /* Background Light - #FFFFFF and #F8F9FA */
     --background: 0 0% 100%;
-    --foreground: 0 0% 1%;
+    --foreground: 0 0% 0%;
 
     /* Card and Surface Colors */
-    --card: 210 20% 98%;
-    --card-foreground: 0 0% 1%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 1%;
+    --popover-foreground: 0 0% 0%;
 
     /* Secondary Colors */
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 0 0% 1%;
-    --muted: 210 20% 96%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
-    --accent: 210 20% 96%;
-    --accent-foreground: 0 0% 1%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 9%;
 
     /* Status Colors */
-    --destructive: 0 84% 70%; /* #FF6B6B coral accent */
+    --destructive: 355 100% 63%; /* Same red */
     --destructive-foreground: 0 0% 100%;
 
     /* Border and Input */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 211 65% 53%; /* Primary blue focus ring */
-    --radius: 0.75rem;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 355 100% 63%; /* Red focus ring */
+    --radius: 0.5rem;
   }
 }
 
@@ -58,22 +58,26 @@
   }
 }
 
-/* Updated Utility Classes with New Color System */
+/* Simple Red Underline Navigation */
 @layer utilities {
-  /* Blue Gradient Text */
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary-blue to-blue-600 bg-clip-text text-transparent;
+  .nav-link {
+    @apply relative text-foreground transition-colors duration-200 hover:text-foreground;
   }
 
-  /* Glass Effect - Updated for light background */
-  .glass {
-    @apply backdrop-blur-xl bg-white/80 border border-gray-200/50;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #FF4444;
+    transition: width 0.3s ease-in-out;
   }
 
-  /* Pill Button */
-  .pill-button {
-    @apply px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95;
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
   }
 
   /* Section Padding */
@@ -86,79 +90,33 @@
     @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
   }
 
-  /* Animation Utilities */
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
+  /* Red Button */
+  .red-button {
+    @apply bg-[#FF4444] text-white px-6 py-3 rounded-md font-medium transition-colors hover:bg-[#FF3333];
   }
 
-  .animate-pulse-glow {
-    animation: pulse-glow 3s ease-in-out infinite;
+  /* Service Card Hover */
+  .service-card {
+    @apply cursor-pointer transition-colors duration-200;
   }
 
-  /* Light Noise Overlay */
-  .noise-overlay {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+  .service-card:hover .service-title {
+    @apply relative;
   }
 
-  /* Card Flip Animation */
-  .card-flip {
-    perspective: 1000px;
-  }
-
-  .card-flip-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-
-  .card-flip:hover .card-flip-inner {
-    transform: rotateY(180deg);
-  }
-
-  .card-flip-front, .card-flip-back {
+  .service-card:hover .service-title::after {
+    content: '';
     position: absolute;
     width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 1rem;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #FF4444;
   }
 
-  .card-flip-back {
-    transform: rotateY(180deg);
-  }
-
-  /* Rotating Text Animation */
+  /* Animation Utilities */
   .rotating-text {
     animation: text-rotation 4s ease-in-out infinite;
-  }
-
-  /* Navigation Tags */
-  .nav-tag {
-    @apply px-2 py-1 rounded-md text-xs font-medium text-white;
-  }
-
-  .nav-tag-services {
-    background-color: #F39C12;
-  }
-
-  .nav-tag-industries {
-    background-color: #9B59B6;
-  }
-
-  .nav-tag-resources {
-    background-color: #4ECDC4;
-  }
-
-  .nav-tag-blog {
-    background-color: #E91E63;
-  }
-
-  .nav-tag-about {
-    background-color: #9B59B6;
   }
 }
 
@@ -169,55 +127,5 @@ html {
 
 /* Focus styles */
 *:focus-visible {
-  @apply outline-none ring-2 ring-ring ring-offset-2;
-}
-
-/* Markdown Content Styles */
-.markdown-content {
-  @apply text-foreground leading-relaxed;
-}
-
-.markdown-content h1 {
-  @apply text-4xl font-sora font-bold mb-6 gradient-text;
-}
-
-.markdown-content h2 {
-  @apply text-3xl font-sora font-semibold mb-4 text-foreground;
-}
-
-.markdown-content h3 {
-  @apply text-2xl font-sora font-semibold mb-3 text-foreground;
-}
-
-.markdown-content p {
-  @apply mb-4 text-muted-foreground;
-}
-
-.markdown-content ul {
-  @apply mb-4 space-y-2;
-}
-
-.markdown-content li {
-  @apply flex items-start space-x-2;
-}
-
-.markdown-content li::before {
-  content: "→";
-  @apply text-primary-blue font-bold flex-shrink-0 mt-0.5;
-}
-
-.markdown-content blockquote {
-  @apply border-l-4 border-primary pl-4 italic text-muted-foreground my-6;
-}
-
-.markdown-content code {
-  @apply bg-muted px-2 py-1 rounded text-sm font-mono text-primary-blue;
-}
-
-.markdown-content pre {
-  @apply bg-muted p-4 rounded-lg overflow-x-auto my-4;
-}
-
-.markdown-content pre code {
-  @apply bg-transparent p-0 text-foreground;
+  @apply outline-none ring-2 ring-[#FF4444] ring-offset-2;
 }

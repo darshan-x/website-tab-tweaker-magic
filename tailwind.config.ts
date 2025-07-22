@@ -24,22 +24,13 @@ export default {
 				'inter': ['Inter', 'sans-serif'],
 			},
 			colors: {
-				// Updated color system per prompt - Primary: #4A90E2 (blue/purple), Accent: #FF6B6B (red/coral)
-				'primary-blue': '#4A90E2',
-				'accent-coral': '#FF6B6B',
+				// Universal Red Color - #FF4444 converted to HSL: 355° 100% 63%
+				'universal-red': '#FF4444',
+				
+				// Black and white only
+				'text-black': '#000000',
 				'background-light': '#FFFFFF',
 				'background-alt': '#F8F9FA',
-				
-				// Navigation color-coded tags
-				'nav-services': '#F39C12', // yellow/amber
-				'nav-industries': '#9B59B6', // purple
-				'nav-resources': '#4ECDC4', // teal
-				'nav-blog': '#E91E63', // pink
-				'nav-about': '#9B59B6', // purple
-				
-				// CTA colors
-				'cta-green': '#2ECC71',
-				'cta-coral': '#FF6B6B',
 				
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -73,16 +64,6 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
-				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
 			borderRadius: {
@@ -107,26 +88,6 @@ export default {
 						height: '0'
 					}
 				},
-				float: {
-					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-10px)' }
-				},
-				'pulse-glow': {
-					'0%, 100%': { 
-						boxShadow: '0 0 20px rgba(74, 144, 226, 0.2)',
-						transform: 'scale(1)'
-					},
-					'50%': { 
-						boxShadow: '0 0 40px rgba(74, 144, 226, 0.4)',
-						transform: 'scale(1.02)'
-					}
-				},
-				'flow-particle': {
-					'0%': { opacity: '0' },
-					'10%': { opacity: '1' },
-					'90%': { opacity: '1' },
-					'100%': { opacity: '0' }
-				},
 				'text-rotation': {
 					'0%': { opacity: '1' },
 					'33%': { opacity: '0' },
@@ -137,9 +98,6 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'float': 'float 6s ease-in-out infinite',
-				'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
-				'flow-particle': 'flow-particle 3s ease-in-out infinite',
 				'text-rotation': 'text-rotation 4s ease-in-out infinite'
 			}
 		}
