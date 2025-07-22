@@ -82,7 +82,7 @@
 
   /* Section Padding */
   .section-padding {
-    @apply py-16 lg:py-24;
+    @apply py-12 lg:py-16;
   }
 
   /* Container */

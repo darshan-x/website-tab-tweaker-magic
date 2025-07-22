@@ -27,17 +27,21 @@ const HeroSection = () => {
           {/* Main Headline */}
           <h1 className="text-5xl lg:text-6xl font-sora font-bold text-foreground mb-6 leading-tight">
             AI that helps you{' '}
-            <span className="text-[#FF4444] inline-block min-w-[300px] text-left">
-              {rotatingTexts.map((text, index) => (
-                <span
-                  key={index}
-                  className={`absolute transition-opacity duration-500 ${
-                    index === currentTextIndex ? 'opacity-100' : 'opacity-0'
-                  }`}
-                >
-                  {text}
-                </span>
-              ))}
+            <span className="text-[#FF4444] inline-block">
+              <span className="block h-16 overflow-hidden">
+                {rotatingTexts.map((text, index) => (
+                  <span
+                    key={index}
+                    className={`block transition-transform duration-500 ${
+                      index === currentTextIndex 
+                        ? 'transform translate-y-0' 
+                        : 'transform translate-y-full'
+                    }`}
+                  >
+                    {text}
+                  </span>
+                ))}
+              </span>
             </span>
           </h1>
 
@@ -55,7 +59,7 @@ const HeroSection = () => {
               </Link>
             </Button>
             
-            <Button asChild variant="outline" size="lg" className="text-lg px-8 py-4 border-border hover:bg-muted">
+            <Button asChild size="lg" className="red-button text-lg px-8 py-4">
               <Link to="/case-studies">
                 <Play className="mr-2 w-5 h-5" />
                 See Results

@@ -22,7 +22,7 @@ const IndustriesSection = () => {
   return (
     <section id="industries" className="section-padding bg-background">
       <div className="container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-4xl font-sora font-bold text-foreground mb-4">
             Domain Expertise
           </h2>
@@ -31,14 +31,11 @@ const IndustriesSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
           {industries.map((industry, index) => (
-            <div 
-              key={index} 
-              className="service-card text-center p-6 bg-background-alt rounded-lg border border-border"
-            >
-              <industry.icon className="w-12 h-12 text-[#FF4444] mx-auto mb-4" />
-              <h3 className="service-title font-medium text-foreground">
+            <div key={index} className="text-center p-4">
+              <industry.icon className="w-8 h-8 text-[#FF4444] mx-auto mb-3" />
+              <h3 className="font-medium text-foreground text-sm">
                 {industry.name}
               </h3>
             </div>
