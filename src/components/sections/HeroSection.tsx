@@ -110,7 +110,7 @@ const HeroSection = () => {
                   Explore AI Use Cases
                 </Link>
               </Button>
-            </div>
+            </motion.div>
 
             {/* Social Proof */}
             <motion.div
