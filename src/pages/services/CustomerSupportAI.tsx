@@ -1,31 +1,13 @@
 
 import React from 'react';
-import Navbar from '@/components/layout/Navbar';
-import { motion } from 'framer-motion';
+import ServiceTemplate from '@/components/templates/ServiceTemplate';
+import servicesData from '@/data/services.json';
 
 const CustomerSupportAI = () => {
-  return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <section className="section-padding pt-32">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <h1 className="text-4xl lg:text-6xl font-sora font-bold mb-6">
-              <span className="gradient-text">Customer Support AI</span>
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              24/7 intelligent customer support automation
-            </p>
-          </motion.div>
-        </div>
-      </section>
-    </div>
-  );
+  const serviceData = servicesData['customer-support-ai'];
+  if (!serviceData) return <div>Service not found</div>;
+  
+  return <ServiceTemplate data={serviceData} />;
 };
 
 export default CustomerSupportAI;

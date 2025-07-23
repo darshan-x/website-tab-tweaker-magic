@@ -1,31 +1,42 @@
 
 import React from 'react';
-import Navbar from '@/components/layout/Navbar';
-import { motion } from 'framer-motion';
+import EventListTemplate from '@/components/templates/EventListTemplate';
+import webinarsData from '@/data/webinars.json';
 
 const Webinars = () => {
-  return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <section className="section-padding pt-32">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <h1 className="text-4xl lg:text-6xl font-sora font-bold mb-6">
-              <span className="gradient-text">Webinars</span>
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Join our expert-led AI implementation sessions
-            </p>
-          </motion.div>
-        </div>
-      </section>
-    </div>
-  );
+  // Transform webinar data to match EventListTemplate interface
+  const transformedData = {
+    title: "AI Implementation Webinars",
+    subtitle: "Join our expert-led AI implementation sessions and learn from industry leaders",
+    events: [
+      ...webinarsData.upcoming.map(webinar => ({
+        id: webinar.id,
+        title: webinar.title,
+        date: webinar.date,
+        time: webinar.time,
+        duration: webinar.duration,
+        presenter: webinar.speaker.name,
+        description: webinar.description,
+        topics: webinar.tags,
+        registrationLink: webinar.registrationLink,
+        status: 'upcoming' as const
+      })),
+      ...webinarsData.past.map(webinar => ({
+        id: webinar.id,
+        title: webinar.title,
+        date: webinar.date,
+        time: webinar.time,
+        duration: webinar.duration,
+        presenter: webinar.speaker.name,
+        description: webinar.description,
+        topics: webinar.tags,
+        registrationLink: webinar.recordingLink || '#',
+        status: 'past' as const
+      }))
+    ]
+  };
+
+  return <EventListTemplate data={transformedData} />;
 };
 
 export default Webinars;
