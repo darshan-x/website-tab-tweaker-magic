@@ -1,59 +1,78 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { Card, CardContent } from '@/components/ui/card';
+import { Calendar, Clock, User } from 'lucide-react';
 
 const WebinarsSection = () => {
   const webinars = [
     {
-      title: 'AI Implementation Strategy',
-      date: 'March 15, 2024',
-      description: 'Learn how to successfully implement AI in your organization with our step-by-step framework.'
+      presenter: 'Ravish Kamath',
+      title: 'Best Practices for n8n Workflow Automation',
+      date: 'June 1st, 2025',
+      time: '11:00 AM PST'
     },
     {
-      title: 'Sales AI Best Practices',
-      date: 'March 22, 2024',
-      description: 'Discover how leading companies are using AI to boost their sales performance by 40%+'
+      presenter: 'Ravish Kamath',
+      title: 'AI in Sales Enablement: From Coaching to Content Creation',
+      date: 'June 15th, 2025',
+      time: '10:00 AM PST'
     },
     {
-      title: 'Customer Support Automation',
-      date: 'March 29, 2024',
-      description: 'Transform your customer support with AI-powered automation and 24/7 intelligent assistance.'
+      presenter: 'Darshan Karthik',
+      title: 'AI Use Cases in Marketing and Creative Services',
+      date: 'June 30th, 2025',
+      time: '11:00 AM PST'
     }
   ];
 
   return (
-    <section id="resources" className="section-padding bg-background-alt">
+    <section className="section-padding bg-secondary/20">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-sora font-bold text-foreground mb-4">
             Upcoming Webinars
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join our expert-led sessions on AI implementation
+            Join our expert-led sessions on AI implementation and business transformation.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
           {webinars.map((webinar, index) => (
-            <div key={index} className="bg-background rounded-lg border border-border p-6">
-              <h3 className="text-xl font-sora font-semibold text-foreground mb-2">
-                {webinar.title}
-              </h3>
-              
-              <div className="text-sm text-muted-foreground mb-4">
-                {webinar.date}
-              </div>
-
-              <p className="text-muted-foreground mb-6">
-                {webinar.description}
-              </p>
-
-              <Button asChild className="w-full red-button">
-                <Link to="/webinars">Register Now</Link>
-              </Button>
-            </div>
+            <Card key={index} className="border-border">
+              <CardContent className="p-6">
+                <div className="flex items-center text-muted-foreground text-sm mb-3">
+                  <User className="w-4 h-4 mr-2" />
+                  {webinar.presenter}
+                </div>
+                
+                <h3 className="text-lg font-semibold text-foreground mb-4">
+                  {webinar.title}
+                </h3>
+                
+                <div className="flex items-center text-muted-foreground text-sm mb-2">
+                  <Calendar className="w-4 h-4 mr-2" />
+                  {webinar.date}
+                </div>
+                
+                <div className="flex items-center text-muted-foreground text-sm mb-4">
+                  <Clock className="w-4 h-4 mr-2" />
+                  {webinar.time}
+                </div>
+                
+                <Button className="w-full red-button">
+                  Register Now
+                </Button>
+              </CardContent>
+            </Card>
           ))}
+        </div>
+
+        <div className="text-center">
+          <Button asChild variant="outline" size="lg">
+            <a href="/webinars">View All Webinars</a>
+          </Button>
         </div>
       </div>
     </section>
