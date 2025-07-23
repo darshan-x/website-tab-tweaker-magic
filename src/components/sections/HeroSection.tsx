@@ -27,7 +27,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div>
-            <h1 className="text-5xl lg:text-6xl font-sora font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-5xl lg:text-6xl font-sora font-extrabold text-foreground mb-6 leading-tight">
               AI solutions that{' '}
               <span className="hero-verb" key={currentTextIndex}>
                 {rotatingTexts[currentTextIndex]}

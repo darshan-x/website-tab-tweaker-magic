@@ -67,7 +67,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center">
               <span className="text-2xl font-sora">
                 <span className="text-text-black font-normal">Giga</span>
-                <span className="text-[#FF4444] font-bold">Rev</span>
+                <span className="text-[#FF4444] font-extrabold">Rev</span>
               </span>
             </Link>
 
