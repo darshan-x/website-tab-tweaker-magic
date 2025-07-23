@@ -41,6 +41,10 @@
     --coral-tint-4: 355 100% 88%; /* #FFCCCC */
     --coral-tint-5: 355 100% 94%; /* #FFEEEE */
 
+    /* New semantic tokens */
+    --surface-muted: 210 20% 98%; /* #F8F9FA */
+    --stroke: 0 0% 0% / 0.1; /* #0000001A */
+
     --border: 0 0% 90%;
     --input: 0 0% 90%;
     --ring: 355 100% 63%; /* Red focus ring */
@@ -176,7 +180,55 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Focus styles */
+  /* Focus styles */
 *:focus-visible {
   @apply outline-none ring-2 ring-[#FF4444] ring-offset-2;
+}
+
+/* Enhanced interactions from specifications */
+@layer utilities {
+  .focus-ring-brand {
+    outline: 2px solid #FF4444;
+    outline-offset: 2px;
+  }
+
+  /* Tab item active state */
+  .tab-active {
+    @apply bg-coral-tint-5 rounded-full ring-1 ring-primary/20;
+  }
+
+  /* Dropdown caret rotation */
+  .dropdown-caret {
+    transition: transform 240ms ease-in-out;
+  }
+
+  .dropdown-caret.open {
+    transform: rotate(180deg);
+  }
+
+  /* Card hover enhancement */
+  .card-hover-enhanced {
+    transition: all 300ms ease-in-out;
+  }
+
+  .card-hover-enhanced:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .hero-verb {
+    animation: none;
+  }
+  
+  .line-path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  
+  .dropdown-caret {
+    transition: none;
+  }
 }

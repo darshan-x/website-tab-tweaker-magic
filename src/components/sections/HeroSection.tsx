@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import ProcessFlowDiagram from '@/components/shared/ProcessFlowDiagram';
+import ProcessDiagram6Step from '@/components/shared/ProcessDiagram6Step';
 
 const HeroSection = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -55,7 +55,7 @@ const HeroSection = () => {
 
           {/* Right Column - Process Flow */}
           <div className="lg:pl-8">
-            <ProcessFlowDiagram />
+            <ProcessDiagram6Step />
           </div>
         </div>
       </div>

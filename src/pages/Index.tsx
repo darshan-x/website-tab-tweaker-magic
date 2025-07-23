@@ -5,7 +5,8 @@ import SpecialOfferBanner from '@/components/shared/SpecialOfferBanner';
 import HeroSection from '@/components/sections/HeroSection';
 import { Card, CardContent } from '@/components/ui/card';
 import ServicesSection from '@/components/sections/ServicesSection';
-import ServiceHubSection from '@/components/shared/ServiceHubSection';
+import ServiceHubTabs from '@/components/shared/ServiceHubTabs';
+import NewsletterCTA from '@/components/shared/NewsletterCTA';
 import IndustriesSection from '@/components/sections/IndustriesSection';
 import WebinarsSection from '@/components/sections/WebinarsSection';
 import FooterCTA from '@/components/shared/FooterCTA';
@@ -116,26 +117,16 @@ export default function Index() {
 
       <ServicesSection />
       
-      <ServiceHubSection
-        title="Tech Services Hub"
-        subtitle="Cutting-edge technical solutions to power your AI transformation."
-        services={techServices}
-        metricsTitle="Tech Stack"
-        metrics={techMetrics}
-        className="bg-background"
-      />
-
-      <ServiceHubSection
-        title="Revenue Services Hub"
-        subtitle="AI-powered solutions to optimize every stage of your customer journey."
-        services={revenueServices}
-        metricsTitle="Sales KPI Impact"
-        metrics={salesMetrics}
-        className="bg-secondary/20"
+      <ServiceHubTabs
+        techServices={techServices}
+        revenueServices={revenueServices}
+        techMetrics={techMetrics}
+        salesMetrics={salesMetrics}
       />
 
       <IndustriesSection />
       <WebinarsSection />
+      <NewsletterCTA />
       <FooterCTA />
       <TrustLogos />
       <Footer />
