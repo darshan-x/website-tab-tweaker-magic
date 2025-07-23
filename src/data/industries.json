@@ -1,0 +1,722 @@
+{
+  "field-sales": {
+    "title": "Field Sales AI Solutions",
+    "subtitle": "Mobile-first AI tools designed for field sales teams to close deals faster and optimize territory management.",
+    "kpis": [
+      { "value": "+32%", "label": "Deal Closure", "description": "Higher success rate" },
+      { "value": "60%", "label": "Route Optimization", "description": "Time savings" },
+      { "value": "+28%", "label": "Customer Engagement", "description": "Better interactions" },
+      { "value": "4.5x", "label": "ROI", "description": "First year return" }
+    ],
+    "painPoints": [
+      {
+        "title": "Territory Management Chaos",
+        "description": "Sales reps waste 40% of their time on inefficient routing and scheduling",
+        "impact": "Lost opportunities and frustrated customers"
+      },
+      {
+        "title": "Inconsistent Pitch Quality",
+        "description": "Field reps struggle with personalized presentations without real-time data",
+        "impact": "Lower conversion rates and missed revenue"
+      },
+      {
+        "title": "Poor Lead Prioritization",
+        "description": "No intelligent system to prioritize which prospects to visit first",
+        "impact": "Wasted time on low-value prospects"
+      },
+      {
+        "title": "Manual Data Entry",
+        "description": "Reps spend hours updating CRM instead of selling",
+        "impact": "Reduced selling time and data accuracy issues"
+      }
+    ],
+    "aiSuite": [
+      {
+        "title": "Smart Route Planning",
+        "description": "AI-powered territory optimization and visit scheduling",
+        "features": ["Dynamic route optimization", "Traffic-aware scheduling", "Customer priority scoring"]
+      },
+      {
+        "title": "Mobile Sales Coach",
+        "description": "Real-time coaching and pitch optimization on mobile devices",
+        "features": ["Contextual talking points", "Objection handling scripts", "Real-time competitive intel"]
+      },
+      {
+        "title": "Voice-to-CRM",
+        "description": "Hands-free CRM updates using voice recognition",
+        "features": ["Natural language processing", "Auto field mapping", "Instant sync to CRM"]
+      },
+      {
+        "title": "Predictive Lead Scoring",
+        "description": "AI models to identify highest-value prospects",
+        "features": ["Behavior analysis", "Buying signal detection", "Optimal timing recommendations"]
+      },
+      {
+        "title": "Digital Sales Materials",
+        "description": "Personalized presentations and proposals generated on-demand",
+        "features": ["Dynamic content generation", "Customer-specific customization", "Interactive demos"]
+      },
+      {
+        "title": "Performance Analytics",
+        "description": "Real-time insights into field sales performance",
+        "features": ["Territory performance tracking", "Rep coaching recommendations", "Predictive forecasting"]
+      }
+    ],
+    "whyNative": {
+      "title": "Purpose-Built for Field Sales",
+      "features": [
+        "Offline-first mobile architecture for poor connectivity areas",
+        "GPS-integrated territory management with real-time optimization",
+        "Voice-activated CRM updates for hands-free operation",
+        "Battery-optimized apps for all-day field use",
+        "Integration with existing field sales tools and CRM systems"
+      ]
+    },
+    "pilot": {
+      "title": "45-Day Field Sales AI Pilot",
+      "phases": [
+        {
+          "title": "Week 1-2: Territory Analysis",
+          "activities": ["Map current territories", "Analyze historical performance", "Identify optimization opportunities"]
+        },
+        {
+          "title": "Week 3-4: AI Model Training",
+          "activities": ["Train route optimization models", "Configure lead scoring algorithms", "Set up voice recognition"]
+        },
+        {
+          "title": "Week 5-6: Pilot Deployment",
+          "activities": ["Deploy to pilot group", "Conduct training sessions", "Monitor initial performance"]
+        }
+      ]
+    },
+    "outcomes": [
+      "32% increase in successful deal closures",
+      "60% reduction in travel time through optimized routing",
+      "50% less time spent on administrative tasks",
+      "28% improvement in customer engagement scores",
+      "Real-time visibility into field sales performance"
+    ],
+    "faqs": [
+      {
+        "question": "How does the AI work offline?",
+        "answer": "Our mobile apps are designed with offline-first architecture, storing essential AI models locally and syncing when connectivity is restored."
+      },
+      {
+        "question": "Can it integrate with our existing CRM?",
+        "answer": "Yes, we support integration with all major CRM platforms including Salesforce, HubSpot, Pipedrive, and custom systems."
+      },
+      {
+        "question": "What about data security in the field?",
+        "answer": "All field data is encrypted end-to-end, with biometric authentication and remote wipe capabilities for lost devices."
+      },
+      {
+        "question": "How quickly can reps be trained?",
+        "answer": "Most field reps are productive within 2-3 days of training, with full proficiency achieved in 1-2 weeks."
+      },
+      {
+        "question": "What's the ROI timeline?",
+        "answer": "Most clients see positive ROI within 3-4 months, with full payback typically achieved by month 6."
+      }
+    ]
+  },
+  "adtech": {
+    "title": "AdTech AI Solutions",
+    "subtitle": "Programmatic advertising optimization with AI-driven bidding, creative optimization, and audience targeting.",
+    "kpis": [
+      { "value": "+58%", "label": "CTR Improvement", "description": "AI-optimized campaigns" },
+      { "value": "42%", "label": "Cost Reduction", "description": "Smarter bidding" },
+      { "value": "+73%", "label": "ROAS", "description": "Return on ad spend" },
+      { "value": "10ms", "label": "Bid Response", "description": "Real-time optimization" }
+    ],
+    "painPoints": [
+      {
+        "title": "Manual Bid Management",
+        "description": "Campaign managers spend countless hours adjusting bids across multiple platforms",
+        "impact": "Missed opportunities and suboptimal spend allocation"
+      },
+      {
+        "title": "Creative Fatigue",
+        "description": "Ad creative performance degrades over time without systematic refresh",
+        "impact": "Declining CTRs and increasing cost per acquisition"
+      },
+      {
+        "title": "Audience Fragmentation",
+        "description": "Difficulty in creating cohesive audience strategies across channels",
+        "impact": "Inefficient spend and inconsistent messaging"
+      },
+      {
+        "title": "Attribution Complexity",
+        "description": "Multi-touch attribution across channels is manual and error-prone",
+        "impact": "Incorrect budget allocation and missed optimization opportunities"
+      }
+    ],
+    "aiSuite": [
+      {
+        "title": "Programmatic Bidding AI",
+        "description": "Real-time bid optimization across all major ad exchanges",
+        "features": ["Dynamic bid adjustments", "Cross-platform optimization", "Fraud detection"]
+      },
+      {
+        "title": "Creative Intelligence",
+        "description": "AI-powered creative testing and optimization",
+        "features": ["Automated A/B testing", "Creative performance prediction", "Dynamic creative optimization"]
+      },
+      {
+        "title": "Audience AI",
+        "description": "Advanced audience modeling and lookalike creation",
+        "features": ["Behavioral clustering", "Predictive LTV modeling", "Cross-channel audience matching"]
+      },
+      {
+        "title": "Attribution Engine",
+        "description": "Multi-touch attribution with AI-powered insights",
+        "features": ["Cross-device tracking", "Incrementality testing", "Media mix modeling"]
+      },
+      {
+        "title": "Campaign Automation",
+        "description": "End-to-end campaign management automation",
+        "features": ["Budget allocation", "Dayparting optimization", "Geographic targeting"]
+      },
+      {
+        "title": "Performance Forecasting",
+        "description": "Predictive analytics for campaign planning",
+        "features": ["Spend forecasting", "Performance prediction", "Seasonal adjustment"]
+      }
+    ],
+    "whyNative": {
+      "title": "Built for AdTech Scale",
+      "features": [
+        "Sub-10ms bid response times for real-time auctions",
+        "Direct integration with major DSPs and ad exchanges",
+        "Privacy-compliant data processing for GDPR/CCPA",
+        "Custom attribution models for complex customer journeys",
+        "White-label solutions for agencies and platforms"
+      ]
+    },
+    "pilot": {
+      "title": "45-Day AdTech AI Pilot",
+      "phases": [
+        {
+          "title": "Week 1-2: Campaign Audit",
+          "activities": ["Analyze current campaign performance", "Identify optimization opportunities", "Set up tracking infrastructure"]
+        },
+        {
+          "title": "Week 3-4: AI Model Training",
+          "activities": ["Train bidding algorithms", "Configure creative optimization", "Set up audience models"]
+        },
+        {
+          "title": "Week 5-6: Pilot Launch",
+          "activities": ["Launch AI-optimized campaigns", "Monitor performance", "Optimize and scale"]
+        }
+      ]
+    },
+    "outcomes": [
+      "58% improvement in click-through rates",
+      "42% reduction in cost per acquisition",
+      "73% increase in return on ad spend",
+      "90% reduction in manual campaign management time",
+      "Real-time optimization across all channels"
+    ],
+    "faqs": [
+      {
+        "question": "Which ad platforms do you support?",
+        "answer": "We integrate with all major platforms including Google Ads, Facebook Ads, The Trade Desk, Amazon DSP, and 50+ other exchanges."
+      },
+      {
+        "question": "How do you handle data privacy?",
+        "answer": "Our platform is fully compliant with GDPR, CCPA, and other privacy regulations, with privacy-by-design architecture."
+      },
+      {
+        "question": "Can you work with our existing attribution model?",
+        "answer": "Yes, we can integrate with existing attribution solutions or implement our advanced multi-touch attribution engine."
+      },
+      {
+        "question": "What's the minimum ad spend required?",
+        "answer": "Our AI optimization works best with monthly ad spends of $50K+, though we can accommodate smaller budgets for specific use cases."
+      },
+      {
+        "question": "How transparent is the AI decision-making?",
+        "answer": "We provide full transparency with explainable AI reports showing why specific optimization decisions were made."
+      }
+    ]
+  },
+  "martech": {
+    "title": "MarTech AI Solutions",
+    "subtitle": "Marketing technology stack optimization with AI-powered automation, personalization, and customer journey orchestration.",
+    "kpis": [
+      { "value": "+65%", "label": "Lead Quality", "description": "AI-scored prospects" },
+      { "value": "80%", "label": "Campaign Automation", "description": "Reduced manual work" },
+      { "value": "+45%", "label": "Conversion Rate", "description": "Personalized experiences" },
+      { "value": "3.2x", "label": "Marketing ROI", "description": "Improved efficiency" }
+    ],
+    "painPoints": [
+      {
+        "title": "Fragmented Tech Stack",
+        "description": "Marketing tools don't communicate effectively, creating data silos",
+        "impact": "Inconsistent customer experiences and wasted marketing spend"
+      },
+      {
+        "title": "Manual Campaign Management",
+        "description": "Marketers spend 60% of time on repetitive tasks instead of strategy",
+        "impact": "Reduced creativity and slower time-to-market"
+      },
+      {
+        "title": "Poor Lead Scoring",
+        "description": "Static lead scoring models miss nuanced buying signals",
+        "impact": "Sales teams waste time on unqualified leads"
+      },
+      {
+        "title": "Generic Personalization",
+        "description": "One-size-fits-all messaging fails to resonate with diverse audiences",
+        "impact": "Low engagement rates and missed revenue opportunities"
+      }
+    ],
+    "aiSuite": [
+      {
+        "title": "Marketing Automation AI",
+        "description": "Intelligent workflow automation across your entire stack",
+        "features": ["Smart trigger conditions", "Dynamic content insertion", "Performance optimization"]
+      },
+      {
+        "title": "Predictive Lead Scoring",
+        "description": "AI models that identify high-value prospects in real-time",
+        "features": ["Behavioral analysis", "Intent data integration", "Dynamic scoring updates"]
+      },
+      {
+        "title": "Personalization Engine",
+        "description": "1:1 personalization at scale across all touchpoints",
+        "features": ["Dynamic content optimization", "Journey personalization", "Cross-channel consistency"]
+      },
+      {
+        "title": "Customer Journey AI",
+        "description": "Intelligent orchestration of multi-channel customer journeys",
+        "features": ["Path optimization", "Timing predictions", "Channel preference learning"]
+      },
+      {
+        "title": "Content Intelligence",
+        "description": "AI-powered content creation and optimization",
+        "features": ["Automated copywriting", "Visual content generation", "Performance prediction"]
+      },
+      {
+        "title": "Attribution & Analytics",
+        "description": "Advanced attribution modeling with predictive insights",
+        "features": ["Multi-touch attribution", "Customer lifetime value prediction", "ROI optimization"]
+      }
+    ],
+    "whyNative": {
+      "title": "Purpose-Built for MarTech",
+      "features": [
+        "Native integrations with 200+ marketing tools and platforms",
+        "Real-time data synchronization across your entire stack",
+        "Custom API development for proprietary systems",
+        "Scalable architecture handling millions of customer interactions",
+        "Marketing-specific AI models trained on industry data"
+      ]
+    },
+    "pilot": {
+      "title": "45-Day MarTech AI Pilot",
+      "phases": [
+        {
+          "title": "Week 1-2: Stack Analysis",
+          "activities": ["Audit existing MarTech stack", "Map data flows", "Identify integration opportunities"]
+        },
+        {
+          "title": "Week 3-4: AI Implementation",
+          "activities": ["Deploy AI models", "Configure automation workflows", "Set up personalization rules"]
+        },
+        {
+          "title": "Week 5-6: Pilot Campaigns",
+          "activities": ["Launch AI-powered campaigns", "A/B test against control groups", "Optimize performance"]
+        }
+      ]
+    },
+    "outcomes": [
+      "65% improvement in lead quality scores",
+      "80% reduction in manual campaign tasks",
+      "45% increase in conversion rates",
+      "50% faster campaign deployment",
+      "Unified view of customer journey across all channels"
+    ],
+    "faqs": [
+      {
+        "question": "Which MarTech platforms do you integrate with?",
+        "answer": "We have native integrations with 200+ platforms including HubSpot, Marketo, Pardot, Mailchimp, and can build custom integrations for any system."
+      },
+      {
+        "question": "How do you handle data privacy and compliance?",
+        "answer": "Our platform includes built-in privacy controls, consent management, and compliance monitoring for GDPR, CCPA, and industry regulations."
+      },
+      {
+        "question": "Can you work with our existing customer data platform?",
+        "answer": "Yes, we integrate seamlessly with CDPs like Segment, mParticle, ActionIQ, and others, or can help implement a new CDP if needed."
+      },
+      {
+        "question": "What's the learning period for the AI?",
+        "answer": "Our AI models typically need 2-4 weeks of data to achieve baseline performance, with continuous improvement over 3-6 months."
+      },
+      {
+        "question": "How do you measure success?",
+        "answer": "We track key metrics like lead quality, conversion rates, campaign ROI, and time savings, with detailed attribution reporting."
+      }
+    ]
+  },
+  "telecom": {
+    "title": "Telecom AI Solutions",
+    "subtitle": "Network optimization, customer analytics, and service automation for telecommunications and fiber providers.",
+    "kpis": [
+      { "value": "35%", "label": "Network Efficiency", "description": "Optimized performance" },
+      { "value": "-28%", "label": "Churn Reduction", "description": "Improved retention" },
+      { "value": "60%", "label": "Support Automation", "description": "Faster resolution" },
+      { "value": "+22%", "label": "Revenue per User", "description": "Upsell optimization" }
+    ],
+    "painPoints": [
+      {
+        "title": "Network Congestion",
+        "description": "Peak usage periods cause service degradation and customer complaints",
+        "impact": "Customer dissatisfaction and potential churn"
+      },
+      {
+        "title": "High Customer Churn",
+        "description": "Unable to predict and prevent customer churn effectively",
+        "impact": "Revenue loss and high acquisition costs"
+      },
+      {
+        "title": "Manual Support Processes",
+        "description": "Support agents handle routine issues that could be automated",
+        "impact": "High operational costs and slower resolution times"
+      },
+      {
+        "title": "Inefficient Resource Planning",
+        "description": "Network capacity planning relies on historical data, not predictive insights",
+        "impact": "Over/under-provisioning and suboptimal investments"
+      }
+    ],
+    "aiSuite": [
+      {
+        "title": "Network Optimization AI",
+        "description": "Real-time network performance optimization and predictive maintenance",
+        "features": ["Traffic load balancing", "Predictive failure detection", "Automated capacity scaling"]
+      },
+      {
+        "title": "Churn Prediction Engine",
+        "description": "Advanced ML models to identify at-risk customers",
+        "features": ["Behavioral analysis", "Usage pattern recognition", "Proactive retention campaigns"]
+      },
+      {
+        "title": "Customer Service AI",
+        "description": "Intelligent customer support automation and routing",
+        "features": ["Natural language processing", "Issue categorization", "Smart agent routing"]
+      },
+      {
+        "title": "Revenue Optimization",
+        "description": "AI-powered pricing and upselling recommendations",
+        "features": ["Dynamic pricing models", "Personalized offer generation", "Usage-based recommendations"]
+      },
+      {
+        "title": "Fraud Detection",
+        "description": "Real-time fraud detection and prevention systems",
+        "features": ["Anomaly detection", "Pattern recognition", "Automated blocking"]
+      },
+      {
+        "title": "Infrastructure Planning",
+        "description": "Predictive analytics for network expansion and upgrades",
+        "features": ["Demand forecasting", "Site optimization", "Investment prioritization"]
+      }
+    ],
+    "whyNative": {
+      "title": "Built for Telecom Scale",
+      "features": [
+        "Real-time processing of network data at telecom scale",
+        "Integration with OSS/BSS systems and network equipment",
+        "Compliance with telecom industry regulations and standards",
+        "Edge computing capabilities for low-latency applications",
+        "Custom models trained on telecom-specific use cases"
+      ]
+    },
+    "pilot": {
+      "title": "45-Day Telecom AI Pilot",
+      "phases": [
+        {
+          "title": "Week 1-2: Network Assessment",
+          "activities": ["Analyze network performance data", "Identify optimization opportunities", "Map customer journey touchpoints"]
+        },
+        {
+          "title": "Week 3-4: AI Model Development",
+          "activities": ["Train predictive models", "Configure optimization algorithms", "Set up monitoring systems"]
+        },
+        {
+          "title": "Week 5-6: Pilot Deployment",
+          "activities": ["Deploy AI solutions", "Monitor network improvements", "Track customer satisfaction metrics"]
+        }
+      ]
+    },
+    "outcomes": [
+      "35% improvement in network efficiency and uptime",
+      "28% reduction in customer churn rates",
+      "60% automation of customer support queries",
+      "22% increase in average revenue per user",
+      "Proactive issue resolution before customer impact"
+    ],
+    "faqs": [
+      {
+        "question": "Which network equipment do you support?",
+        "answer": "We integrate with all major vendors including Cisco, Ericsson, Nokia, Huawei, and can work with any equipment that provides SNMP or API access."
+      },
+      {
+        "question": "How do you ensure network security?",
+        "answer": "Our solutions include end-to-end encryption, secure API gateways, and comply with telecom security standards like NIST and ISO 27001."
+      },
+      {
+        "question": "Can you work with legacy systems?",
+        "answer": "Yes, we specialize in integrating with legacy OSS/BSS systems and can provide APIs to bridge old and new technologies."
+      },
+      {
+        "question": "What about regulatory compliance?",
+        "answer": "Our platform is designed with telecom regulations in mind, including data protection, network neutrality, and industry reporting requirements."
+      },
+      {
+        "question": "How quickly can we see network improvements?",
+        "answer": "Network optimization benefits are typically visible within 2-3 weeks of deployment, with full optimization achieved within 2-3 months."
+      }
+    ]
+  },
+  "tech-smb": {
+    "title": "Tech SMB AI Solutions",
+    "subtitle": "Startup-friendly AI implementation with rapid deployment, cost-effective solutions, and scalable architecture.",
+    "kpis": [
+      { "value": "2-4 weeks", "label": "Implementation", "description": "Fast deployment" },
+      { "value": "70%", "label": "Cost Savings", "description": "vs enterprise solutions" },
+      { "value": "+150%", "label": "Productivity Gain", "description": "Team efficiency" },
+      { "value": "6 months", "label": "ROI Timeline", "description": "Break-even point" }
+    ],
+    "painPoints": [
+      {
+        "title": "Limited Tech Resources",
+        "description": "Small teams lack dedicated AI/ML expertise for implementation",
+        "impact": "Missed opportunities and delayed digital transformation"
+      },
+      {
+        "title": "Budget Constraints",
+        "description": "Enterprise AI solutions are too expensive for SMB budgets",
+        "impact": "Inability to compete with larger companies using AI"
+      },
+      {
+        "title": "Complex Integration",
+        "description": "Existing systems aren't designed for easy AI integration",
+        "impact": "Technical debt and operational inefficiencies"
+      },
+      {
+        "title": "Scaling Challenges",
+        "description": "Solutions that work today may not scale with business growth",
+        "impact": "Need for costly re-implementation as company grows"
+      }
+    ],
+    "aiSuite": [
+      {
+        "title": "AI-as-a-Service",
+        "description": "Pre-built AI solutions that can be deployed in days",
+        "features": ["No-code AI implementation", "API-first architecture", "Usage-based pricing"]
+      },
+      {
+        "title": "Smart Process Automation",
+        "description": "Automate routine business processes with AI",
+        "features": ["Document processing", "Email automation", "Customer onboarding"]
+      },
+      {
+        "title": "Customer Intelligence",
+        "description": "AI-powered customer insights and behavior analysis",
+        "features": ["Churn prediction", "Lifetime value calculation", "Personalization engine"]
+      },
+      {
+        "title": "Sales & Marketing AI",
+        "description": "Growth-focused AI tools for small teams",
+        "features": ["Lead scoring", "Content generation", "Campaign optimization"]
+      },
+      {
+        "title": "Operational AI",
+        "description": "AI tools to optimize daily operations",
+        "features": ["Inventory optimization", "Schedule management", "Resource allocation"]
+      },
+      {
+        "title": "Analytics & Insights",
+        "description": "Business intelligence powered by AI",
+        "features": ["Predictive analytics", "Performance dashboards", "Growth recommendations"]
+      }
+    ],
+    "whyNative": {
+      "title": "Purpose-Built for SMBs",
+      "features": [
+        "Plug-and-play integration with popular SMB tools (Slack, HubSpot, Shopify)",
+        "Transparent, usage-based pricing that scales with your business",
+        "Self-service setup with guided onboarding and tutorials",
+        "Cloud-native architecture that requires no infrastructure investment",
+        "SMB-focused support team that understands startup challenges"
+      ]
+    },
+    "pilot": {
+      "title": "45-Day SMB AI Pilot",
+      "phases": [
+        {
+          "title": "Week 1-2: Quick Assessment",
+          "activities": ["Identify highest-impact use cases", "Review existing tools and workflows", "Set success metrics"]
+        },
+        {
+          "title": "Week 3-4: Rapid Implementation",
+          "activities": ["Deploy AI solutions", "Configure integrations", "Train team members"]
+        },
+        {
+          "title": "Week 5-6: Optimization",
+          "activities": ["Monitor performance", "Optimize configurations", "Plan scaling strategy"]
+        }
+      ]
+    },
+    "outcomes": [
+      "2-4 week implementation timeline",
+      "70% cost savings compared to enterprise solutions",
+      "150% increase in team productivity",
+      "Scalable foundation for future growth",
+      "Competitive advantage through AI adoption"
+    ],
+    "faqs": [
+      {
+        "question": "What's the minimum commitment required?",
+        "answer": "We offer month-to-month plans with no long-term contracts, allowing you to scale up or down as needed."
+      },
+      {
+        "question": "Do we need technical expertise to implement?",
+        "answer": "No, our solutions are designed for non-technical users with guided setup, tutorials, and ongoing support."
+      },
+      {
+        "question": "How does pricing work as we grow?",
+        "answer": "Our usage-based pricing scales with your business - you only pay for what you use, with volume discounts as you grow."
+      },
+      {
+        "question": "Can we upgrade to more advanced features later?",
+        "answer": "Absolutely, our platform is designed to grow with you, with seamless upgrades to enterprise features as needed."
+      },
+      {
+        "question": "What support do you provide?",
+        "answer": "We provide comprehensive support including setup assistance, training resources, and ongoing technical support via chat and email."
+      }
+    ]
+  },
+  "mid-market": {
+    "title": "Mid-Market AI Solutions",
+    "subtitle": "Enterprise-grade AI implementation designed for mid-market companies with scalable, compliant, and ROI-focused solutions.",
+    "kpis": [
+      { "value": "+38%", "label": "Operational Efficiency", "description": "Process optimization" },
+      { "value": "85%", "label": "Compliance Rate", "description": "Regulatory adherence" },
+      { "value": "18 months", "label": "Full ROI", "description": "Complete payback" },
+      { "value": "99.5%", "label": "System Uptime", "description": "Enterprise reliability" }
+    ],
+    "painPoints": [
+      {
+        "title": "Complex Compliance Requirements",
+        "description": "Mid-market companies face enterprise-level compliance without dedicated compliance teams",
+        "impact": "Risk of regulatory violations and associated penalties"
+      },
+      {
+        "title": "Legacy System Integration",
+        "description": "Existing enterprise systems resist modern AI integration",
+        "impact": "Technical debt and operational silos"
+      },
+      {
+        "title": "Resource Allocation",
+        "description": "Competing priorities make it difficult to allocate resources for AI initiatives",
+        "impact": "Delayed digital transformation and competitive disadvantage"
+      },
+      {
+        "title": "Scalability Concerns",
+        "description": "Solutions must handle current needs while preparing for enterprise scale",
+        "impact": "Risk of costly re-implementation during growth phases"
+      }
+    ],
+    "aiSuite": [
+      {
+        "title": "Enterprise AI Platform",
+        "description": "Comprehensive AI infrastructure designed for mid-market scale",
+        "features": ["Multi-tenant architecture", "Role-based access control", "Audit trails and compliance"]
+      },
+      {
+        "title": "Process Intelligence",
+        "description": "AI-powered business process optimization and automation",
+        "features": ["Process mining", "Workflow automation", "Performance monitoring"]
+      },
+      {
+        "title": "Risk Management AI",
+        "description": "Predictive risk assessment and compliance monitoring",
+        "features": ["Fraud detection", "Compliance monitoring", "Risk scoring"]
+      },
+      {
+        "title": "Customer Experience AI",
+        "description": "End-to-end customer journey optimization",
+        "features": ["Personalization at scale", "Omnichannel orchestration", "Sentiment analysis"]
+      },
+      {
+        "title": "Financial Intelligence",
+        "description": "AI-powered financial planning and analysis",
+        "features": ["Predictive forecasting", "Budget optimization", "Anomaly detection"]
+      },
+      {
+        "title": "Supply Chain AI",
+        "description": "Intelligent supply chain optimization and management",
+        "features": ["Demand forecasting", "Inventory optimization", "Supplier risk assessment"]
+      }
+    ],
+    "whyNative": {
+      "title": "Designed for Mid-Market Scale",
+      "features": [
+        "Enterprise-grade security and compliance out of the box",
+        "Seamless integration with existing ERP, CRM, and business systems",
+        "Scalable architecture that grows from mid-market to enterprise",
+        "Dedicated customer success manager and technical support",
+        "Industry-specific compliance templates and monitoring"
+      ]
+    },
+    "pilot": {
+      "title": "45-Day Mid-Market AI Pilot",
+      "phases": [
+        {
+          "title": "Week 1-2: Enterprise Assessment",
+          "activities": ["Comprehensive system audit", "Compliance requirement review", "Stakeholder alignment sessions"]
+        },
+        {
+          "title": "Week 3-4: Solution Architecture",
+          "activities": ["Design scalable AI architecture", "Plan integration strategy", "Configure security and compliance"]
+        },
+        {
+          "title": "Week 5-6: Pilot Implementation",
+          "activities": ["Deploy pilot solution", "Conduct user training", "Monitor performance and compliance"]
+        }
+      ]
+    },
+    "outcomes": [
+      "38% improvement in operational efficiency",
+      "85% compliance rate with regulatory requirements",
+      "18-month complete ROI realization",
+      "99.5% system uptime with enterprise reliability",
+      "Scalable foundation for future growth"
+    ],
+    "faqs": [
+      {
+        "question": "How do you ensure compliance with our industry regulations?",
+        "answer": "We provide industry-specific compliance templates, automated monitoring, and regular audit reports to ensure adherence to regulations like SOX, HIPAA, GDPR, etc."
+      },
+      {
+        "question": "Can you integrate with our existing ERP system?",
+        "answer": "Yes, we have extensive experience integrating with major ERP systems like SAP, Oracle, Microsoft Dynamics, and can build custom integrations as needed."
+      },
+      {
+        "question": "What's included in the customer success program?",
+        "answer": "You get a dedicated customer success manager, quarterly business reviews, ongoing optimization recommendations, and priority technical support."
+      },
+      {
+        "question": "How do you handle data governance and security?",
+        "answer": "Our platform includes comprehensive data governance tools, end-to-end encryption, role-based access controls, and meets enterprise security standards."
+      },
+      {
+        "question": "What happens if we need to scale to enterprise level?",
+        "answer": "Our platform is designed to scale seamlessly from mid-market to enterprise, with no re-implementation required and smooth transition to enterprise features."
+      }
+    ]
+  }
+}

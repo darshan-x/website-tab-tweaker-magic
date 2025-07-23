@@ -1,0 +1,571 @@
+{
+  "case-studies": {
+    "title": "Success Stories",
+    "subtitle": "Real results from our AI implementations across industries and company sizes.",
+    "items": [
+      {
+        "id": "notion-ai-automation",
+        "title": "Notion: 70% Task Automation with AI Workflows",
+        "category": "Productivity",
+        "industry": "Tech",
+        "summary": "How Notion automated their internal workflows and improved team productivity by 70% using custom AI solutions.",
+        "metrics": [
+          { "label": "Task Automation", "value": "70%" },
+          { "label": "Time Savings", "value": "15 hrs/week" },
+          { "label": "ROI", "value": "320%" },
+          { "label": "Implementation", "value": "6 weeks" }
+        ],
+        "challenge": "Notion's rapidly growing team was spending too much time on repetitive administrative tasks, reducing focus on core product development.",
+        "solution": "We implemented AI-powered workflow automation that handles task assignment, status updates, meeting scheduling, and progress reporting.",
+        "results": [
+          "70% reduction in manual administrative tasks",
+          "15 hours per week saved per team member",
+          "320% ROI within first 6 months",
+          "Improved team satisfaction and focus on core work"
+        ],
+        "testimonial": {
+          "quote": "GigaRev's AI automation has transformed how our team works. We're now spending 70% less time on admin tasks and more time building great products.",
+          "author": "Sarah Chen",
+          "role": "Head of Operations, Notion"
+        },
+        "tags": ["Workflow Automation", "Productivity", "SaaS"]
+      },
+      {
+        "id": "chipr-sales-ai",
+        "title": "Chipr: 45% Sales Increase with AI-Powered CRM",
+        "category": "Sales",
+        "industry": "FinTech",
+        "summary": "Chipr's sales team achieved a 45% increase in deal closure rate using our AI-powered sales enablement platform.",
+        "metrics": [
+          { "label": "Sales Increase", "value": "45%" },
+          { "label": "Lead Quality", "value": "+62%" },
+          { "label": "Sales Cycle", "value": "-28 days" },
+          { "label": "Team Productivity", "value": "+38%" }
+        ],
+        "challenge": "Chipr's sales team struggled with lead qualification and spent too much time on unqualified prospects.",
+        "solution": "We deployed an AI-powered CRM with intelligent lead scoring, automated follow-ups, and predictive deal analysis.",
+        "results": [
+          "45% increase in deal closure rate",
+          "62% improvement in lead quality scores",
+          "28-day reduction in average sales cycle",
+          "38% increase in sales team productivity"
+        ],
+        "testimonial": {
+          "quote": "The AI-powered lead scoring has completely changed our approach to sales. We're closing 45% more deals by focusing on the right prospects.",
+          "author": "Marcus Johnson",
+          "role": "VP of Sales, Chipr"
+        },
+        "tags": ["Sales AI", "CRM", "Lead Scoring"]
+      },
+      {
+        "id": "accuras-customer-support",
+        "title": "Accuras: 80% Support Automation Success",
+        "category": "Customer Support",
+        "industry": "Healthcare",
+        "summary": "Accuras automated 80% of their customer support queries while improving satisfaction scores by 35%.",
+        "metrics": [
+          { "label": "Automation Rate", "value": "80%" },
+          { "label": "Response Time", "value": "<30 seconds" },
+          { "label": "CSAT Score", "value": "+35%" },
+          { "label": "Cost Reduction", "value": "65%" }
+        ],
+        "challenge": "Accuras was overwhelmed with support tickets and couldn't provide timely responses to customer inquiries.",
+        "solution": "We implemented an AI chatbot with natural language processing and integrated it with their knowledge base and CRM system.",
+        "results": [
+          "80% of queries resolved automatically",
+          "Response time reduced to under 30 seconds",
+          "35% improvement in customer satisfaction",
+          "65% reduction in support costs"
+        ],
+        "testimonial": {
+          "quote": "Our customers now get instant answers 24/7, and our support team can focus on complex issues that truly need human attention.",
+          "author": "Dr. Emily Rodriguez",
+          "role": "Head of Customer Success, Accuras"
+        },
+        "tags": ["Customer Support", "Chatbot", "Healthcare"]
+      },
+      {
+        "id": "recoup-marketing-ai",
+        "title": "Recoup: 3x Marketing ROI with AI Campaigns",
+        "category": "Marketing",
+        "industry": "E-commerce",
+        "summary": "Recoup tripled their marketing ROI using AI-powered campaign optimization and personalization.",
+        "metrics": [
+          { "label": "Marketing ROI", "value": "3x" },
+          { "label": "Conversion Rate", "value": "+58%" },
+          { "label": "Campaign Efficiency", "value": "+72%" },
+          { "label": "Customer LTV", "value": "+41%" }
+        ],
+        "challenge": "Recoup's marketing campaigns were generating leads but with poor conversion rates and high customer acquisition costs.",
+        "solution": "We deployed AI-powered campaign optimization with dynamic personalization and predictive customer lifetime value modeling.",
+        "results": [
+          "3x increase in marketing ROI",
+          "58% improvement in conversion rates",
+          "72% more efficient campaign targeting",
+          "41% increase in customer lifetime value"
+        ],
+        "testimonial": {
+          "quote": "The AI-powered personalization has transformed our marketing. We're seeing 3x ROI and our customers are more engaged than ever.",
+          "author": "Alex Thompson",
+          "role": "CMO, Recoup"
+        },
+        "tags": ["Marketing AI", "Personalization", "E-commerce"]
+      },
+      {
+        "id": "instabloom-content-ai",
+        "title": "Instabloom: 10x Content Production with AI",
+        "category": "Content",
+        "industry": "Social Media",
+        "summary": "Instabloom scaled their content production 10x while maintaining quality and brand consistency using AI content generation.",
+        "metrics": [
+          { "label": "Content Volume", "value": "10x" },
+          { "label": "Production Time", "value": "-85%" },
+          { "label": "Brand Consistency", "value": "98%" },
+          { "label": "Engagement Rate", "value": "+43%" }
+        ],
+        "challenge": "Instabloom needed to dramatically scale content production for their social media management platform without compromising quality.",
+        "solution": "We built a custom AI content generation system that maintains brand voice while producing high-quality, engaging content at scale.",
+        "results": [
+          "10x increase in content production volume",
+          "85% reduction in content creation time",
+          "98% brand consistency across all content",
+          "43% improvement in content engagement rates"
+        ],
+        "testimonial": {
+          "quote": "GigaRev's AI solution has allowed us to scale content production 10x while maintaining the quality our clients expect.",
+          "author": "Jordan Kim",
+          "role": "Head of Content, Instabloom"
+        },
+        "tags": ["Content AI", "Social Media", "Brand Management"]
+      },
+      {
+        "id": "techcorp-process-automation",
+        "title": "TechCorp: 60% Process Efficiency Gain",
+        "category": "Process Automation",
+        "industry": "Technology",
+        "summary": "TechCorp achieved 60% efficiency gains across their operations using AI-powered process automation.",
+        "metrics": [
+          { "label": "Process Efficiency", "value": "+60%" },
+          { "label": "Error Reduction", "value": "92%" },
+          { "label": "Cost Savings", "value": "$2.1M" },
+          { "label": "Employee Satisfaction", "value": "+28%" }
+        ],
+        "challenge": "TechCorp had complex manual processes that were error-prone and time-consuming, limiting their ability to scale operations.",
+        "solution": "We implemented end-to-end process automation with AI-powered decision making and exception handling.",
+        "results": [
+          "60% improvement in process efficiency",
+          "92% reduction in processing errors",
+          "$2.1M in annual cost savings",
+          "28% increase in employee satisfaction"
+        ],
+        "testimonial": {
+          "quote": "The process automation has revolutionized our operations. We're 60% more efficient and our team can focus on strategic work.",
+          "author": "Lisa Wang",
+          "role": "COO, TechCorp"
+        },
+        "tags": ["Process Automation", "Operations", "Efficiency"]
+      }
+    ],
+    "filters": [
+      { "id": "all", "label": "All Case Studies" },
+      { "id": "sales", "label": "Sales" },
+      { "id": "marketing", "label": "Marketing" },
+      { "id": "customer-support", "label": "Customer Support" },
+      { "id": "productivity", "label": "Productivity" },
+      { "id": "content", "label": "Content" },
+      { "id": "process-automation", "label": "Process Automation" }
+    ]
+  },
+  "playbooks": {
+    "title": "Implementation Playbooks",
+    "subtitle": "Step-by-step guides for successful AI implementation in your organization.",
+    "items": [
+      {
+        "id": "ai-readiness-assessment",
+        "title": "AI Readiness Assessment Framework",
+        "category": "Strategy",
+        "difficulty": "Beginner",
+        "duration": "2-3 hours",
+        "summary": "A comprehensive framework to assess your organization's readiness for AI implementation and identify the best starting points.",
+        "sections": [
+          "Current State Analysis",
+          "Data Maturity Assessment",
+          "Technical Infrastructure Review",
+          "Organizational Readiness",
+          "Priority Use Case Selection"
+        ],
+        "downloads": [
+          "AI Readiness Checklist (PDF)",
+          "Assessment Templates (Excel)",
+          "Scoring Framework (PDF)"
+        ],
+        "outcomes": [
+          "Clear understanding of AI readiness level",
+          "Prioritized list of potential AI use cases",
+          "Gap analysis and improvement roadmap",
+          "Business case template for AI initiatives"
+        ],
+        "tags": ["Strategy", "Assessment", "Planning"]
+      },
+      {
+        "id": "sales-ai-implementation",
+        "title": "Sales AI Implementation Playbook",
+        "category": "Sales",
+        "difficulty": "Intermediate",
+        "duration": "6-8 weeks",
+        "summary": "Complete guide to implementing AI in your sales process, from lead scoring to deal forecasting.",
+        "sections": [
+          "Sales Process Mapping",
+          "Data Collection & Preparation",
+          "AI Tool Selection & Setup",
+          "Team Training & Adoption",
+          "Performance Monitoring & Optimization"
+        ],
+        "downloads": [
+          "Sales AI Toolkit (PDF)",
+          "Implementation Timeline (Excel)",
+          "ROI Calculator (Excel)",
+          "Training Materials (PowerPoint)"
+        ],
+        "outcomes": [
+          "Automated lead scoring system",
+          "Improved sales forecasting accuracy",
+          "Reduced time spent on administrative tasks",
+          "Higher conversion rates and deal values"
+        ],
+        "tags": ["Sales", "Implementation", "CRM"]
+      },
+      {
+        "id": "customer-support-automation",
+        "title": "Customer Support Automation Guide",
+        "category": "Customer Support",
+        "difficulty": "Intermediate",
+        "duration": "4-6 weeks",
+        "summary": "Step-by-step guide to automate customer support with AI chatbots and intelligent routing systems.",
+        "sections": [
+          "Support Process Analysis",
+          "Chatbot Design & Training",
+          "Knowledge Base Optimization",
+          "Human Handoff Configuration",
+          "Performance Measurement"
+        ],
+        "downloads": [
+          "Chatbot Design Template (PDF)",
+          "FAQ Analysis Tool (Excel)",
+          "Integration Checklist (PDF)",
+          "Success Metrics Dashboard (Excel)"
+        ],
+        "outcomes": [
+          "24/7 automated customer support",
+          "Reduced response times",
+          "Lower support costs",
+          "Improved customer satisfaction"
+        ],
+        "tags": ["Customer Support", "Chatbot", "Automation"]
+      },
+      {
+        "id": "marketing-ai-optimization",
+        "title": "Marketing AI Optimization Playbook",
+        "category": "Marketing",
+        "difficulty": "Advanced",
+        "duration": "8-10 weeks",
+        "summary": "Advanced strategies for using AI to optimize marketing campaigns, personalization, and customer journey orchestration.",
+        "sections": [
+          "Customer Data Platform Setup",
+          "Personalization Engine Configuration",
+          "Campaign Optimization Algorithms",
+          "Attribution Modeling",
+          "Continuous Optimization Framework"
+        ],
+        "downloads": [
+          "Marketing AI Strategy Template (PDF)",
+          "Campaign Optimization Guide (PDF)",
+          "Attribution Model Builder (Excel)",
+          "Performance Dashboard Templates (Excel)"
+        ],
+        "outcomes": [
+          "Personalized customer experiences at scale",
+          "Improved campaign ROI",
+          "Better attribution and insights",
+          "Automated optimization workflows"
+        ],
+        "tags": ["Marketing", "Personalization", "Optimization"]
+      },
+      {
+        "id": "data-preparation-guide",
+        "title": "AI Data Preparation & Quality Guide",
+        "category": "Data",
+        "difficulty": "Intermediate",
+        "duration": "3-4 weeks",
+        "summary": "Comprehensive guide to preparing, cleaning, and organizing data for successful AI implementations.",
+        "sections": [
+          "Data Audit & Inventory",
+          "Quality Assessment Framework",
+          "Cleaning & Transformation",
+          "Privacy & Compliance",
+          "Ongoing Data Governance"
+        ],
+        "downloads": [
+          "Data Quality Checklist (PDF)",
+          "Cleaning Scripts Template (Python)",
+          "Privacy Compliance Guide (PDF)",
+          "Governance Framework (PDF)"
+        ],
+        "outcomes": [
+          "High-quality, AI-ready datasets",
+          "Automated data quality monitoring",
+          "Compliance with privacy regulations",
+          "Sustainable data governance practices"
+        ],
+        "tags": ["Data", "Quality", "Governance"]
+      },
+      {
+        "id": "roi-measurement-framework",
+        "title": "AI ROI Measurement Framework",
+        "category": "Analytics",
+        "difficulty": "Advanced",
+        "duration": "2-3 weeks",
+        "summary": "Framework for measuring and proving the ROI of AI initiatives across different business functions.",
+        "sections": [
+          "ROI Metrics Definition",
+          "Baseline Measurement",
+          "Tracking & Attribution",
+          "Cost Accounting",
+          "Reporting & Communication"
+        ],
+        "downloads": [
+          "ROI Calculator Template (Excel)",
+          "Metrics Dashboard (PowerBI)",
+          "Cost Tracking Template (Excel)",
+          "Executive Report Template (PowerPoint)"
+        ],
+        "outcomes": [
+          "Clear ROI measurement methodology",
+          "Automated tracking and reporting",
+          "Stakeholder communication framework",
+          "Continuous improvement insights"
+        ],
+        "tags": ["Analytics", "ROI", "Measurement"]
+      }
+    ],
+    "categories": [
+      { "id": "all", "label": "All Playbooks" },
+      { "id": "strategy", "label": "Strategy" },
+      { "id": "sales", "label": "Sales" },
+      { "id": "marketing", "label": "Marketing" },
+      { "id": "customer-support", "label": "Customer Support" },
+      { "id": "data", "label": "Data" },
+      { "id": "analytics", "label": "Analytics" }
+    ],
+    "difficulties": [
+      { "id": "beginner", "label": "Beginner" },
+      { "id": "intermediate", "label": "Intermediate" },
+      { "id": "advanced", "label": "Advanced" }
+    ]
+  },
+  "ai-use-cases": {
+    "title": "AI Use Cases by Industry",
+    "subtitle": "Explore specific AI applications and their impact across different industries and business functions.",
+    "items": [
+      {
+        "id": "predictive-maintenance",
+        "title": "Predictive Maintenance in Manufacturing",
+        "industry": "Manufacturing",
+        "function": "Operations",
+        "complexity": "High",
+        "impact": "High",
+        "summary": "Use AI to predict equipment failures before they happen, reducing downtime and maintenance costs.",
+        "description": "AI-powered predictive maintenance analyzes sensor data, historical maintenance records, and operational patterns to predict when equipment is likely to fail. This allows for proactive maintenance scheduling, reducing unplanned downtime by up to 50% and maintenance costs by 20-25%.",
+        "technologies": ["Machine Learning", "IoT Sensors", "Time Series Analysis", "Computer Vision"],
+        "benefits": [
+          "50% reduction in unplanned downtime",
+          "25% decrease in maintenance costs",
+          "Extended equipment lifespan",
+          "Improved safety through failure prevention"
+        ],
+        "implementation": {
+          "timeline": "3-6 months",
+          "complexity": "High",
+          "requirements": ["IoT sensors", "Historical data", "Cloud infrastructure", "ML expertise"]
+        },
+        "roi": {
+          "paybackPeriod": "12-18 months",
+          "annualSavings": "$500K - $2M",
+          "costReduction": "20-25%"
+        },
+        "tags": ["Manufacturing", "IoT", "Predictive Analytics"]
+      },
+      {
+        "id": "dynamic-pricing",
+        "title": "Dynamic Pricing Optimization",
+        "industry": "E-commerce",
+        "function": "Sales",
+        "complexity": "Medium",
+        "impact": "High",
+        "summary": "AI-powered dynamic pricing that adjusts prices in real-time based on demand, competition, and market conditions.",
+        "description": "Dynamic pricing algorithms analyze competitor prices, demand patterns, inventory levels, and customer behavior to optimize pricing in real-time. This can increase revenue by 15-25% while maintaining competitive positioning.",
+        "technologies": ["Machine Learning", "Price Monitoring APIs", "Demand Forecasting", "Competition Analysis"],
+        "benefits": [
+          "15-25% increase in revenue",
+          "Optimized inventory turnover",
+          "Competitive price positioning",
+          "Automated pricing decisions"
+        ],
+        "implementation": {
+          "timeline": "2-4 months",
+          "complexity": "Medium",
+          "requirements": ["E-commerce platform", "Competitor data", "Historical sales data", "Pricing rules engine"]
+        },
+        "roi": {
+          "paybackPeriod": "6-12 months",
+          "annualSavings": "$200K - $1M",
+          "revenueIncrease": "15-25%"
+        },
+        "tags": ["E-commerce", "Pricing", "Revenue Optimization"]
+      },
+      {
+        "id": "fraud-detection",
+        "title": "Real-time Fraud Detection",
+        "industry": "Financial Services",
+        "function": "Risk Management",
+        "complexity": "High",
+        "impact": "High",
+        "summary": "AI system that detects fraudulent transactions in real-time with high accuracy and low false positives.",
+        "description": "Advanced ML models analyze transaction patterns, user behavior, and risk factors to identify potentially fraudulent activity in milliseconds. This reduces fraud losses by 60-80% while minimizing false positives that impact customer experience.",
+        "technologies": ["Deep Learning", "Anomaly Detection", "Real-time Processing", "Graph Neural Networks"],
+        "benefits": [
+          "60-80% reduction in fraud losses",
+          "90% fewer false positives",
+          "Real-time transaction scoring",
+          "Adaptive learning from new fraud patterns"
+        ],
+        "implementation": {
+          "timeline": "4-8 months",
+          "complexity": "High",
+          "requirements": ["Transaction data", "Real-time infrastructure", "Compliance framework", "ML expertise"]
+        },
+        "roi": {
+          "paybackPeriod": "8-12 months",
+          "annualSavings": "$1M - $10M",
+          "fraudReduction": "60-80%"
+        },
+        "tags": ["Financial Services", "Fraud Detection", "Risk Management"]
+      },
+      {
+        "id": "personalized-recommendations",
+        "title": "Personalized Product Recommendations",
+        "industry": "Retail",
+        "function": "Marketing",
+        "complexity": "Medium",
+        "impact": "High",
+        "summary": "AI-powered recommendation engine that personalizes product suggestions based on customer behavior and preferences.",
+        "description": "Recommendation systems analyze customer purchase history, browsing behavior, demographics, and product attributes to suggest relevant products. This increases conversion rates by 20-30% and average order value by 15-20%.",
+        "technologies": ["Collaborative Filtering", "Content-Based Filtering", "Deep Learning", "Real-time Personalization"],
+        "benefits": [
+          "20-30% increase in conversion rates",
+          "15-20% higher average order value",
+          "Improved customer satisfaction",
+          "Increased customer lifetime value"
+        ],
+        "implementation": {
+          "timeline": "2-3 months",
+          "complexity": "Medium",
+          "requirements": ["Customer data", "Product catalog", "E-commerce platform", "Analytics infrastructure"]
+        },
+        "roi": {
+          "paybackPeriod": "4-8 months",
+          "annualSavings": "$300K - $2M",
+          "revenueIncrease": "15-25%"
+        },
+        "tags": ["Retail", "Personalization", "E-commerce"]
+      },
+      {
+        "id": "supply-chain-optimization",
+        "title": "AI-Powered Supply Chain Optimization",
+        "industry": "Logistics",
+        "function": "Operations",
+        "complexity": "High",
+        "impact": "High",
+        "summary": "End-to-end supply chain optimization using AI for demand forecasting, inventory management, and route optimization.",
+        "description": "AI optimizes the entire supply chain by predicting demand, optimizing inventory levels, scheduling deliveries, and finding the most efficient routes. This reduces costs by 15-20% while improving service levels.",
+        "technologies": ["Demand Forecasting", "Route Optimization", "Inventory Management", "Predictive Analytics"],
+        "benefits": [
+          "15-20% reduction in supply chain costs",
+          "30% improvement in on-time delivery",
+          "25% reduction in inventory holding costs",
+          "Better demand forecast accuracy"
+        ],
+        "implementation": {
+          "timeline": "6-12 months",
+          "complexity": "High",
+          "requirements": ["Supply chain data", "ERP integration", "Route planning tools", "Demand history"]
+        },
+        "roi": {
+          "paybackPeriod": "12-18 months",
+          "annualSavings": "$1M - $5M",
+          "costReduction": "15-20%"
+        },
+        "tags": ["Logistics", "Supply Chain", "Optimization"]
+      },
+      {
+        "id": "medical-diagnosis-ai",
+        "title": "AI-Assisted Medical Diagnosis",
+        "industry": "Healthcare",
+        "function": "Clinical",
+        "complexity": "High",
+        "impact": "High",
+        "summary": "AI system that assists doctors in diagnosing diseases from medical images and patient data with high accuracy.",
+        "description": "AI analyzes medical images (X-rays, MRIs, CT scans) and patient data to assist physicians in diagnosis. This improves diagnostic accuracy by 15-25% and reduces time to diagnosis by 40-60%.",
+        "technologies": ["Computer Vision", "Deep Learning", "Medical Imaging", "Natural Language Processing"],
+        "benefits": [
+          "15-25% improvement in diagnostic accuracy",
+          "40-60% faster diagnosis time",
+          "Reduced physician workload",
+          "Early detection of diseases"
+        ],
+        "implementation": {
+          "timeline": "8-18 months",
+          "complexity": "High",
+          "requirements": ["Medical imaging data", "Clinical expertise", "Regulatory compliance", "HIPAA compliance"]
+        },
+        "roi": {
+          "paybackPeriod": "18-24 months",
+          "annualSavings": "$500K - $5M",
+          "accuracyImprovement": "15-25%"
+        },
+        "tags": ["Healthcare", "Medical Imaging", "Diagnosis"]
+      }
+    ],
+    "filters": {
+      "industries": [
+        { "id": "all", "label": "All Industries" },
+        { "id": "manufacturing", "label": "Manufacturing" },
+        { "id": "e-commerce", "label": "E-commerce" },
+        { "id": "financial-services", "label": "Financial Services" },
+        { "id": "retail", "label": "Retail" },
+        { "id": "logistics", "label": "Logistics" },
+        { "id": "healthcare", "label": "Healthcare" }
+      ],
+      "functions": [
+        { "id": "all", "label": "All Functions" },
+        { "id": "operations", "label": "Operations" },
+        { "id": "sales", "label": "Sales" },
+        { "id": "marketing", "label": "Marketing" },
+        { "id": "risk-management", "label": "Risk Management" },
+        { "id": "clinical", "label": "Clinical" }
+      ],
+      "complexity": [
+        { "id": "all", "label": "All Complexity" },
+        { "id": "low", "label": "Low" },
+        { "id": "medium", "label": "Medium" },
+        { "id": "high", "label": "High" }
+      ],
+      "impact": [
+        { "id": "all", "label": "All Impact" },
+        { "id": "low", "label": "Low" },
+        { "id": "medium", "label": "Medium" },
+        { "id": "high", "label": "High" }
+      ]
+    }
+  }
+}

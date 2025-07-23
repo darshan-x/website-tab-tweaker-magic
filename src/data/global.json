@@ -1,0 +1,402 @@
+{
+  "company": {
+    "name": "GigaRev",
+    "tagline": "Implement AI. Slash Costs. Accelerate Revenue.",
+    "description": "We help businesses implement custom AI, develop intelligent applications, and drive revenue growth with our specialized expertise.",
+    "phone": "(341) 228-4528",
+    "email": "team@gigarev.com",
+    "address": {
+      "street": "123 Innovation Drive",
+      "city": "San Francisco",
+      "state": "CA",
+      "zip": "94105"
+    },
+    "social": {
+      "linkedin": "https://linkedin.com/company/gigarev",
+      "twitter": "https://twitter.com/gigarev",
+      "github": "https://github.com/gigarev"
+    }
+  },
+  "navigation": {
+    "services": [
+      {
+        "title": "AI Implementation",
+        "description": "Custom AI solutions with seamless integration",
+        "icon": "Brain",
+        "link": "/services/ai-implementation",
+        "category": "tech"
+      },
+      {
+        "title": "Full-Stack Development",
+        "description": "End-to-end product engineering",
+        "icon": "Code",
+        "link": "/services/full-stack-development",
+        "category": "tech"
+      },
+      {
+        "title": "Rapid Prototyping",
+        "description": "From concept to MVP in weeks",
+        "icon": "Zap",
+        "link": "/services/rapid-prototyping",
+        "category": "tech"
+      },
+      {
+        "title": "Sales AI",
+        "description": "AI-powered sales enablement",
+        "icon": "TrendingUp",
+        "link": "/services/sales-ai",
+        "category": "revenue"
+      },
+      {
+        "title": "Marketing AI",
+        "description": "Intelligent marketing automation",
+        "icon": "Target",
+        "link": "/services/marketing-ai",
+        "category": "revenue"
+      },
+      {
+        "title": "Customer Support AI",
+        "description": "24/7 intelligent support",
+        "icon": "MessageCircle",
+        "link": "/services/customer-support-ai",
+        "category": "revenue"
+      }
+    ],
+    "industries": [
+      {
+        "title": "Field Sales",
+        "icon": "Users",
+        "link": "/verticals/field-sales",
+        "color": "teal"
+      },
+      {
+        "title": "AdTech",
+        "icon": "BarChart3",
+        "link": "/verticals/adtech",
+        "color": "pink"
+      },
+      {
+        "title": "MarTech",
+        "icon": "Zap",
+        "link": "/verticals/martech",
+        "color": "purple"
+      },
+      {
+        "title": "Telecom/Fibre",
+        "icon": "Radio",
+        "link": "/verticals/telecom",
+        "color": "orange"
+      },
+      {
+        "title": "Tech SMB",
+        "icon": "Smartphone",
+        "link": "/verticals/tech-smb",
+        "color": "green"
+      },
+      {
+        "title": "Mid-Market",
+        "icon": "Building",
+        "link": "/verticals/mid-market",
+        "color": "red"
+      }
+    ],
+    "resources": [
+      {
+        "title": "Case Studies",
+        "description": "Real results from our implementations",
+        "icon": "FileText",
+        "link": "/case-studies",
+        "color": "pink"
+      },
+      {
+        "title": "Implementation Playbooks",
+        "description": "Step-by-step guides for success",
+        "icon": "Book",
+        "link": "/playbooks",
+        "color": "purple"
+      },
+      {
+        "title": "Webinars",
+        "description": "Expert-led sessions on AI implementation",
+        "icon": "Video",
+        "link": "/webinars",
+        "color": "orange"
+      }
+    ]
+  },
+  "hero": {
+    "headline": {
+      "static": "AI solutions that",
+      "rotating": [
+        { "text": "Implement AI.", "color": "default" },
+        { "text": "Slash Costs.", "color": "accent" },
+        { "text": "Accelerate Revenue.", "color": "accent" }
+      ]
+    },
+    "subtitle": "We help businesses implement custom AI, develop intelligent applications, and drive revenue growth with our specialized expertise.",
+    "ctas": [
+      {
+        "text": "Talk to an AI Advisor",
+        "type": "primary",
+        "link": "/contact"
+      },
+      {
+        "text": "Explore AI Use Cases",
+        "type": "secondary",
+        "link": "/ai-use-cases"
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "value": "40%+",
+      "label": "Cost Reduction",
+      "description": "Average operational savings"
+    },
+    {
+      "value": "2-6 Weeks",
+      "label": "Implementation Time",
+      "description": "From concept to production"
+    },
+    {
+      "value": "3-5x",
+      "label": "ROI (First Year)",
+      "description": "Return on investment"
+    }
+  ],
+  "servicePreview": {
+    "title": "Our Services",
+    "subtitle": "We help businesses implement AI, slash costs, and accelerate revenue with our comprehensive suite of services.",
+    "services": [
+      {
+        "title": "AI Implementation",
+        "description": "Custom AI solutions built on cutting-edge models with seamless integration.",
+        "features": [
+          "Model selection & fine-tuning",
+          "Real-time inference < 100ms",
+          "Secure deployment & monitoring",
+          "Compliance & guard-rails"
+        ],
+        "expandedContent": "Custom AI solutions architected, fine-tuned, and embedded into your existing tech stack with zero workflow disruption. From model selection to production deployment, we handle the entire implementation lifecycle.",
+        "keyBenefits": [
+          "Model accuracy ≥ 95%",
+          "Response time < 100ms",
+          "Cost reduction > 40%"
+        ],
+        "link": "/services/ai-implementation"
+      },
+      {
+        "title": "Development Services",
+        "description": "End-to-end product engineering delivered by cross-functional pods.",
+        "features": [
+          "MVP in 8-12 weeks",
+          "Microservices architecture",
+          "Cloud-native deployment",
+          "Performance optimization"
+        ],
+        "expandedContent": "End-to-end product engineering—from UI wireframe to auto-scaling production clusters—delivered by a single, cross-functional pod. We transform ideas into production-ready systems in one quarter.",
+        "keyBenefits": [
+          "MVP in 8-12 weeks",
+          "70%+ process automation",
+          "98/100 security score"
+        ],
+        "link": "/services/full-stack-development"
+      },
+      {
+        "title": "Revenue Services",
+        "description": "AI-powered solutions for sales, marketing, and customer success.",
+        "features": [
+          "AI sales coaching & automation",
+          "Real-time deal intelligence",
+          "Conversation analytics",
+          "Revenue optimization"
+        ],
+        "expandedContent": "Comprehensive AI solutions for modern sales teams - from prospecting to closing and analytics. Our AI-powered stacks help increase win rates, reduce sales cycles, and boost productivity.",
+        "keyBenefits": [
+          "Win rate +24%",
+          "Sales cycle -31%",
+          "Productivity +40%"
+        ],
+        "link": "/services/sales-ai"
+      }
+    ]
+  },
+  "domainExpertise": {
+    "title": "Domain Expertise",
+    "subtitle": "We specialize in these industries with deep domain knowledge and proven results.",
+    "industries": [
+      {
+        "name": "Field Sales",
+        "icon": "Users",
+        "color": "pink",
+        "link": "/verticals/field-sales"
+      },
+      {
+        "name": "AdTech",
+        "icon": "BarChart3",
+        "color": "blue",
+        "link": "/verticals/adtech"
+      },
+      {
+        "name": "MarTech",
+        "icon": "Zap",
+        "color": "red",
+        "link": "/verticals/martech"
+      },
+      {
+        "name": "Telecom/Fibre",
+        "icon": "Radio",
+        "color": "green",
+        "link": "/verticals/telecom"
+      },
+      {
+        "name": "Tech SMB",
+        "icon": "Smartphone",
+        "color": "purple",
+        "link": "/verticals/tech-smb"
+      },
+      {
+        "name": "Mid-Market",
+        "icon": "Building",
+        "color": "orange",
+        "link": "/verticals/mid-market"
+      }
+    ]
+  },
+  "webinarsPreview": {
+    "title": "Upcoming Webinars",
+    "subtitle": "Join our expert-led sessions on AI implementation and business transformation.",
+    "webinars": [
+      {
+        "speaker": "Ravish Kamath",
+        "title": "Best Practices for n8n Workflow Automation",
+        "date": "January 15th, 2025",
+        "time": "11:00 AM PST",
+        "registrationLink": "/webinar-registration?id=n8n-workflow-automation"
+      },
+      {
+        "speaker": "Ravish Kamath",
+        "title": "AI in Sales Enablement: From Coaching to Content Creation",
+        "date": "January 29th, 2025",
+        "time": "10:00 AM PST",
+        "registrationLink": "/webinar-registration?id=sales-ai-enablement"
+      },
+      {
+        "speaker": "Darshan Karthik",
+        "title": "AI Use Cases in Marketing and Creative Services",
+        "date": "February 12th, 2025",
+        "time": "11:00 AM PST",
+        "registrationLink": "/webinar-registration?id=marketing-creative-ai"
+      }
+    ],
+    "viewAllLink": "/webinars"
+  },
+  "finalCTA": {
+    "title": "Ready to revolutionize your business with AI?",
+    "subtitle": "Book a free 30-minute strategy call to discover how GigaRev can help you implement AI, slash costs, and accelerate revenue.",
+    "ctas": [
+      {
+        "text": "Book Strategy Call",
+        "type": "primary",
+        "link": "/contact"
+      },
+      {
+        "text": "Watch 90-sec Overview",
+        "type": "secondary",
+        "link": "/overview-video",
+        "icon": "Play"
+      }
+    ]
+  },
+  "trustLogos": {
+    "title": "Trusted by innovative companies",
+    "companies": [
+      {
+        "name": "Notion",
+        "logo": "/images/logos/notion.svg",
+        "description": "Productivity platform"
+      },
+      {
+        "name": "Accuras",
+        "logo": "/images/logos/accuras.svg",
+        "description": "Healthcare technology"
+      },
+      {
+        "name": "Chipr",
+        "logo": "/images/logos/chipr.svg",
+        "description": "Financial services"
+      },
+      {
+        "name": "Recoup",
+        "logo": "/images/logos/recoup.svg",
+        "description": "E-commerce platform"
+      },
+      {
+        "name": "Instabloom",
+        "logo": "/images/logos/instabloom.svg",
+        "description": "Social media management"
+      }
+    ]
+  },
+  "footer": {
+    "services": [
+      {
+        "name": "AI Implementation",
+        "link": "/services/ai-implementation",
+        "color": "green"
+      },
+      {
+        "name": "Development Services",
+        "link": "/services/full-stack-development",
+        "color": "blue"
+      },
+      {
+        "name": "Sales AI",
+        "link": "/services/sales-ai",
+        "color": "red"
+      },
+      {
+        "name": "Marketing AI",
+        "link": "/services/marketing-ai",
+        "color": "purple"
+      },
+      {
+        "name": "Customer Support AI",
+        "link": "/services/customer-support-ai",
+        "color": "teal"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Case Studies",
+        "link": "/case-studies",
+        "color": "pink"
+      },
+      {
+        "name": "Implementation Playbooks",
+        "link": "/playbooks",
+        "color": "purple"
+      },
+      {
+        "name": "ROI Calculator",
+        "link": "/roi-calculator",
+        "color": "red"
+      },
+      {
+        "name": "Webinars",
+        "link": "/webinars",
+        "color": "orange"
+      }
+    ],
+    "newsletter": {
+      "title": "STAY UPDATED",
+      "description": "Subscribe to our newsletter for AI insights and industry trends.",
+      "placeholder": "Your email",
+      "buttonText": "Subscribe"
+    }
+  },
+  "specialOffer": {
+    "text": "Special offer: Get one AI workflow automated for free when you schedule a consultation!",
+    "link": "/special-offer"
+  }
+}

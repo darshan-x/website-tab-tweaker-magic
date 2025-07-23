@@ -1,0 +1,680 @@
+{
+  "ai-implementation": {
+    "title": "Transform Your Business with AI",
+    "subtitle": "Custom AI solutions built on cutting-edge models with seamless integration into your existing tech stack.",
+    "kpis": [
+      { "value": "95%+", "label": "Model Accuracy", "description": "Precision in real-world applications" },
+      { "value": "10M+/day", "label": "Data Processing", "description": "Scale without limits" },
+      { "value": "<100ms", "label": "Response Time", "description": "Lightning-fast inference" },
+      { "value": "40%+", "label": "Cost Reduction", "description": "Operational savings guarantee" }
+    ],
+    "heroCTAs": [
+      { "text": "Schedule Demo", "type": "primary", "link": "/contact" },
+      { "text": "View Process", "type": "secondary", "link": "#process" }
+    ],
+    "stacks": [
+      {
+        "title": "AI Readiness Audit",
+        "icon": "Search",
+        "features": [
+          "Data quality assessment",
+          "Infrastructure evaluation",
+          "Use case prioritization",
+          "ROI projections"
+        ],
+        "outcomes": ["50% reduction in manual steps", "Complete process visibility"]
+      },
+      {
+        "title": "Model Selection & Fine-tuning",
+        "icon": "Brain",
+        "features": [
+          "Custom model architecture",
+          "Domain-specific training",
+          "Performance optimization",
+          "A/B testing framework"
+        ],
+        "outcomes": ["95%+ accuracy achieved", "Domain-specific optimization"]
+      },
+      {
+        "title": "Production Deployment",
+        "icon": "Rocket",
+        "features": [
+          "Auto-scaling infrastructure",
+          "Real-time monitoring",
+          "Security compliance",
+          "Rollback capabilities"
+        ],
+        "outcomes": ["Zero-downtime deployment", "Enterprise-grade security"]
+      }
+    ],
+    "bundles": [
+      {
+        "title": "AI Starter Pack",
+        "price": "From $25K",
+        "duration": "4-6 weeks",
+        "features": [
+          "Single AI use case",
+          "Basic model integration",
+          "Training & documentation",
+          "30-day support"
+        ],
+        "ideal": "Small businesses, first AI implementation"
+      },
+      {
+        "title": "AI Scale Suite",
+        "price": "From $75K",
+        "duration": "8-12 weeks",
+        "features": [
+          "Multiple AI workflows",
+          "Custom model training",
+          "Advanced integrations",
+          "90-day optimization"
+        ],
+        "ideal": "Growing companies, multiple departments"
+      },
+      {
+        "title": "AI Enterprise Platform",
+        "price": "Custom pricing",
+        "duration": "12-20 weeks",
+        "features": [
+          "Enterprise-wide AI platform",
+          "Custom infrastructure",
+          "Ongoing optimization",
+          "Dedicated AI team"
+        ],
+        "ideal": "Large enterprises, complex requirements"
+      }
+    ],
+    "processSteps": [
+      {
+        "title": "Discovery & Analysis",
+        "duration": "Week 1-2",
+        "description": "Deep dive into your business processes and AI readiness",
+        "deliverables": ["Readiness assessment", "Use case prioritization", "ROI projections"]
+      },
+      {
+        "title": "Strategy & Architecture",
+        "duration": "Week 3-4",
+        "description": "Design the optimal AI solution architecture for your needs",
+        "deliverables": ["Technical architecture", "Implementation roadmap", "Resource requirements"]
+      },
+      {
+        "title": "Development & Training",
+        "duration": "Week 5-10",
+        "description": "Build, train, and optimize your custom AI models",
+        "deliverables": ["Trained models", "Integration code", "Testing framework"]
+      },
+      {
+        "title": "Deployment & Optimization",
+        "duration": "Week 11-12",
+        "description": "Deploy to production and optimize for peak performance",
+        "deliverables": ["Production deployment", "Monitoring dashboard", "Performance reports"]
+      }
+    ]
+  },
+  "full-stack-development": {
+    "title": "End-to-End Product Engineering",
+    "subtitle": "From UI wireframe to auto-scaling production clusters—delivered by a single, cross-functional pod.",
+    "kpis": [
+      { "value": "8-12 weeks", "label": "Time to MVP", "description": "From concept to production" },
+      { "value": "70%+", "label": "Process Automation", "description": "Streamlined workflows" },
+      { "value": "98/100", "label": "Security Score", "description": "Enterprise-grade security" },
+      { "value": "99.9%", "label": "Uptime SLA", "description": "Production reliability" }
+    ],
+    "heroCTAs": [
+      { "text": "Start Building", "type": "primary", "link": "/contact" },
+      { "text": "View Portfolio", "type": "secondary", "link": "/case-studies" }
+    ],
+    "stacks": [
+      {
+        "title": "Frontend Excellence",
+        "icon": "Monitor",
+        "features": [
+          "React/Next.js applications",
+          "Responsive design systems",
+          "Performance optimization",
+          "Accessibility compliance"
+        ],
+        "outcomes": ["Lightning-fast UX", "Mobile-first design"]
+      },
+      {
+        "title": "Backend Architecture",
+        "icon": "Server",
+        "features": [
+          "Microservices architecture",
+          "API-first development",
+          "Database optimization",
+          "Real-time capabilities"
+        ],
+        "outcomes": ["Scalable infrastructure", "Sub-100ms response times"]
+      },
+      {
+        "title": "DevOps & Deployment",
+        "icon": "Cloud",
+        "features": [
+          "CI/CD pipelines",
+          "Container orchestration",
+          "Monitoring & alerting",
+          "Auto-scaling setup"
+        ],
+        "outcomes": ["Zero-downtime deploys", "Automatic scaling"]
+      }
+    ],
+    "bundles": [
+      {
+        "title": "MVP Builder",
+        "price": "From $35K",
+        "duration": "6-8 weeks",
+        "features": [
+          "Core feature development",
+          "Basic admin panel",
+          "Cloud deployment",
+          "Documentation"
+        ],
+        "ideal": "Startups, proof of concept"
+      },
+      {
+        "title": "Production Ready",
+        "price": "From $85K",
+        "duration": "10-14 weeks",
+        "features": [
+          "Full feature development",
+          "Advanced integrations",
+          "Security hardening",
+          "Performance optimization"
+        ],
+        "ideal": "Growing businesses, market launch"
+      },
+      {
+        "title": "Enterprise Platform",
+        "price": "From $150K",
+        "duration": "16-24 weeks",
+        "features": [
+          "Enterprise architecture",
+          "Multi-tenant setup",
+          "Advanced security",
+          "Dedicated team"
+        ],
+        "ideal": "Large companies, complex systems"
+      }
+    ],
+    "processSteps": [
+      {
+        "title": "Requirements & Design",
+        "duration": "Week 1-2",
+        "description": "Define scope, create wireframes, and plan architecture",
+        "deliverables": ["Technical specifications", "UI/UX designs", "Project roadmap"]
+      },
+      {
+        "title": "Core Development",
+        "duration": "Week 3-8",
+        "description": "Build core features with iterative feedback cycles",
+        "deliverables": ["Working prototype", "Core features", "Testing framework"]
+      },
+      {
+        "title": "Integration & Testing",
+        "duration": "Week 9-10",
+        "description": "Third-party integrations and comprehensive testing",
+        "deliverables": ["Full integrations", "Test coverage", "Security audit"]
+      },
+      {
+        "title": "Launch & Handover",
+        "duration": "Week 11-12",
+        "description": "Production deployment and knowledge transfer",
+        "deliverables": ["Live application", "Documentation", "Team training"]
+      }
+    ]
+  },
+  "rapid-prototyping": {
+    "title": "From Concept to MVP in Weeks",
+    "subtitle": "Transform ideas into working prototypes in days with our accelerated development process.",
+    "kpis": [
+      { "value": "2-4 weeks", "label": "Time to MVP", "description": "Rapid turnaround" },
+      { "value": "60%", "label": "Cost Savings", "description": "vs traditional development" },
+      { "value": "92%", "label": "Success Rate", "description": "Projects to production" },
+      { "value": "4.8/5", "label": "Client Satisfaction", "description": "Average rating" }
+    ],
+    "heroCTAs": [
+      { "text": "Start Prototype", "type": "primary", "link": "/contact" },
+      { "text": "See Examples", "type": "secondary", "link": "/case-studies" }
+    ],
+    "stacks": [
+      {
+        "title": "Rapid Design Sprint",
+        "icon": "Zap",
+        "features": [
+          "48-hour design sprint",
+          "User journey mapping",
+          "Interactive wireframes",
+          "Stakeholder alignment"
+        ],
+        "outcomes": ["Clear product vision", "Validated assumptions"]
+      },
+      {
+        "title": "Fast Development",
+        "icon": "Code",
+        "features": [
+          "No-code/low-code tools",
+          "Pre-built components",
+          "Agile methodology",
+          "Daily progress updates"
+        ],
+        "outcomes": ["Working prototype in days", "Iterative improvements"]
+      },
+      {
+        "title": "User Testing",
+        "icon": "Users",
+        "features": [
+          "Real user feedback",
+          "A/B testing setup",
+          "Analytics integration",
+          "Conversion optimization"
+        ],
+        "outcomes": ["Data-driven decisions", "Optimized user experience"]
+      }
+    ],
+    "bundles": [
+      {
+        "title": "Concept Validator",
+        "price": "From $8K",
+        "duration": "1-2 weeks",
+        "features": [
+          "Interactive mockups",
+          "Basic functionality",
+          "User testing",
+          "Feedback report"
+        ],
+        "ideal": "Early-stage startups, idea validation"
+      },
+      {
+        "title": "MVP Builder",
+        "price": "From $25K",
+        "duration": "3-4 weeks",
+        "features": [
+          "Core feature development",
+          "Database integration",
+          "User authentication",
+          "Basic analytics"
+        ],
+        "ideal": "Startups ready to launch"
+      },
+      {
+        "title": "Market Ready",
+        "price": "From $45K",
+        "duration": "4-6 weeks",
+        "features": [
+          "Production-ready code",
+          "Payment integration",
+          "Advanced features",
+          "Launch support"
+        ],
+        "ideal": "Companies seeking fast market entry"
+      }
+    ],
+    "processSteps": [
+      {
+        "title": "Rapid Discovery",
+        "duration": "Day 1-2",
+        "description": "Quick requirement gathering and scope definition",
+        "deliverables": ["Project brief", "Feature prioritization", "Timeline confirmation"]
+      },
+      {
+        "title": "Design Sprint",
+        "duration": "Day 3-5",
+        "description": "Create wireframes and user experience flow",
+        "deliverables": ["Interactive prototypes", "User flows", "Design system"]
+      },
+      {
+        "title": "Development Sprint",
+        "duration": "Week 2-3",
+        "description": "Build core functionality with daily check-ins",
+        "deliverables": ["Working MVP", "Core features", "Basic testing"]
+      },
+      {
+        "title": "Testing & Launch",
+        "duration": "Week 4",
+        "description": "User testing, refinements, and deployment",
+        "deliverables": ["Tested product", "User feedback", "Launch plan"]
+      }
+    ]
+  },
+  "sales-ai": {
+    "title": "AI-Powered Sales Enablement",
+    "subtitle": "Accelerate pipeline, coach reps, and close deals faster with intelligent sales automation.",
+    "kpis": [
+      { "value": "+24%", "label": "Win Rate", "description": "Average improvement" },
+      { "value": "-31%", "label": "Sales Cycle", "description": "Faster deal closure" },
+      { "value": "+17%", "label": "Deal Size", "description": "Higher value deals" },
+      { "value": "+40%", "label": "Sales Productivity", "description": "More deals per rep" }
+    ],
+    "heroCTAs": [
+      { "text": "Boost Sales Now", "type": "primary", "link": "/contact" },
+      { "text": "See ROI Calculator", "type": "secondary", "link": "/roi-calculator" }
+    ],
+    "stacks": [
+      {
+        "title": "AI Sales Coaching",
+        "icon": "GraduationCap",
+        "features": [
+          "Role-play simulations",
+          "Pitch optimization",
+          "Objection handling",
+          "Performance analytics"
+        ],
+        "outcomes": ["Improved win rates", "Faster rep onboarding"]
+      },
+      {
+        "title": "Deal Intelligence",
+        "icon": "TrendingUp",
+        "features": [
+          "Lead scoring automation",
+          "Deal probability analysis",
+          "Competitive insights",
+          "Next-best-action recommendations"
+        ],
+        "outcomes": ["Prioritized pipeline", "Strategic deal guidance"]
+      },
+      {
+        "title": "Conversation Analytics",
+        "icon": "MessageSquare",
+        "features": [
+          "Call transcription & analysis",
+          "Sentiment tracking",
+          "Key moment identification",
+          "Follow-up automation"
+        ],
+        "outcomes": ["Actionable insights", "Automated follow-ups"]
+      }
+    ],
+    "bundles": [
+      {
+        "title": "Sales Starter AI",
+        "price": "From $15K",
+        "duration": "4-6 weeks",
+        "features": [
+          "Basic lead scoring",
+          "Call transcription",
+          "Sales dashboard",
+          "Team training"
+        ],
+        "ideal": "Small sales teams, getting started"
+      },
+      {
+        "title": "Sales Acceleration Suite",
+        "price": "From $45K",
+        "duration": "8-10 weeks",
+        "features": [
+          "Advanced AI coaching",
+          "Deal intelligence",
+          "CRM integration",
+          "Custom playbooks"
+        ],
+        "ideal": "Growing sales teams, scaling operations"
+      },
+      {
+        "title": "Enterprise Sales Platform",
+        "price": "From $100K",
+        "duration": "12-16 weeks",
+        "features": [
+          "Full sales automation",
+          "Multi-channel integration",
+          "Advanced analytics",
+          "Dedicated success manager"
+        ],
+        "ideal": "Large sales organizations"
+      }
+    ],
+    "processSteps": [
+      {
+        "title": "Sales Process Audit",
+        "duration": "Week 1-2",
+        "description": "Analyze current sales processes and identify AI opportunities",
+        "deliverables": ["Process analysis", "AI opportunity map", "ROI projections"]
+      },
+      {
+        "title": "AI Model Training",
+        "duration": "Week 3-6",
+        "description": "Train AI models on your sales data and best practices",
+        "deliverables": ["Trained models", "Custom algorithms", "Testing results"]
+      },
+      {
+        "title": "Integration & Testing",
+        "duration": "Week 7-8",
+        "description": "Integrate with existing CRM and sales tools",
+        "deliverables": ["CRM integration", "User training", "Pilot testing"]
+      },
+      {
+        "title": "Launch & Optimization",
+        "duration": "Week 9-10",
+        "description": "Full deployment and performance optimization",
+        "deliverables": ["Live system", "Performance dashboard", "Optimization plan"]
+      }
+    ]
+  },
+  "marketing-ai": {
+    "title": "Intelligent Marketing Automation",
+    "subtitle": "Scale personalized marketing campaigns with AI-driven content creation, audience targeting, and performance optimization.",
+    "kpis": [
+      { "value": "+45%", "label": "Campaign ROI", "description": "Average improvement" },
+      { "value": "85%", "label": "Content Automation", "description": "Reduced manual work" },
+      { "value": "+60%", "label": "Lead Quality", "description": "Better targeting" },
+      { "value": "-50%", "label": "Time to Campaign", "description": "Faster execution" }
+    ],
+    "heroCTAs": [
+      { "text": "Automate Marketing", "type": "primary", "link": "/contact" },
+      { "text": "View Case Studies", "type": "secondary", "link": "/case-studies" }
+    ],
+    "stacks": [
+      {
+        "title": "AI Content Creation",
+        "icon": "PenTool",
+        "features": [
+          "Automated copywriting",
+          "Visual content generation",
+          "Brand voice consistency",
+          "Multi-channel adaptation"
+        ],
+        "outcomes": ["10x content production", "Consistent brand voice"]
+      },
+      {
+        "title": "Smart Audience Targeting",
+        "icon": "Target",
+        "features": [
+          "Predictive audience modeling",
+          "Dynamic segmentation",
+          "Lookalike audience creation",
+          "Cross-channel attribution"
+        ],
+        "outcomes": ["Higher conversion rates", "Reduced acquisition costs"]
+      },
+      {
+        "title": "Campaign Optimization",
+        "icon": "BarChart3",
+        "features": [
+          "Real-time performance monitoring",
+          "Automated A/B testing",
+          "Budget optimization",
+          "Predictive analytics"
+        ],
+        "outcomes": ["Improved ROI", "Data-driven decisions"]
+      }
+    ],
+    "bundles": [
+      {
+        "title": "Marketing AI Starter",
+        "price": "From $20K",
+        "duration": "6-8 weeks",
+        "features": [
+          "AI content assistant",
+          "Basic automation",
+          "Performance dashboard",
+          "Team training"
+        ],
+        "ideal": "Small marketing teams"
+      },
+      {
+        "title": "Growth Marketing Suite",
+        "price": "From $60K",
+        "duration": "10-12 weeks",
+        "features": [
+          "Advanced content AI",
+          "Multi-channel campaigns",
+          "Predictive analytics",
+          "CRM integration"
+        ],
+        "ideal": "Growing companies, multiple channels"
+      },
+      {
+        "title": "Enterprise Marketing Platform",
+        "price": "From $120K",
+        "duration": "14-18 weeks",
+        "features": [
+          "Full marketing automation",
+          "Advanced AI models",
+          "Custom integrations",
+          "Dedicated strategist"
+        ],
+        "ideal": "Large marketing departments"
+      }
+    ],
+    "processSteps": [
+      {
+        "title": "Marketing Audit",
+        "duration": "Week 1-2",
+        "description": "Analyze current marketing performance and AI opportunities",
+        "deliverables": ["Performance audit", "AI opportunity assessment", "Strategy roadmap"]
+      },
+      {
+        "title": "AI Implementation",
+        "duration": "Week 3-8",
+        "description": "Deploy AI tools for content, targeting, and optimization",
+        "deliverables": ["AI tools setup", "Content templates", "Automation workflows"]
+      },
+      {
+        "title": "Campaign Launch",
+        "duration": "Week 9-10",
+        "description": "Launch AI-powered campaigns and monitor performance",
+        "deliverables": ["Live campaigns", "Performance tracking", "Optimization recommendations"]
+      },
+      {
+        "title": "Scale & Optimize",
+        "duration": "Week 11-12",
+        "description": "Scale successful campaigns and optimize performance",
+        "deliverables": ["Scaled campaigns", "Performance reports", "Future roadmap"]
+      }
+    ]
+  },
+  "customer-support-ai": {
+    "title": "24/7 Intelligent Support",
+    "subtitle": "Transform customer service with AI-powered automation, instant responses, and proactive support solutions.",
+    "kpis": [
+      { "value": "90%", "label": "Query Resolution", "description": "Automated resolution rate" },
+      { "value": "<30s", "label": "Response Time", "description": "Average first response" },
+      { "value": "+35%", "label": "Customer Satisfaction", "description": "CSAT improvement" },
+      { "value": "75%", "label": "Cost Reduction", "description": "Support cost savings" }
+    ],
+    "heroCTAs": [
+      { "text": "Upgrade Support", "type": "primary", "link": "/contact" },
+      { "text": "Try Demo", "type": "secondary", "link": "/demo" }
+    ],
+    "stacks": [
+      {
+        "title": "AI Chatbot Platform",
+        "icon": "MessageCircle",
+        "features": [
+          "Natural language understanding",
+          "Multi-language support",
+          "Context awareness",
+          "Seamless human handoff"
+        ],
+        "outcomes": ["24/7 availability", "Instant responses"]
+      },
+      {
+        "title": "Intelligent Routing",
+        "icon": "GitBranch",
+        "features": [
+          "Smart ticket routing",
+          "Priority classification",
+          "Agent skill matching",
+          "Workload balancing"
+        ],
+        "outcomes": ["Faster resolution", "Better agent utilization"]
+      },
+      {
+        "title": "Proactive Support",
+        "icon": "Shield",
+        "features": [
+          "Issue prediction",
+          "Proactive outreach",
+          "Knowledge base automation",
+          "Self-service optimization"
+        ],
+        "outcomes": ["Reduced ticket volume", "Higher satisfaction"]
+      }
+    ],
+    "bundles": [
+      {
+        "title": "Support AI Essentials",
+        "price": "From $12K",
+        "duration": "4-6 weeks",
+        "features": [
+          "Basic chatbot setup",
+          "FAQ automation",
+          "Ticket routing",
+          "Analytics dashboard"
+        ],
+        "ideal": "Small support teams"
+      },
+      {
+        "title": "Smart Support Suite",
+        "price": "From $40K",
+        "duration": "8-10 weeks",
+        "features": [
+          "Advanced AI chatbot",
+          "Multi-channel support",
+          "Intelligent routing",
+          "CRM integration"
+        ],
+        "ideal": "Growing customer base"
+      },
+      {
+        "title": "Enterprise Support Platform",
+        "price": "From $85K",
+        "duration": "12-16 weeks",
+        "features": [
+          "Full support automation",
+          "Predictive analytics",
+          "Custom integrations",
+          "Dedicated support specialist"
+        ],
+        "ideal": "Large customer support operations"
+      }
+    ],
+    "processSteps": [
+      {
+        "title": "Support Analysis",
+        "duration": "Week 1-2",
+        "description": "Analyze current support processes and common issues",
+        "deliverables": ["Support audit", "Issue categorization", "Automation opportunities"]
+      },
+      {
+        "title": "AI Training",
+        "duration": "Week 3-6",
+        "description": "Train AI models on your support data and best practices",
+        "deliverables": ["Trained chatbot", "Knowledge base", "Routing rules"]
+      },
+      {
+        "title": "Integration & Testing",
+        "duration": "Week 7-8",
+        "description": "Integrate with existing support tools and test thoroughly",
+        "deliverables": ["System integration", "Testing results", "Team training"]
+      },
+      {
+        "title": "Launch & Monitor",
+        "duration": "Week 9-10",
+        "description": "Launch AI support system and monitor performance",
+        "deliverables": ["Live system", "Performance monitoring", "Optimization plan"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "upcoming": [
+    {
+      "id": "n8n-workflow-automation",
+      "title": "Best Practices for n8n Workflow Automation",
+      "speaker": {
+        "name": "Ravish Kamath",
+        "role": "Senior AI Solutions Architect",
+        "bio": "Ravish has 8+ years of experience in workflow automation and has helped 50+ companies implement n8n solutions.",
+        "image": "/images/speakers/ravish-kamath.jpg"
+      },
+      "date": "2025-01-15",
+      "time": "11:00 AM PST",
+      "duration": "60 minutes",
+      "description": "Learn advanced techniques for building robust, scalable workflow automations with n8n. This session covers best practices, common pitfalls, and real-world examples.",
+      "agenda": [
+        "n8n Architecture & Setup Best Practices",
+        "Advanced Workflow Patterns & Techniques",
+        "Error Handling & Monitoring Strategies",
+        "Integration with Popular Tools & APIs",
+        "Scaling Workflows for Enterprise Use",
+        "Live Q&A Session"
+      ],
+      "takeaways": [
+        "Advanced n8n workflow patterns",
+        "Error handling strategies",
+        "Performance optimization techniques",
+        "Real-world implementation examples"
+      ],
+      "registrationLink": "/webinar-registration?id=n8n-workflow-automation",
+      "tags": ["n8n", "Workflow Automation", "Integration"]
+    },
+    {
+      "id": "sales-ai-enablement",
+      "title": "AI in Sales Enablement: From Coaching to Content Creation",
+      "speaker": {
+        "name": "Ravish Kamath",
+        "role": "Senior AI Solutions Architect",
+        "bio": "Expert in AI-powered sales solutions with track record of improving sales performance by 40%+ across various industries.",
+        "image": "/images/speakers/ravish-kamath.jpg"
+      },
+      "date": "2025-01-29",
+      "time": "10:00 AM PST",
+      "duration": "60 minutes",
+      "description": "Discover how AI is revolutionizing sales enablement through automated coaching, content generation, and performance optimization.",
+      "agenda": [
+        "Current State of Sales Enablement",
+        "AI-Powered Sales Coaching Techniques",
+        "Automated Content Creation for Sales",
+        "Lead Scoring & Prioritization",
+        "Performance Analytics & Insights",
+        "Implementation Roadmap & Best Practices"
+      ],
+      "takeaways": [
+        "AI coaching implementation strategies",
+        "Content automation workflows",
+        "Lead scoring algorithms",
+        "ROI measurement frameworks"
+      ],
+      "registrationLink": "/webinar-registration?id=sales-ai-enablement",
+      "tags": ["Sales AI", "Lead Scoring", "Sales Coaching"]
+    },
+    {
+      "id": "marketing-creative-ai",
+      "title": "AI Use Cases in Marketing and Creative Services",
+      "speaker": {
+        "name": "Darshan Karthik",
+        "role": "Head of Marketing AI",
+        "bio": "Darshan specializes in AI-powered marketing automation and has helped companies achieve 3x ROI improvement through AI implementations.",
+        "image": "/images/speakers/darshan-karthik.jpg"
+      },
+      "date": "2025-02-12",
+      "time": "11:00 AM PST",
+      "duration": "60 minutes",
+      "description": "Explore cutting-edge AI applications in marketing and creative services, from content generation to campaign optimization.",
+      "agenda": [
+        "AI Content Generation & Personalization",
+        "Automated Campaign Optimization",
+        "Creative Asset Generation & Testing",
+        "Customer Journey AI",
+        "Attribution & Performance Measurement",
+        "Future Trends in Marketing AI"
+      ],
+      "takeaways": [
+        "Content generation strategies",
+        "Campaign optimization techniques",
+        "Creative testing frameworks",
+        "Attribution modeling approaches"
+      ],
+      "registrationLink": "/webinar-registration?id=marketing-creative-ai",
+      "tags": ["Marketing AI", "Content Generation", "Campaign Optimization"]
+    },
+    {
+      "id": "ai-implementation-roadmap",
+      "title": "Building Your AI Implementation Roadmap",
+      "speaker": {
+        "name": "Sarah Chen",
+        "role": "AI Strategy Consultant",
+        "bio": "Sarah has led AI transformations at 25+ companies and specializes in creating practical, ROI-focused implementation strategies.",
+        "image": "/images/speakers/sarah-chen.jpg"
+      },
+      "date": "2025-02-26",
+      "time": "2:00 PM PST",
+      "duration": "60 minutes",
+      "description": "Learn how to create a strategic AI implementation roadmap that delivers measurable business value.",
+      "agenda": [
+        "AI Readiness Assessment Framework",
+        "Use Case Prioritization & Selection",
+        "Building Your AI Team & Capabilities",
+        "Implementation Phases & Milestones",
+        "Change Management & Adoption",
+        "Measuring Success & ROI"
+      ],
+      "takeaways": [
+        "AI readiness assessment tools",
+        "Implementation planning frameworks",
+        "Team building strategies",
+        "Success measurement metrics"
+      ],
+      "registrationLink": "/webinar-registration?id=ai-implementation-roadmap",
+      "tags": ["AI Strategy", "Implementation", "Change Management"]
+    }
+  ],
+  "past": [
+    {
+      "id": "intro-to-business-ai",
+      "title": "Introduction to Business AI: Getting Started",
+      "speaker": {
+        "name": "Marcus Johnson",
+        "role": "AI Solutions Architect",
+        "bio": "Marcus has 10+ years of experience helping businesses adopt AI technologies.",
+        "image": "/images/speakers/marcus-johnson.jpg"
+      },
+      "date": "2024-12-10",
+      "time": "10:00 AM PST",
+      "duration": "45 minutes",
+      "description": "A comprehensive introduction to AI applications in business, covering fundamentals and practical use cases.",
+      "recordingLink": "/recordings/intro-to-business-ai",
+      "slidesLink": "/slides/intro-to-business-ai.pdf",
+      "attendees": 340,
+      "rating": 4.8,
+      "tags": ["AI Fundamentals", "Business Applications", "Getting Started"]
+    },
+    {
+      "id": "customer-support-automation",
+      "title": "Automating Customer Support with AI",
+      "speaker": {
+        "name": "Elena Martinez",
+        "role": "Customer Success AI Lead",
+        "bio": "Elena specializes in AI-powered customer support solutions and has implemented chatbots for 30+ companies.",
+        "image": "/images/speakers/elena-martinez.jpg"
+      },
+      "date": "2024-11-28",
+      "time": "1:00 PM PST",
+      "duration": "50 minutes",
+      "description": "Learn how to implement AI-powered customer support that improves satisfaction while reducing costs.",
+      "recordingLink": "/recordings/customer-support-automation",
+      "slidesLink": "/slides/customer-support-automation.pdf",
+      "attendees": 285,
+      "rating": 4.7,
+      "tags": ["Customer Support", "Chatbots", "Automation"]
+    },
+    {
+      "id": "data-prep-for-ai",
+      "title": "Data Preparation for AI Success",
+      "speaker": {
+        "name": "Dr. James Liu",
+        "role": "Data Science Director",
+        "bio": "Dr. Liu is an expert in data engineering and has helped companies prepare datasets for successful AI implementations.",
+        "image": "/images/speakers/james-liu.jpg"
+      },
+      "date": "2024-11-14",
+      "time": "11:00 AM PST",
+      "duration": "55 minutes",
+      "description": "Essential strategies for preparing, cleaning, and organizing data for AI projects.",
+      "recordingLink": "/recordings/data-prep-for-ai",
+      "slidesLink": "/slides/data-prep-for-ai.pdf",
+      "attendees": 195,
+      "rating": 4.9,
+      "tags": ["Data Preparation", "Data Quality", "AI Implementation"]
+    }
+  ],
+  "series": [
+    {
+      "id": "ai-fundamentals-series",
+      "title": "AI Fundamentals Series",
+      "description": "A comprehensive 6-part series covering the basics of business AI implementation.",
+      "episodes": 6,
+      "totalDuration": "5 hours",
+      "difficulty": "Beginner",
+      "nextEpisode": {
+        "title": "AI Strategy & Planning",
+        "date": "2025-03-12",
+        "registrationLink": "/series/ai-fundamentals"
+      }
+    },
+    {
+      "id": "advanced-ai-techniques",
+      "title": "Advanced AI Techniques",
+      "description": "Deep dive into advanced AI implementation strategies for experienced practitioners.",
+      "episodes": 4,
+      "totalDuration": "4 hours",
+      "difficulty": "Advanced",
+      "nextEpisode": {
+        "title": "Multi-Modal AI Applications",
+        "date": "2025-03-26",
+        "registrationLink": "/series/advanced-ai-techniques"
+      }
+    }
+  ],
+  "topics": [
+    { "id": "ai-strategy", "label": "AI Strategy", "count": 12 },
+    { "id": "sales-ai", "label": "Sales AI", "count": 8 },
+    { "id": "marketing-ai", "label": "Marketing AI", "count": 6 },
+    { "id": "customer-support", "label": "Customer Support", "count": 5 },
+    { "id": "workflow-automation", "label": "Workflow Automation", "count": 7 },
+    { "id": "data-science", "label": "Data Science", "count": 4 },
+    { "id": "implementation", "label": "Implementation", "count": 9 }
+  ]
+}
