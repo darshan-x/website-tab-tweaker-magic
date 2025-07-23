@@ -8,15 +8,15 @@ import ProcessFlowDiagram from '@/components/shared/ProcessFlowDiagram';
 const HeroSection = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const rotatingTexts = [
-    'Implement AI.',
-    'Slash Costs.',
-    'Accelerate Revenue.'
+    'Implement AI',
+    'Slash Costs', 
+    'Accelerate Revenue'
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTextIndex((prev) => (prev + 1) % rotatingTexts.length);
-    }, 2000);
+    }, 3500); // 3.5s loop as per design brief
 
     return () => clearInterval(interval);
   }, []);
@@ -29,21 +29,8 @@ const HeroSection = () => {
           <div>
             <h1 className="text-5xl lg:text-6xl font-sora font-bold text-foreground mb-6 leading-tight">
               AI solutions that{' '}
-              <span className="text-primary inline-block">
-                <span className="block h-16 overflow-hidden">
-                  {rotatingTexts.map((text, index) => (
-                    <span
-                      key={index}
-                      className={`block transition-transform duration-500 ${
-                        index === currentTextIndex 
-                          ? 'transform translate-y-0' 
-                          : 'transform translate-y-full'
-                      }`}
-                    >
-                      {text}
-                    </span>
-                  ))}
-                </span>
+              <span className="hero-verb" key={currentTextIndex}>
+                {rotatingTexts[currentTextIndex]}
               </span>
             </h1>
 

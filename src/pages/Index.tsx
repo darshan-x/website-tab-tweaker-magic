@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Navbar from '@/components/layout/Navbar';
 import SpecialOfferBanner from '@/components/shared/SpecialOfferBanner';
 import HeroSection from '@/components/sections/HeroSection';
 import { Card, CardContent } from '@/components/ui/card';
@@ -78,6 +79,7 @@ export default function Index() {
 
   return (
     <div className="min-h-screen">
+      <Navbar />
       <SpecialOfferBanner />
       <HeroSection />
       

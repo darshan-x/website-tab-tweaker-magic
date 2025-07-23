@@ -27,6 +27,13 @@ export default {
 				// Universal Red Color - #FF4444 converted to HSL: 355° 100% 63%
 				'universal-red': '#FF4444',
 				
+				// Coral Tint System Y1-Y5 as per design brief
+				'coral-tint-1': '#FF6666',
+				'coral-tint-2': '#FF8888', 
+				'coral-tint-3': '#FFAAAA',
+				'coral-tint-4': '#FFCCCC',
+				'coral-tint-5': '#FFEEEE',
+				
 				// Black and white only
 				'text-black': '#000000',
 				'background-light': '#FFFFFF',
@@ -69,7 +76,8 @@ export default {
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				sm: 'calc(var(--radius) - 4px)',
+				DEFAULT: '1rem' /* 16px as per design brief */
 			},
 			keyframes: {
 				'accordion-down': {
@@ -88,17 +96,20 @@ export default {
 						height: '0'
 					}
 				},
-				'text-rotation': {
-					'0%': { opacity: '1' },
-					'33%': { opacity: '0' },
-					'66%': { opacity: '0' },
-					'100%': { opacity: '1' }
+				'textRotation': {
+					'0%, 8%': { opacity: '0', transform: 'translateY(20%)' },
+					'10%, 40%': { opacity: '1', transform: 'translateY(0)' },
+					'42%, 100%': { opacity: '0', transform: 'translateY(-20%)' }
+				},
+				'lineDraw': {
+					'to': { 'stroke-dashoffset': '0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'text-rotation': 'text-rotation 4s ease-in-out infinite'
+				'textRotation': 'textRotation 10.5s infinite ease-in-out',
+				'lineDraw': 'lineDraw 0.5s forwards ease-in-out'
 			}
 		}
 	},

@@ -10,11 +10,11 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Services', href: '/#services' },
-    { name: 'Industries', href: '/#industries' },
-    { name: 'Resources', href: '/#resources' },
-    { name: 'Blog', href: '/blog' },
-    { name: 'About', href: '/about' }
+    { name: 'Services', href: '/#services', badge: 'Y1' },
+    { name: 'Industries', href: '/#industries', badge: 'Y2' },
+    { name: 'Resources', href: '/#resources', badge: 'Y3' },
+    { name: 'Blog', href: '/blog', badge: 'Y4' },
+    { name: 'About', href: '/about', badge: 'Y5' }
   ];
 
   const isActive = (href: string) => {
@@ -47,13 +47,16 @@ const Navbar = () => {
                   className={`nav-link ${isActive(item.href) ? 'active' : ''}`}
                 >
                   {item.name}
+                  <span className={`nav-badge nav-badge-${item.badge.toLowerCase()}`}>
+                    {item.badge}
+                  </span>
                 </Link>
               ))}
             </div>
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center">
-              <Button asChild className="red-button">
+              <Button asChild className="h-14">
                 <Link to="/contact">Talk to an AI Advisor</Link>
               </Button>
             </div>
@@ -89,7 +92,7 @@ const Navbar = () => {
                   </Link>
                 ))}
 
-                <Button asChild className="w-full red-button mt-4">
+                <Button asChild className="w-full h-14 mt-4">
                   <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
                     Talk to an AI Advisor
                   </Link>

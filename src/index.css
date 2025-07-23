@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,11 +34,17 @@
     --destructive: 355 100% 63%; /* Same red */
     --destructive-foreground: 0 0% 100%;
 
-    /* Border and Input */
+    /* Coral Tint System Y1-Y5 */
+    --coral-tint-1: 355 100% 70%; /* #FF6666 */
+    --coral-tint-2: 355 100% 76%; /* #FF8888 */
+    --coral-tint-3: 355 100% 82%; /* #FFAAAA */
+    --coral-tint-4: 355 100% 88%; /* #FFCCCC */
+    --coral-tint-5: 355 100% 94%; /* #FFEEEE */
+
     --border: 0 0% 90%;
     --input: 0 0% 90%;
     --ring: 355 100% 63%; /* Red focus ring */
-    --radius: 0.5rem;
+    --radius: 1rem; /* 16px border radius */
   }
 }
 
@@ -56,6 +61,24 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-sora;
   }
+}
+
+/* Hero rotating verbs - exact timing from design brief */
+@keyframes textRotation {
+  0%, 8% { opacity: 0; transform: translateY(20%); }
+  10%, 40% { opacity: 1; transform: translateY(0); }
+  42%, 100% { opacity: 0; transform: translateY(-20%); }
+}
+
+/* SVG process line draw */
+.line-path {
+  stroke-dasharray: 120;
+  stroke-dashoffset: 120;
+  animation: lineDraw 0.5s forwards ease-in-out;
+}
+
+@keyframes lineDraw {
+  to { stroke-dashoffset: 0; }
 }
 
 /* Simple Red Underline Navigation */
@@ -114,9 +137,37 @@
     background-color: #FF4444;
   }
 
-  /* Animation Utilities */
-  .rotating-text {
-    animation: text-rotation 4s ease-in-out infinite;
+  /* Hero Rotating Verbs - As per design brief */
+  .hero-verb {
+    color: #FF4444;
+    font-weight: 600;
+    animation: textRotation 10.5s infinite ease-in-out;
+  }
+
+  /* Navigation badges */
+  .nav-badge {
+    @apply inline-flex items-center justify-center w-5 h-5 text-xs font-medium text-white rounded-full ml-1;
+  }
+
+  .nav-badge-y1 { background-color: hsl(var(--coral-tint-1)); }
+  .nav-badge-y2 { background-color: hsl(var(--coral-tint-2)); }
+  .nav-badge-y3 { background-color: hsl(var(--coral-tint-3)); }
+  .nav-badge-y4 { background-color: hsl(var(--coral-tint-4)); }
+  .nav-badge-y5 { background-color: hsl(var(--coral-tint-5)); }
+
+  /* Card hover lift with proper shadow */
+  .card-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Sticky translucent nav */
+  .nav-sticky {
+    @apply backdrop-blur-md bg-white/90 border-b border-gray-200/50;
   }
 }
 
