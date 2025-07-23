@@ -52,13 +52,13 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="red-button text-lg px-8 py-4">
+              <Button asChild size="lg" className="text-lg px-8 py-4 h-14">
                 <Link to="/contact">
                   Talk to an AI Advisor <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
               
-              <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4">
+              <Button asChild size="lg" variant="outline" className="text-lg px-8 py-4 h-14">
                 <Link to="/ai-use-cases">
                   Explore AI Use Cases
                 </Link>

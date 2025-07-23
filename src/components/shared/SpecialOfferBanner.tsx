@@ -7,15 +7,15 @@ const SpecialOfferBanner = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-yellow-50 border-b border-yellow-200 px-4 py-3">
+    <div className="bg-red-50 border-b border-red-200 px-4 py-3">
       <div className="container">
         <div className="flex items-center justify-between">
-          <p className="text-sm font-medium text-yellow-800">
+          <p className="text-sm font-medium text-red-800">
             <span className="font-semibold">Special offer:</span> Get one AI workflow automated for free when you schedule a consultation!
           </p>
           <button
             onClick={() => setIsVisible(false)}
-            className="text-yellow-600 hover:text-yellow-800"
+            className="text-red-600 hover:text-red-800"
           >
             <X className="w-4 h-4" />
           </button>
