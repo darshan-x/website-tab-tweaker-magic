@@ -79,8 +79,8 @@ export default function Index() {
 
   return (
     <div className="min-h-screen">
-      <Navbar />
       <SpecialOfferBanner />
+      <Navbar />
       <HeroSection />
       
       {/* Key Metrics Section */}

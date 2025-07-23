@@ -23,6 +23,9 @@ export default {
 				'sora': ['Sora', 'sans-serif'],
 				'inter': ['Inter', 'sans-serif'],
 			},
+			letterSpacing: {
+				'tighter': '-0.01em', // -1%
+			},
 			colors: {
 				// Universal Red Color - #FF4444 converted to HSL: 355° 100% 63%
 				'universal-red': '#FF4444',
