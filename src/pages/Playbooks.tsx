@@ -1,31 +1,10 @@
 
 import React from 'react';
-import Navbar from '@/components/layout/Navbar';
-import { motion } from 'framer-motion';
+import ResourceListTemplate from '@/components/templates/ResourceListTemplate';
+import resourcesData from '@/data/resources.json';
 
 const Playbooks = () => {
-  return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
-      <section className="section-padding pt-32">
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-center"
-          >
-            <h1 className="text-4xl lg:text-6xl font-sora font-bold mb-6">
-              Implementation <span className="gradient-text">Playbooks</span>
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Step-by-step guides for AI implementation
-            </p>
-          </motion.div>
-        </div>
-      </section>
-    </div>
-  );
+  return <ResourceListTemplate data={resourcesData['playbooks']} type="playbooks" />;
 };
 
 export default Playbooks;

@@ -18,7 +18,7 @@ interface ServiceTemplateProps {
     }>;
     heroCTAs: Array<{
       text: string;
-      type: 'primary' | 'secondary';
+      type: string;
       link: string;
     }>;
     stacks: Array<{
