@@ -48,7 +48,7 @@ const HeroSection = () => {
             </div>
 
             {/* Description Text */}
-            <p className="font-inter text-[16px] md:text-[18px] lg:text-[20px] text-[#5A5A5A] leading-[1.6] tracking-[-0.005em] max-w-[520px] mb-10 hero-description">
+            <p className="font-inter text-[11px] md:text-[13px] lg:text-[14px] text-[#5A5A5A] leading-[1.6] tracking-[-0.005em] max-w-[520px] mb-10 hero-description">
               We help businesses implement custom AI, develop intelligent applications, and drive revenue growth with our specialized expertise.
             </p>
 
