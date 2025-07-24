@@ -19,12 +19,12 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="hero" className="h-[85vh] md:h-[75vh] lg:h-[85vh] pt-20 px-5 lg:px-10 bg-white hero-section">
+    <section id="hero" className="min-h-[85vh] md:min-h-[75vh] lg:min-h-[85vh] pt-20 px-5 lg:px-10 bg-white hero-section">
       {/* Custom container with 1200px max-width */}
       <div className="mx-auto max-w-[1200px]">
-        <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 h-full">
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-start">
           {/* Left Column - Content (60%) */}
-          <div className="flex flex-col justify-start pt-8">
+          <div className="flex flex-col justify-start pt-8 lg:pt-12">
             {/* Main Headline */}
             <div className="mb-4">
               {/* Static Text */}
@@ -102,8 +102,8 @@ const HeroSection = () => {
           </div>
 
           {/* Right Column - Process Flow Diagram (40%) */}
-          <div className="flex items-center justify-center">
-            <div className="w-full max-w-[400px] h-[400px]">
+          <div className="flex items-start justify-center pt-8 lg:pt-12">
+            <div className="w-full max-w-[350px] h-[450px]">
               <ProcessDiagram4Step />
             </div>
           </div>

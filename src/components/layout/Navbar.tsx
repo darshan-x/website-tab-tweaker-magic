@@ -73,10 +73,10 @@ const Navbar = () => {
       <nav className={`sticky top-0 z-40 transition-all duration-200 ${
         isSticky ? 'nav-sticky' : 'bg-background border-b border-border'
       }`}>
-        <div className="container">
-          <div className="flex items-center justify-between h-16">
+        <div className="max-w-[1200px] mx-auto px-5 lg:px-10">
+          <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center" style={{ height: '40px' }}>
+            <Link to="/" className="flex items-center">
               <span className="text-2xl font-sora">
                 <span className="text-foreground font-normal">Giga</span>
                 <span className="text-brand font-semibold">Rev</span>
@@ -84,7 +84,7 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-10">
               <NavigationMenu>
                 <NavigationMenuList>
                   {/* Services Dropdown */}
@@ -202,7 +202,7 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center">
-              <Button asChild className="btn-hover h-14">
+              <Button asChild className="btn-hover h-12 px-6">
                 <Link to="/contact">Talk to an AI Advisor »</Link>
               </Button>
             </div>
