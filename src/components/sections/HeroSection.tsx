@@ -72,23 +72,31 @@ const HeroSection = () => {
             </div>
 
             {/* Metrics Cards Section */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full metrics-cards">
-              {/* Card 1 */}
-              <div className="bg-white border border-[#E5E5E5] rounded-[16px] px-6 py-8 text-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] cursor-pointer">
-                <div className="font-inter font-bold text-[36px] text-[#FF4444] leading-none mb-2">40%+</div>
-                <div className="font-inter font-medium text-[14px] text-[#5A5A5A] leading-[1.4]">Cost Reduction</div>
-              </div>
-              
-              {/* Card 2 */}
-              <div className="bg-white border border-[#E5E5E5] rounded-[16px] px-6 py-8 text-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] cursor-pointer">
-                <div className="font-inter font-bold text-[36px] text-[#FF4444] leading-none mb-2">2-6 Weeks</div>
-                <div className="font-inter font-medium text-[14px] text-[#5A5A5A] leading-[1.4]">Implementation Time</div>
-              </div>
-              
-              {/* Card 3 */}
-              <div className="bg-white border border-[#E5E5E5] rounded-[16px] px-6 py-8 text-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] cursor-pointer">
-                <div className="font-inter font-bold text-[36px] text-[#FF4444] leading-none mb-2">3-5x</div>
-                <div className="font-inter font-medium text-[14px] text-[#5A5A5A] leading-[1.4]">ROI (First Year)</div>
+            <div className="bg-white border border-[#E5E5E5] rounded-[16px] p-8 w-full metrics-cards">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                {/* Metric 1 */}
+                <div className="text-center flex-1">
+                  <div className="font-inter font-bold text-[36px] text-[#FF4444] leading-none mb-2">40%+</div>
+                  <div className="font-inter font-medium text-[14px] text-[#5A5A5A] leading-[1.4]">Cost Reduction</div>
+                </div>
+                
+                {/* Divider 1 */}
+                <div className="hidden md:block w-[1px] h-16 bg-[#E5E5E5] mx-8"></div>
+                
+                {/* Metric 2 */}
+                <div className="text-center flex-1 mt-8 md:mt-0">
+                  <div className="font-inter font-bold text-[36px] text-[#FF4444] leading-none mb-2">2-6 Weeks</div>
+                  <div className="font-inter font-medium text-[14px] text-[#5A5A5A] leading-[1.4]">Implementation Time</div>
+                </div>
+                
+                {/* Divider 2 */}
+                <div className="hidden md:block w-[1px] h-16 bg-[#E5E5E5] mx-8"></div>
+                
+                {/* Metric 3 */}
+                <div className="text-center flex-1 mt-8 md:mt-0">
+                  <div className="font-inter font-bold text-[36px] text-[#FF4444] leading-none mb-2">3-5x</div>
+                  <div className="font-inter font-medium text-[14px] text-[#5A5A5A] leading-[1.4]">ROI (First Year)</div>
+                </div>
               </div>
             </div>
           </div>
