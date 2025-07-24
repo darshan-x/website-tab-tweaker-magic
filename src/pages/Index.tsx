@@ -90,7 +90,7 @@ export default function Index() {
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Card className="text-center border-border">
               <CardContent className="p-6">
-                <div className="text-5xl font-bold text-primary mb-2">40%+</div>
+                <div className="text-5xl font-sora font-extrabold text-primary mb-2">40%+</div>
                 <div className="text-lg font-medium text-foreground mb-2">Cost Reduction</div>
                 <div className="text-sm text-muted-foreground">Average cost savings through AI automation</div>
               </CardContent>
@@ -98,7 +98,7 @@ export default function Index() {
             
             <Card className="text-center border-border">
               <CardContent className="p-6">
-                <div className="text-5xl font-bold text-primary mb-2">2-6 Weeks</div>
+                <div className="text-5xl font-sora font-extrabold text-primary mb-2">2-6 Weeks</div>
                 <div className="text-lg font-medium text-foreground mb-2">Implementation Time</div>
                 <div className="text-sm text-muted-foreground">From strategy to deployment</div>
               </CardContent>
@@ -106,7 +106,7 @@ export default function Index() {
             
             <Card className="text-center border-border">
               <CardContent className="p-6">
-                <div className="text-5xl font-bold text-primary mb-2">3-5x</div>
+                <div className="text-5xl font-sora font-extrabold text-primary mb-2">3-5x</div>
                 <div className="text-lg font-medium text-foreground mb-2">ROI (First Year)</div>
                 <div className="text-sm text-muted-foreground">Return on AI investment</div>
               </CardContent>

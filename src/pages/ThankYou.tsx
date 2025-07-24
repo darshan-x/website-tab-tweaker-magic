@@ -15,7 +15,7 @@ const ThankYou = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl lg:text-6xl font-sora font-bold mb-6">
+            <h1 className="text-4xl lg:text-6xl font-sora font-extrabold mb-6">
               <span className="gradient-text">Thank You</span>
             </h1>
             <p className="text-lg text-muted-foreground">

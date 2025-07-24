@@ -34,7 +34,7 @@ const KeyMetricsSection = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl lg:text-5xl font-sora font-bold mb-6 text-foreground">
+          <h2 className="text-3xl lg:text-5xl font-sora font-extrabold mb-6 text-foreground">
             Proven <span className="gradient-text">Results</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -52,7 +52,7 @@ const KeyMetricsSection = () => {
               viewport={{ once: true }}
               className="text-center bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
-              <div className={`text-5xl lg:text-6xl font-sora font-bold mb-4 ${metric.color}`}>
+              <div className={`text-5xl lg:text-6xl font-sora font-extrabold mb-4 ${metric.color}`}>
                 {metric.value}
               </div>
               <div className="text-xl font-sora font-semibold text-foreground mb-2">

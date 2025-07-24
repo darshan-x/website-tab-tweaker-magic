@@ -232,7 +232,7 @@ export default function SVGNodeAnimation() {
                 x={x}
                 y={y + 1.5}
                 textAnchor="middle"
-                className="fill-white font-bold"
+                className="fill-white font-extrabold"
                 fontSize="4"
                 initial={{ opacity: 0 }}
                 animate={{ 

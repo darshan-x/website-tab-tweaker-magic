@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo & Tagline */}
           <div className="md:col-span-1">
-            <h3 className="text-2xl font-sora font-bold text-foreground mb-2">
+            <h3 className="text-2xl font-sora font-extrabold text-foreground mb-2">
               GigaRev
             </h3>
             <p className="text-muted-foreground text-sm">

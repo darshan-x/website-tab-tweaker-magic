@@ -74,7 +74,7 @@ const ResourceListTemplate: React.FC<ResourceListTemplateProps> = ({ data, type 
         <div className="grid grid-cols-2 gap-4 mb-4">
           {item.metrics.slice(0, 4).map((metric: any, idx: number) => (
             <div key={idx} className="text-center">
-              <div className="text-lg font-bold text-primary">{metric.value}</div>
+              <div className="text-lg font-sora font-extrabold text-primary">{metric.value}</div>
               <div className="text-xs text-muted-foreground">{metric.label}</div>
             </div>
           ))}
@@ -214,7 +214,7 @@ const ResourceListTemplate: React.FC<ResourceListTemplateProps> = ({ data, type 
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h1 className="text-4xl lg:text-6xl font-sora font-bold mb-6">
+            <h1 className="text-4xl lg:text-6xl font-sora font-extrabold mb-6">
               {data.title}
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

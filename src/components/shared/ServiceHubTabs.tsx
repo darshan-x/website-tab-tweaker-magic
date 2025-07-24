@@ -35,7 +35,7 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
     <section className="section-padding bg-background">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-sora font-bold text-foreground mb-4">
+          <h2 className="text-3xl lg:text-4xl font-sora font-extrabold text-foreground mb-4">
             Our Service Hubs
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

@@ -60,7 +60,7 @@ const IndustryTemplate: React.FC<IndustryTemplateProps> = ({ data }) => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h1 className="text-4xl lg:text-6xl font-sora font-bold mb-6">
+            <h1 className="text-4xl lg:text-6xl font-sora font-extrabold mb-6">
               {data.title}
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
@@ -72,7 +72,7 @@ const IndustryTemplate: React.FC<IndustryTemplateProps> = ({ data }) => {
               {data.kpis.map((kpi, index) => (
                 <Card key={index} className="text-center">
                   <CardContent className="p-6">
-                    <div className="text-2xl font-bold text-primary mb-2">{kpi.value}</div>
+                    <div className="text-2xl font-sora font-extrabold text-primary mb-2">{kpi.value}</div>
                     <div className="font-semibold text-foreground mb-1">{kpi.label}</div>
                     <div className="text-sm text-muted-foreground">{kpi.description}</div>
                   </CardContent>
@@ -97,7 +97,7 @@ const IndustryTemplate: React.FC<IndustryTemplateProps> = ({ data }) => {
       <section className="section-padding bg-secondary/20">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-sora font-bold mb-4">
+            <h2 className="text-3xl font-sora font-extrabold mb-4">
               Why {data.title.split(' ')[0]} Still Leaks Revenue
             </h2>
             <p className="text-xl text-muted-foreground">Common challenges we solve</p>
@@ -128,7 +128,7 @@ const IndustryTemplate: React.FC<IndustryTemplateProps> = ({ data }) => {
       <section className="section-padding">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-sora font-bold mb-4">AI Enablement Suite</h2>
+            <h2 className="text-3xl font-sora font-extrabold mb-4">AI Enablement Suite</h2>
             <p className="text-xl text-muted-foreground">Six powerful modules designed for your industry</p>
           </div>
           
@@ -162,7 +162,7 @@ const IndustryTemplate: React.FC<IndustryTemplateProps> = ({ data }) => {
       <section className="section-padding bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-sora font-bold mb-4">{data.whyNative.title}</h2>
+            <h2 className="text-3xl font-sora font-extrabold mb-4">{data.whyNative.title}</h2>
             <div className="grid md:grid-cols-2 gap-6 mt-8">
               {data.whyNative.features.map((feature, index) => (
                 <div key={index} className="flex items-start">
@@ -179,7 +179,7 @@ const IndustryTemplate: React.FC<IndustryTemplateProps> = ({ data }) => {
       <section id="pilot" className="section-padding">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-sora font-bold mb-4">{data.pilot.title}</h2>
+            <h2 className="text-3xl font-sora font-extrabold mb-4">{data.pilot.title}</h2>
             <p className="text-xl text-muted-foreground">Fast-track implementation with proven results</p>
           </div>
           
@@ -214,7 +214,7 @@ const IndustryTemplate: React.FC<IndustryTemplateProps> = ({ data }) => {
       <section className="section-padding bg-secondary/20">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-sora font-bold mb-4">What You Get</h2>
+            <h2 className="text-3xl font-sora font-extrabold mb-4">What You Get</h2>
             <p className="text-xl text-muted-foreground">Measurable outcomes and tangible results</p>
           </div>
           
@@ -235,7 +235,7 @@ const IndustryTemplate: React.FC<IndustryTemplateProps> = ({ data }) => {
       <section className="section-padding">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-sora font-bold mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-sora font-extrabold mb-4">Frequently Asked Questions</h2>
             <p className="text-xl text-muted-foreground">Get answers to common questions</p>
           </div>
           
@@ -255,7 +255,7 @@ const IndustryTemplate: React.FC<IndustryTemplateProps> = ({ data }) => {
       {/* Final CTA */}
       <section className="section-padding bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container text-center">
-          <h2 className="text-3xl font-sora font-bold mb-4">Ready to Transform Your Business?</h2>
+          <h2 className="text-3xl font-sora font-extrabold mb-4">Ready to Transform Your Business?</h2>
           <p className="text-xl text-muted-foreground mb-8">
             Join the companies already succeeding with our AI solutions
           </p>

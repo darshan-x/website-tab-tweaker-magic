@@ -15,7 +15,7 @@ const Blog = () => {
             transition={{ duration: 0.8 }}
             className="text-center"
           >
-            <h1 className="text-4xl lg:text-6xl font-sora font-bold mb-6">
+            <h1 className="text-4xl lg:text-6xl font-sora font-extrabold mb-6">
               GigaRev <span className="gradient-text">Blog</span>
             </h1>
             <p className="text-lg text-muted-foreground">

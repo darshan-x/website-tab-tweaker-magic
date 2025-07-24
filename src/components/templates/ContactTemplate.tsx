@@ -66,7 +66,7 @@ const ContactTemplate: React.FC<ContactTemplateProps> = ({ data }) => {
               className="max-w-md mx-auto text-center"
             >
               <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
-              <h2 className="text-2xl font-sora font-bold mb-4">Message Sent!</h2>
+              <h2 className="text-2xl font-sora font-extrabold mb-4">Message Sent!</h2>
               <p className="text-muted-foreground mb-6">
                 Thank you for contacting us. We'll get back to you within 24 hours.
               </p>
@@ -94,7 +94,7 @@ const ContactTemplate: React.FC<ContactTemplateProps> = ({ data }) => {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h1 className="text-4xl lg:text-6xl font-sora font-bold mb-6">
+            <h1 className="text-4xl lg:text-6xl font-sora font-extrabold mb-6">
               {data.title}
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -208,7 +208,7 @@ const ContactTemplate: React.FC<ContactTemplateProps> = ({ data }) => {
               className="space-y-8"
             >
               <div>
-                <h3 className="text-2xl font-sora font-bold mb-6">Get in touch</h3>
+                <h3 className="text-2xl font-sora font-extrabold mb-6">Get in touch</h3>
                 <p className="text-muted-foreground mb-8">
                   Ready to transform your business with AI? We're here to help you every step of the way.
                 </p>

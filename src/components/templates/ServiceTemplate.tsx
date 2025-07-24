@@ -57,7 +57,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ data }) => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h1 className="text-4xl lg:text-6xl font-sora font-bold mb-6">
+            <h1 className="text-4xl lg:text-6xl font-sora font-extrabold mb-6">
               {data.title}
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
@@ -69,7 +69,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ data }) => {
               {data.kpis.map((kpi, index) => (
                 <Card key={index} className="text-center">
                   <CardContent className="p-6">
-                    <div className="text-2xl font-bold text-primary mb-2">{kpi.value}</div>
+                    <div className="text-2xl font-sora font-extrabold text-primary mb-2">{kpi.value}</div>
                     <div className="font-semibold text-foreground mb-1">{kpi.label}</div>
                     <div className="text-sm text-muted-foreground">{kpi.description}</div>
                   </CardContent>
@@ -99,7 +99,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ data }) => {
       <section className="section-padding">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-sora font-bold mb-4">Service Stacks</h2>
+            <h2 className="text-3xl font-sora font-extrabold mb-4">Service Stacks</h2>
             <p className="text-xl text-muted-foreground">Comprehensive solutions designed for your success</p>
           </div>
           
@@ -147,7 +147,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ data }) => {
       <section className="section-padding bg-secondary/20">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-sora font-bold mb-4">Implementation Bundles</h2>
+            <h2 className="text-3xl font-sora font-extrabold mb-4">Implementation Bundles</h2>
             <p className="text-xl text-muted-foreground">Choose the right package for your needs</p>
           </div>
           
@@ -156,7 +156,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ data }) => {
               <Card key={index} className="h-full">
                 <CardHeader>
                   <CardTitle>{bundle.title}</CardTitle>
-                  <CardDescription className="text-2xl font-bold text-primary">
+                  <CardDescription className="text-2xl font-sora font-extrabold text-primary">
                     {bundle.price}
                   </CardDescription>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -189,7 +189,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ data }) => {
       <section className="section-padding">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-sora font-bold mb-4">Implementation Process</h2>
+            <h2 className="text-3xl font-sora font-extrabold mb-4">Implementation Process</h2>
             <p className="text-xl text-muted-foreground">Our proven methodology for success</p>
           </div>
           
@@ -229,7 +229,7 @@ const ServiceTemplate: React.FC<ServiceTemplateProps> = ({ data }) => {
       {/* Final CTA */}
       <section className="section-padding bg-gradient-to-r from-primary/10 to-secondary/10">
         <div className="container text-center">
-          <h2 className="text-3xl font-sora font-bold mb-4">Ready to Get Started?</h2>
+          <h2 className="text-3xl font-sora font-extrabold mb-4">Ready to Get Started?</h2>
           <p className="text-xl text-muted-foreground mb-8">
             Schedule a free consultation to discuss your specific needs
           </p>

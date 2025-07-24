@@ -67,7 +67,7 @@ const EventListTemplate: React.FC<EventListTemplateProps> = ({ data }) => {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h1 className="text-4xl lg:text-6xl font-sora font-bold mb-6">
+            <h1 className="text-4xl lg:text-6xl font-sora font-extrabold mb-6">
               {data.title}
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">

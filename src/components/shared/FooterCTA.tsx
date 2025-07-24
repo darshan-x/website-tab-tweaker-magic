@@ -7,7 +7,7 @@ const FooterCTA = () => {
     <section className="section-padding bg-primary/5">
       <div className="container">
         <div className="text-center max-w-4xl mx-auto">
-          <h2 className="text-4xl font-sora font-bold text-foreground mb-6">
+          <h2 className="text-4xl font-sora font-extrabold text-foreground mb-6">
             Ready to revolutionize your business with AI?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">

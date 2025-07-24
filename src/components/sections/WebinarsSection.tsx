@@ -30,7 +30,7 @@ const WebinarsSection = () => {
     <section className="section-padding bg-secondary/20">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-sora font-bold text-foreground mb-4">
+          <h2 className="text-4xl font-sora font-extrabold text-foreground mb-4">
             Upcoming Webinars
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
