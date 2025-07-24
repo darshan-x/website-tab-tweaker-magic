@@ -26,14 +26,14 @@ const HeroSection = () => {
           {/* Left Column - Content (60%) */}
           <div className="flex flex-col justify-start pt-8">
             {/* Main Headline */}
-            <div className="mb-8">
+            <div className="mb-4">
               {/* Static Text */}
               <h1 className="font-inter font-semibold text-[36px] md:text-[48px] lg:text-[64px] text-[#030303] leading-[1.1] tracking-[-0.01em] mb-0 hero-text">
                 AI solutions that
               </h1>
               
               {/* Dynamic Rotating Text */}
-              <div className="font-inter font-semibold text-[36px] md:text-[48px] lg:text-[64px] text-[#FF4444] leading-[1.1] tracking-[-0.01em] mb-8 hero-text">
+              <div className="font-inter font-semibold text-[36px] md:text-[48px] lg:text-[64px] text-[#FF4444] leading-[1.1] tracking-[-0.01em] mb-4 hero-text">
                 <span 
                   key={currentTextIndex} 
                   className="hero-verb"
