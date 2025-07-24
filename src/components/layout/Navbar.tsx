@@ -93,12 +93,12 @@ const Navbar = () => {
                       Services
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="w-[600px] p-6 bg-background shadow-lg rounded-lg border z-50">
-                        <div className="grid grid-cols-2 gap-8">
+                       <div className="w-[600px] p-4 bg-background shadow-lg rounded-xl border z-50">
+                         <div className="grid grid-cols-2 gap-6">
                           {/* Tech Services */}
                           <div>
                             <h3 className="font-sora font-semibold text-sm mb-4 text-foreground tracking-tighter">Tech Services</h3>
-                            <div className="space-y-3">
+                             <div className="space-y-2">
                               {servicesData.tech.map((service) => (
                                 <Link
                                   key={service.name}
@@ -118,7 +118,7 @@ const Navbar = () => {
                           {/* Revenue Services */}
                           <div>
                             <h3 className="font-sora font-semibold text-sm mb-4 text-foreground tracking-tighter">Revenue Services</h3>
-                            <div className="space-y-3">
+                            <div className="space-y-2">
                               {servicesData.revenue.map((service) => (
                                 <Link
                                   key={service.name}
@@ -145,7 +145,7 @@ const Navbar = () => {
                       Industries
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="w-[300px] p-6 bg-background shadow-lg rounded-lg border z-50">
+                      <div className="w-[300px] p-4 bg-background shadow-lg rounded-xl border z-50">
                         <div className="space-y-2">
                           {industriesData.map((industry) => (
                             <Link
@@ -168,7 +168,7 @@ const Navbar = () => {
                       Resources
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="w-[280px] p-6 bg-background shadow-lg rounded-lg border z-50">
+                      <div className="w-[280px] p-4 bg-background shadow-lg rounded-xl border z-50">
                         <div className="space-y-2">
                           {resourcesData.map((resource) => (
                             <Link

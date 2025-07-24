@@ -70,7 +70,7 @@ const ServicesSection = () => {
   return (
     <section id="services" className="section-padding bg-secondary/20">
       <div className="container">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl font-sora font-extrabold text-foreground mb-4">
             Our Services
           </h2>
@@ -79,7 +79,7 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="space-y-8 max-w-4xl mx-auto">
+        <div className="space-y-6 max-w-4xl mx-auto">
           {services.map((service, index) => (
             <ServiceBlock key={index} {...service} />
           ))}

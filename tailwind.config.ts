@@ -20,11 +20,22 @@ export default {
 		},
 		extend: {
 			fontFamily: {
+				'sans': ['Sora', 'ui-sans-serif', 'system-ui'],
 				'sora': ['Sora', 'sans-serif'],
 				'inter': ['Inter', 'sans-serif'],
 			},
 			letterSpacing: {
-				'tighter': '-0.01em', // -1%
+				'tightest': '-.04em',
+				'tighter': '-.02em',
+				'tight': '-.01em',
+			},
+			lineHeight: {
+				'snug': '1.35',
+				'tight': '1.2',
+			},
+			spacing: {
+				'section': '3rem',
+				'component': '1rem',
 			},
 			colors: {
 				// Brand Colors as per spec

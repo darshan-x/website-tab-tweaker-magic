@@ -61,27 +61,26 @@
   }
   
   body {
-    @apply bg-background text-foreground font-sora antialiased leading-relaxed;
+    @apply bg-background text-foreground font-sora antialiased leading-snug tracking-tight;
     font-feature-settings: "rlig" 1, "calt" 1;
-    letter-spacing: -0.01em; /* Custom -1% letter spacing */
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-sora leading-tight;
+    @apply font-sora leading-tight tracking-tight;
   }
 
   p {
-    @apply max-w-[560px] leading-relaxed;
+    @apply max-w-[560px] leading-snug tracking-tight;
   }
 }
 
 /* Hero rotating verbs - 3s cycle with 0.35s transitions */
 @keyframes textRotation {
-  0% { opacity: 0; transform: translateY(10px); }
+  0% { opacity: 0; transform: translateY(6px); }
   16.67% { opacity: 1; transform: translateY(0); }
   33.33% { opacity: 1; transform: translateY(0); }
-  50% { opacity: 0; transform: translateY(-10px); }
-  100% { opacity: 0; transform: translateY(-10px); }
+  50% { opacity: 0; transform: translateY(-6px); }
+  100% { opacity: 0; transform: translateY(-6px); }
 }
 
 /* SVG process line draw */
@@ -119,7 +118,7 @@
 
   /* Section Padding */
   .section-padding {
-    @apply py-6 lg:py-10;
+    @apply py-12 md:py-16;
   }
 
   /* Container */
@@ -219,11 +218,11 @@
 
   /* Card hover lift with proper shadow */
   .card-hover {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .card-hover:hover {
-    transform: translateY(-4px);
+    transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   }
 
@@ -266,11 +265,11 @@ html {
 
   /* Card hover enhancement */
   .card-hover-enhanced {
-    transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in-out;
   }
 
   .card-hover-enhanced:hover {
-    transform: translateY(-4px) scale(1.02);
+    transform: translateY(-2px) scale(1.01);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   }
 }

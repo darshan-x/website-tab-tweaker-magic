@@ -34,7 +34,7 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
   return (
     <section className="section-padding bg-background">
       <div className="container">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-2xl lg:text-3xl font-sora font-extrabold text-foreground mb-4">
             Our Service Hubs
           </h2>
@@ -44,7 +44,7 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
         </div>
 
         <Tabs defaultValue="tech" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto mb-12">
+          <TabsList className="grid w-full grid-cols-2 max-w-md mx-auto mb-8">
             <TabsTrigger 
               value="tech" 
               className="data-[state=active]:tab-active transition-all duration-200"
@@ -60,10 +60,10 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
           </TabsList>
 
           <TabsContent value="tech" className="mt-0">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
+             <div className="grid lg:grid-cols-2 gap-8 items-start">
               {/* Tech Services */}
-              <div className="space-y-6">
-                <div className="mb-8">
+               <div className="space-y-4">
+                 <div className="mb-6">
                   <h3 className="text-xl font-sora font-semibold text-foreground mb-4">
                     Tech Services Hub
                   </h3>
@@ -72,10 +72,10 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
                   </p>
                 </div>
 
-                <div className="space-y-6">
+                 <div className="space-y-4">
                   {techServices.map((service, index) => (
                     <Card key={index} className="border-stroke/10 card-hover-enhanced">
-                      <CardContent className="p-6">
+                       <CardContent className="px-4 py-4">
                         <h4 className="font-sora font-semibold text-base text-foreground mb-2">
                           {service.title}
                         </h4>
@@ -83,7 +83,7 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
                           {service.description}
                         </p>
                         
-                        <ul className="space-y-2 mb-6">
+                         <ul className="space-y-1 mb-4">
                           {service.features.map((feature, featureIndex) => (
                             <li key={featureIndex} className="flex items-start">
                               <Check className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />
@@ -115,10 +115,10 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
           </TabsContent>
 
           <TabsContent value="revenue" className="mt-0">
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="grid lg:grid-cols-2 gap-8 items-start">
               {/* Revenue Services */}
-              <div className="space-y-6">
-                <div className="mb-8">
+               <div className="space-y-4">
+                 <div className="mb-6">
                   <h3 className="text-xl font-sora font-semibold text-foreground mb-4">
                     Revenue Services Hub
                   </h3>
@@ -127,10 +127,10 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
                   </p>
                 </div>
 
-                <div className="space-y-6">
+                <div className="space-y-4">
                   {revenueServices.map((service, index) => (
                     <Card key={index} className="border-stroke/10 card-hover-enhanced">
-                      <CardContent className="p-6">
+                      <CardContent className="px-4 py-4">
                         <h4 className="font-sora font-semibold text-base text-foreground mb-2">
                           {service.title}
                         </h4>
@@ -138,7 +138,7 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
                           {service.description}
                         </p>
                         
-                        <ul className="space-y-2 mb-6">
+                        <ul className="space-y-1 mb-4">
                           {service.features.map((feature, featureIndex) => (
                             <li key={featureIndex} className="flex items-start">
                               <Check className="h-4 w-4 text-primary mt-0.5 mr-2 flex-shrink-0" />

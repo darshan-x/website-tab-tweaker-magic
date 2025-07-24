@@ -5,8 +5,8 @@ import NewsletterSignup from '@/components/shared/NewsletterSignup';
 const Footer = () => {
   return (
     <footer className="bg-ink border-t border-white/10">
-      <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container py-8">
+         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
           {/* Logo & Tagline */}
           <div className="md:col-span-1">
             <h3 className="text-2xl font-sora font-extrabold text-white mb-2">
@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-white/10 mt-8 pt-8">
+        <div className="border-t border-white/10 mt-6 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <p className="text-sm text-white/70">

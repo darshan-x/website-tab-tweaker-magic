@@ -81,7 +81,7 @@ const ProcessDiagram6Step: React.FC = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full max-w-6xl mx-auto p-6">
+    <div ref={containerRef} className="w-full max-w-6xl mx-auto p-4">
       <div className="relative">
         {/* Zig-zag connecting lines */}
         <svg 
@@ -109,7 +109,7 @@ const ProcessDiagram6Step: React.FC = () => {
         </svg>
 
         {/* Process steps grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 relative z-10">
           {processSteps.map((step, index) => {
             const isVisible = visibleSteps.has(step.id);
             const isEven = index % 2 === 1;
@@ -126,7 +126,7 @@ const ProcessDiagram6Step: React.FC = () => {
                   ${isEven ? 'lg:mt-16' : 'lg:mt-0'}
                 `}
               >
-                <div className="bg-card rounded-xl p-6 shadow-sm border border-stroke/10 card-hover-enhanced">
+                <div className="bg-card rounded-xl px-4 py-4 shadow-sm border border-stroke/10 card-hover-enhanced">
                   {/* Step number */}
                   <div className="absolute -top-3 -left-3 w-8 h-8 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-semibold">
                     {step.id}

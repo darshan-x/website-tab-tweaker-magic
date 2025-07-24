@@ -29,7 +29,7 @@ const WebinarsSection = () => {
   return (
     <section className="section-padding bg-secondary/20">
       <div className="container">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-3xl font-sora font-extrabold text-foreground mb-4">
             Upcoming Webinars
           </h2>
@@ -38,10 +38,10 @@ const WebinarsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-8">
+        <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-6">
           {webinars.map((webinar, index) => (
             <Card key={index} className="border-border">
-              <CardContent className="p-6">
+              <CardContent className="px-4 py-4">
                 <div className="flex items-center text-muted-foreground text-sm mb-3">
                   <User className="w-4 h-4 mr-2" />
                   {webinar.presenter}

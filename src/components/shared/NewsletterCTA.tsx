@@ -59,16 +59,16 @@ const NewsletterCTA: React.FC<NewsletterCTAProps> = ({
     <section className="section-padding bg-surface-muted/50">
       <div className="container">
         <Card className="max-w-4xl mx-auto border-stroke/10 shadow-sm">
-          <CardContent className="p-8 lg:p-12">
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
+           <CardContent className="p-6 lg:p-8">
+             <div className="grid lg:grid-cols-2 gap-6 items-center">
               <div className="text-center lg:text-left">
-                <div className="flex items-center justify-center lg:justify-start mb-4">
+                <div className="flex items-center justify-center lg:justify-start mb-3">
                   <Mail className="h-6 w-6 text-primary mr-3" />
                   <span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
                     Newsletter
                   </span>
                 </div>
-                <h3 className="text-2xl lg:text-3xl font-sora font-semibold text-foreground mb-4">
+                <h3 className="text-2xl lg:text-3xl font-sora font-semibold text-foreground mb-3">
                   {title}
                 </h3>
                 <p className="text-muted-foreground text-lg leading-relaxed">

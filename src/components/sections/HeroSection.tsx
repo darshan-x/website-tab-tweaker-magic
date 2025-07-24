@@ -24,7 +24,7 @@ const HeroSection = () => {
   return (
     <section id="hero" className="section-padding pt-16 lg:pt-20 bg-background">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left Column - Content */}
           <div className="order-2 lg:order-1">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-sora font-semibold text-foreground mb-6 leading-tight">
@@ -38,7 +38,7 @@ const HeroSection = () => {
               We help businesses implement custom AI, develop intelligent applications, and drive revenue growth with our specialized expertise.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 space-y-4 sm:space-y-0">
+            <div className="flex flex-col sm:flex-row gap-2 space-y-4 sm:space-y-0">
               <Button asChild className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full min-h-[44px] w-full sm:w-auto">
                 <Link to="/contact">
                   Talk to an AI Advisor <ArrowRight className="w-4 h-4" />

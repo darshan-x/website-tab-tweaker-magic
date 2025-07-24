@@ -12,9 +12,9 @@ interface MetricsTableProps {
 
 const MetricsTable: React.FC<MetricsTableProps> = ({ title, metrics }) => {
   return (
-    <div className="bg-secondary/50 rounded-lg p-6">
-      <h4 className="text-lg font-semibold text-foreground mb-4">{title}</h4>
-      <div className="space-y-3">
+     <div className="bg-secondary/50 rounded-xl px-4 py-4">
+       <h4 className="text-lg font-semibold text-foreground mb-3">{title}</h4>
+       <div className="space-y-2">
         {metrics.map((metric, index) => (
           <div key={index} className="flex justify-between items-center">
             <span className="text-muted-foreground">{metric.label}</span>
