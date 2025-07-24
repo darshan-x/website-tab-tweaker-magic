@@ -67,10 +67,10 @@ const ProcessDiagram4Step: React.FC = () => {
       <div className="relative">
         {/* SVG Vertical Process Flow */}
         <svg 
-          width="300" 
-          height="400" 
+          width="90" 
+          height="120" 
           viewBox="0 0 300 400" 
-          className="w-full h-auto"
+          className="w-auto h-auto mx-auto"
           aria-label="GigaRev implementation process: Discovery, Strategy, Implementation, Results"
         >
           <defs>
