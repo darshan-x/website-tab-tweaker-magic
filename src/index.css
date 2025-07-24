@@ -168,6 +168,21 @@
     100% { transform: scale(1); opacity: 1; }
   }
 
+  /* Continuous line flow animation */
+  .line-flow {
+    stroke-dasharray: 20 10;
+    animation: line-flow 3s linear infinite;
+  }
+
+  @keyframes line-flow {
+    0% {
+      stroke-dashoffset: 30;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
   /* Button Variants */
   .btn-primary {
     @apply inline-flex items-center gap-2 px-4 py-2 text-sm font-sora font-medium tracking-tight leading-tight rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 bg-brand text-white hover:bg-brand/90 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_10px_25px_rgba(0,0,0,0.08)];
@@ -267,6 +282,11 @@ html {
   }
   
   .line-path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  
+  .line-flow {
     animation: none;
     stroke-dashoffset: 0;
   }

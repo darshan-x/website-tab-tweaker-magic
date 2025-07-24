@@ -100,7 +100,7 @@ const ProcessDiagram4Step: React.FC = () => {
                 d="M70,70 L210,70"
                 stroke="#000000"
                 strokeWidth="1.5"
-                className="line-path"
+                className="line-flow"
                 style={{ animationDelay: '0s' }}
               />
               {/* Strategy to Implementation (right vertical) */}
@@ -108,24 +108,24 @@ const ProcessDiagram4Step: React.FC = () => {
                 d="M210,70 L210,210"
                 stroke="#000000"
                 strokeWidth="1.5"
-                className="line-path"
-                style={{ animationDelay: '0.1s' }}
+                className="line-flow"
+                style={{ animationDelay: '0.5s' }}
               />
               {/* Implementation to Results (bottom horizontal) */}
               <path
                 d="M210,210 L70,210"
                 stroke="#000000"
                 strokeWidth="1.5"
-                className="line-path"
-                style={{ animationDelay: '0.2s' }}
+                className="line-flow"
+                style={{ animationDelay: '1s' }}
               />
               {/* Results to Discovery (left vertical) */}
               <path
                 d="M70,210 L70,70"
                 stroke="#000000"
                 strokeWidth="1.5"
-                className="line-path"
-                style={{ animationDelay: '0.3s' }}
+                className="line-flow"
+                style={{ animationDelay: '1.5s' }}
               />
             </>
           )}
