@@ -56,8 +56,8 @@ const Navbar = () => {
   ];
 
   const navItems = [
-    { name: 'Blog', href: '/blog', badge: { color: 'bg-rose-300 text-black', text: '11' } },
-    { name: 'About', href: '/about', badge: { color: 'bg-orange-300 text-black', text: '1' } }
+    { name: 'Blog', href: '/blog' },
+    { name: 'About', href: '/about' }
   ];
 
   const isActive = (href: string) => {
@@ -91,7 +91,6 @@ const Navbar = () => {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="nav-link group">
                       Services
-                      <span className="nav-badge bg-amber-300 text-black">6</span>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <div className="w-[600px] p-6 bg-background shadow-lg rounded-lg border z-50">
@@ -144,7 +143,6 @@ const Navbar = () => {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="nav-link group">
                       Industries
-                      <span className="nav-badge bg-violet-400 text-white">6</span>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <div className="w-[300px] p-6 bg-background shadow-lg rounded-lg border z-50">
@@ -168,7 +166,6 @@ const Navbar = () => {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="nav-link group">
                       Resources
-                      <span className="nav-badge bg-teal-400 text-white">3</span>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       <div className="w-[280px] p-6 bg-background shadow-lg rounded-lg border z-50">
@@ -196,9 +193,6 @@ const Navbar = () => {
                         className={`nav-link ${isActive(item.href) ? 'active' : ''}`}
                       >
                         {item.name}
-                        <span className={`nav-badge ${item.badge.color}`}>
-                          {item.badge.text}
-                        </span>
                       </Link>
                     </NavigationMenuItem>
                   ))}
