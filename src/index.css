@@ -164,14 +164,27 @@
     100% { transform: scale(1); opacity: 1; }
   }
 
-  /* Button Hover Effects */
-  .btn-hover {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Button Variants */
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-4 py-2 text-sm font-sora font-medium tracking-tight leading-tight rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2 bg-brand text-white hover:bg-brand/90 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_10px_25px_rgba(0,0,0,0.08)];
   }
 
-  .btn-hover:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-4 py-2 text-sm font-sora font-medium tracking-tight leading-tight rounded-full transition-all duration-200 border-[1.5px] border-current bg-transparent hover:bg-black/5 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_10px_25px_rgba(0,0,0,0.08)];
+  }
+
+  /* Arrow Icon Animation */
+  .btn-primary:hover [data-lucide="arrow-right"],
+  .btn-outline:hover [data-lucide="arrow-right"] {
+    transform: translateX(4px);
+  }
+
+  /* Mobile Responsive Buttons */
+  @media (max-width: 640px) {
+    .btn-primary,
+    .btn-outline {
+      @apply w-full px-3 py-1.5 text-sm;
+    }
   }
 
   /* Navigation badges */
