@@ -86,32 +86,23 @@ export default function Index() {
         <HeroSection />
       
       {/* Key Metrics Section */}
-      <section className="section-padding bg-background">
-        <div className="container">
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <Card className="text-center border-border">
-              <CardContent className="p-6">
-                <div className="text-5xl font-sora font-extrabold text-primary mb-2">40%+</div>
-                <div className="text-lg font-medium text-foreground mb-2">Cost Reduction</div>
-                <div className="text-sm text-muted-foreground">Average cost savings through AI automation</div>
-              </CardContent>
-            </Card>
+      <section id="home-kpis" className="py-12 lg:py-16 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-3">
+            <div role="group" aria-label="Cost Reduction Metric" className="text-center bg-white rounded-xl px-4 py-4 sm:px-3 sm:py-3">
+              <div className="text-3xl md:text-4xl font-sora font-extrabold text-brand leading-tight tracking-tight">40%+</div>
+              <div className="text-sm md:text-base text-ink/90 leading-snug tracking-tight mt-0.5">Cost Reduction</div>
+            </div>
             
-            <Card className="text-center border-border">
-              <CardContent className="p-6">
-                <div className="text-5xl font-sora font-extrabold text-primary mb-2">2-6 Weeks</div>
-                <div className="text-lg font-medium text-foreground mb-2">Implementation Time</div>
-                <div className="text-sm text-muted-foreground">From strategy to deployment</div>
-              </CardContent>
-            </Card>
+            <div role="group" aria-label="Implementation Time Metric" className="text-center bg-white rounded-xl px-4 py-4 sm:px-3 sm:py-3">
+              <div className="text-3xl md:text-4xl font-sora font-extrabold text-brand leading-tight tracking-tight">2-6 Weeks</div>
+              <div className="text-sm md:text-base text-ink/90 leading-snug tracking-tight mt-0.5">Implementation Time</div>
+            </div>
             
-            <Card className="text-center border-border">
-              <CardContent className="p-6">
-                <div className="text-5xl font-sora font-extrabold text-primary mb-2">3-5x</div>
-                <div className="text-lg font-medium text-foreground mb-2">ROI (First Year)</div>
-                <div className="text-sm text-muted-foreground">Return on AI investment</div>
-              </CardContent>
-            </Card>
+            <div role="group" aria-label="ROI (First Year) Metric" className="text-center bg-white rounded-xl px-4 py-4 sm:px-3 sm:py-3">
+              <div className="text-3xl md:text-4xl font-sora font-extrabold text-brand leading-tight tracking-tight">3-5x</div>
+              <div className="text-sm md:text-base text-ink/90 leading-snug tracking-tight mt-0.5">ROI (First Year)</div>
+            </div>
           </div>
         </div>
       </section>

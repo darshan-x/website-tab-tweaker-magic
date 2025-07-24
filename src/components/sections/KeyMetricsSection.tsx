@@ -25,14 +25,14 @@ const KeyMetricsSection = () => {
   ];
 
   return (
-    <section className="section-padding bg-background-alt">
-      <div className="container">
+    <section id="home-kpis" className="py-12 lg:py-16 bg-background-alt">
+      <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-3xl lg:text-5xl font-sora font-extrabold mb-6 text-foreground">
             Proven <span className="gradient-text">Results</span>
@@ -42,24 +42,27 @@ const KeyMetricsSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-3">
           {metrics.map((metric, index) => (
             <motion.div
               key={metric.label}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+              role="group"
+              aria-label={`${metric.label} Metric`}
+              initial={{ opacity: 0, y: 6, scale: 0.97 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ 
+                duration: 0.4, 
+                delay: index * 0.1,
+                ease: [0.25, 0.46, 0.45, 0.94]
+              }}
               viewport={{ once: true }}
-              className="text-center bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300"
+              className="text-center bg-white rounded-xl px-4 py-4 sm:px-3 sm:py-3"
             >
-              <div className={`text-4xl lg:text-5xl font-sora font-extrabold mb-4 ${metric.color}`}>
+              <div className="text-3xl md:text-4xl font-sora font-extrabold text-brand leading-tight tracking-tight">
                 {metric.value}
               </div>
-              <div className="text-lg font-sora font-semibold text-foreground mb-2">
+              <div className="text-sm md:text-base text-ink/90 leading-snug tracking-tight mt-0.5">
                 {metric.label}
-              </div>
-              <div className="text-sm text-muted-foreground">
-                {metric.description}
               </div>
             </motion.div>
           ))}
