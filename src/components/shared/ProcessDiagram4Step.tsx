@@ -88,7 +88,7 @@ const ProcessDiagram4Step: React.FC = () => {
               markerHeight="10"
               orient="auto"
             >
-              <path d="M0,0 L0,6 L9,3 z" fill="hsl(var(--brand))" />
+              <path d="M0,0 L0,6 L9,3 z" fill="hsl(var(--ink))" />
             </marker>
           </defs>
           
@@ -97,8 +97,8 @@ const ProcessDiagram4Step: React.FC = () => {
             <>
               {/* Discovery to Strategy (top horizontal) */}
               <path
-                d="M120,80 L200,80"
-                stroke="hsl(var(--brand))"
+                d="M85,80 L235,80"
+                stroke="hsl(var(--ink))"
                 strokeWidth="2"
                 markerEnd="url(#arrow)"
                 className="line-path"
@@ -106,8 +106,8 @@ const ProcessDiagram4Step: React.FC = () => {
               />
               {/* Strategy to Implementation (right vertical) */}
               <path
-                d="M240,120 L240,200"
-                stroke="hsl(var(--brand))"
+                d="M240,85 L240,235"
+                stroke="hsl(var(--ink))"
                 strokeWidth="2"
                 markerEnd="url(#arrow)"
                 className="line-path"
@@ -115,12 +115,21 @@ const ProcessDiagram4Step: React.FC = () => {
               />
               {/* Implementation to Results (bottom horizontal) */}
               <path
-                d="M200,240 L120,240"
-                stroke="hsl(var(--brand))"
+                d="M235,240 L85,240"
+                stroke="hsl(var(--ink))"
                 strokeWidth="2"
                 markerEnd="url(#arrow)"
                 className="line-path"
                 style={{ animationDelay: '0.2s' }}
+              />
+              {/* Results to Discovery (left vertical) */}
+              <path
+                d="M80,235 L80,85"
+                stroke="hsl(var(--ink))"
+                strokeWidth="2"
+                markerEnd="url(#arrow)"
+                className="line-path"
+                style={{ animationDelay: '0.3s' }}
               />
             </>
           )}
@@ -142,7 +151,7 @@ const ProcessDiagram4Step: React.FC = () => {
                 <circle
                   cx={x}
                   cy={y}
-                  r="20"
+                  r="5"
                   fill="hsl(var(--ink))"
                   stroke="hsl(var(--ink))"
                   strokeWidth="2"
@@ -180,7 +189,9 @@ const ProcessDiagram4Step: React.FC = () => {
                     animationDelay: `${index * 0.15 + 0.1}s`
                   }}
                 >
-                  {step.icon}
+                  <div className="w-2.5 h-2.5 flex items-center justify-center">
+                    {React.cloneElement(step.icon as React.ReactElement, { className: "h-2.5 w-2.5" })}
+                  </div>
                 </div>
                 
                 {/* Label outside circle */}
@@ -191,12 +202,12 @@ const ProcessDiagram4Step: React.FC = () => {
                   style={{ animationDelay: `${index * 0.15 + 0.2}s` }}
                 >
                   <div className={`flex flex-col ${index === 1 || index === 2 ? 'items-end' : 'items-start'}`}>
-                    <h4 className="font-sora font-semibold text-sm text-foreground whitespace-nowrap">
+                    <h3 className="font-sora font-bold text-base text-foreground whitespace-nowrap">
                       {step.title}
-                    </h4>
-                    <p className="text-xs text-muted-foreground mt-1 max-w-20 leading-tight">
+                    </h3>
+                    <h4 className="text-sm text-muted-foreground mt-1 max-w-20 leading-tight font-medium">
                       {step.description}
-                    </p>
+                    </h4>
                   </div>
                 </div>
               </div>
