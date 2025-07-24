@@ -27,6 +27,12 @@ export default {
 				'tighter': '-0.01em', // -1%
 			},
 			colors: {
+				// Brand Colors as per spec
+				brand: '#FF4444',
+				ink: '#030303', 
+				canvas: '#FDFDFD',
+				'surface-muted': '#F8F9FA',
+				
 				// Universal Red Color - #FF4444 converted to HSL: 355° 100% 63%
 				'universal-red': '#FF4444',
 				
@@ -36,11 +42,6 @@ export default {
 				'coral-tint-3': '#FFAAAA',
 				'coral-tint-4': '#FFCCCC',
 				'coral-tint-5': '#FFEEEE',
-				
-				// Black and white only
-				'text-black': '#000000',
-				'background-light': '#FFFFFF',
-				'background-alt': '#F8F9FA',
 				
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

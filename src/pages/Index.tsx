@@ -81,8 +81,9 @@ export default function Index() {
   return (
     <div className="min-h-screen">
       <SpecialOfferBanner />
-      <Navbar />
-      <HeroSection />
+      <div style={{ paddingTop: '32px' }}>
+        <Navbar />
+        <HeroSection />
       
       {/* Key Metrics Section */}
       <section className="section-padding bg-background">
@@ -131,6 +132,7 @@ export default function Index() {
       <TrustLogos />
       <Footer />
       <AIChatbot />
+      </div>
     </div>
   );
 }

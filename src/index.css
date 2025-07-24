@@ -5,16 +5,19 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;800&display=swap');
 
-/* Updated Color System - Red: #FF4444, Black: #000000, White: #FFFFFF */
+/* Updated Color System - Red: #FF4444, Ink: #030303, Canvas: #FDFDFD */
 @layer base {
   :root {
-    /* Universal Red - #FF4444 converted to HSL: 355° 100% 63% */
+    /* Brand Red - #FF4444 converted to HSL: 355° 100% 63% */
+    --brand: 355 100% 63%;
     --primary: 355 100% 63%;
     --primary-foreground: 0 0% 100%;
 
-    /* Background Light - #FFFFFF and #F8F9FA */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    /* Typography Colors - Ink #030303, Canvas #FDFDFD */
+    --background: 220 13% 99%; /* #FDFDFD */
+    --foreground: 0 0% 1%; /* #030303 */
+    --ink: 0 0% 1%; /* #030303 */
+    --canvas: 220 13% 99%; /* #FDFDFD */
 
     /* Card and Surface Colors */
     --card: 0 0% 100%;
@@ -41,7 +44,7 @@
     --coral-tint-4: 355 100% 88%; /* #FFCCCC */
     --coral-tint-5: 355 100% 94%; /* #FFEEEE */
 
-    /* New semantic tokens */
+    /* Surface Muted #F8F9FA */
     --surface-muted: 210 20% 98%; /* #F8F9FA */
     --stroke: 0 0% 0% / 0.1; /* #0000001A */
 
@@ -68,11 +71,13 @@
   }
 }
 
-/* Hero rotating verbs - exact timing from design brief */
+/* Hero rotating verbs - 3s cycle with 0.35s transitions */
 @keyframes textRotation {
-  0%, 8% { opacity: 0; transform: translateY(20%); }
-  10%, 40% { opacity: 1; transform: translateY(0); }
-  42%, 100% { opacity: 0; transform: translateY(-20%); }
+  0% { opacity: 0; transform: translateY(10px); }
+  16.67% { opacity: 1; transform: translateY(0); }
+  33.33% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 0; transform: translateY(-10px); }
 }
 
 /* SVG process line draw */
@@ -142,11 +147,31 @@
     background-color: #FF4444;
   }
 
-  /* Hero Rotating Verbs - As per design brief */
+  /* Hero Rotating Verbs - 3s cycle with proper timing */
   .hero-verb {
     color: #FF4444;
-    font-weight: 600;
-    animation: textRotation 10.5s infinite ease-in-out;
+    font-weight: 800;
+    animation: textRotation 3s infinite ease-in-out;
+  }
+
+  /* SVG Circle Pop Animation */
+  .circle-pop {
+    animation: circleScale 0.25s ease-out forwards;
+  }
+
+  @keyframes circleScale {
+    0% { transform: scale(0); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  /* Button Hover Effects */
+  .btn-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-hover:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   }
 
   /* Navigation badges */
@@ -172,7 +197,7 @@
 
   /* Sticky translucent nav */
   .nav-sticky {
-    @apply backdrop-blur-md bg-white/90 border-b border-gray-200/50;
+    @apply backdrop-blur-md bg-background/80 border-b border-border shadow-sm;
   }
 }
 

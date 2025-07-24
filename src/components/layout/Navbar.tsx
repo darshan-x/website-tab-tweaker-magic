@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
@@ -15,7 +15,17 @@ import {
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 16);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const servicesData = {
     tech: [
@@ -46,8 +56,8 @@ const Navbar = () => {
   ];
 
   const navItems = [
-    { name: 'Blog', href: '/blog', badge: 'Y4' },
-    { name: 'About', href: '/about', badge: 'Y5' }
+    { name: 'Blog', href: '/blog', badge: { color: 'bg-rose-300 text-black', text: '11' } },
+    { name: 'About', href: '/about', badge: { color: 'bg-orange-300 text-black', text: '1' } }
   ];
 
   const isActive = (href: string) => {
@@ -60,14 +70,16 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar */}
-      <nav className="bg-background-light border-b border-border sticky top-0 z-50">
+      <nav className={`sticky top-0 z-40 transition-all duration-200 ${
+        isSticky ? 'nav-sticky' : 'bg-background border-b border-border'
+      }`}>
         <div className="container">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center" style={{ height: '40px' }}>
               <span className="text-2xl font-sora">
-                <span className="text-text-black font-normal">Giga</span>
-                <span className="text-[#FF4444] font-extrabold">Rev</span>
+                <span className="text-foreground font-normal">Giga</span>
+                <span className="text-brand font-semibold">Rev</span>
               </span>
             </Link>
 
@@ -79,10 +91,10 @@ const Navbar = () => {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="nav-link group">
                       Services
-                      <span className="nav-badge nav-badge-y1">Y1</span>
+                      <span className="nav-badge bg-amber-300 text-black">6</span>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="w-[600px] p-6 bg-white shadow-lg rounded-lg border">
+                      <div className="w-[600px] p-6 bg-background shadow-lg rounded-lg border z-50">
                         <div className="grid grid-cols-2 gap-8">
                           {/* Tech Services */}
                           <div>
@@ -132,10 +144,10 @@ const Navbar = () => {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="nav-link group">
                       Industries
-                      <span className="nav-badge nav-badge-y2">Y2</span>
+                      <span className="nav-badge bg-violet-400 text-white">6</span>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="w-[300px] p-6 bg-white shadow-lg rounded-lg border">
+                      <div className="w-[300px] p-6 bg-background shadow-lg rounded-lg border z-50">
                         <div className="space-y-2">
                           {industriesData.map((industry) => (
                             <Link
@@ -156,10 +168,10 @@ const Navbar = () => {
                   <NavigationMenuItem>
                     <NavigationMenuTrigger className="nav-link group">
                       Resources
-                      <span className="nav-badge nav-badge-y3">Y3</span>
+                      <span className="nav-badge bg-teal-400 text-white">3</span>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="w-[280px] p-6 bg-white shadow-lg rounded-lg border">
+                      <div className="w-[280px] p-6 bg-background shadow-lg rounded-lg border z-50">
                         <div className="space-y-2">
                           {resourcesData.map((resource) => (
                             <Link
@@ -184,8 +196,8 @@ const Navbar = () => {
                         className={`nav-link ${isActive(item.href) ? 'active' : ''}`}
                       >
                         {item.name}
-                        <span className={`nav-badge nav-badge-${item.badge.toLowerCase()}`}>
-                          {item.badge}
+                        <span className={`nav-badge ${item.badge.color}`}>
+                          {item.badge.text}
                         </span>
                       </Link>
                     </NavigationMenuItem>
@@ -196,8 +208,8 @@ const Navbar = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center">
-              <Button asChild className="h-14">
-                <Link to="/contact">Talk to an AI Advisor</Link>
+              <Button asChild className="btn-hover h-14">
+                <Link to="/contact">Talk to an AI Advisor »</Link>
               </Button>
             </div>
 
