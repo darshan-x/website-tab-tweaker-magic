@@ -31,7 +31,7 @@ const SpecialOfferBanner = () => {
             onClick={() => setIsVisible(false)}
             className="text-white hover:text-white/80 transition-colors ml-4"
           >
-            <X className="w-4 h-4" />
+            <X className="w-3 h-3 ml-1" />
           </button>
         </div>
       </div>
