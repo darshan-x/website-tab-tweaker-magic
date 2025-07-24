@@ -62,7 +62,7 @@
   }
   
   body {
-    @apply bg-background text-foreground font-sora antialiased leading-snug tracking-tight;
+    @apply bg-background text-foreground font-inter antialiased leading-snug tracking-tight;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
@@ -71,7 +71,7 @@
   }
 
   p {
-    @apply max-w-[560px] leading-snug tracking-tight;
+    @apply max-w-[560px] leading-snug tracking-tight font-inter;
   }
 }
 
