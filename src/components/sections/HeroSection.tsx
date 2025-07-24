@@ -72,7 +72,7 @@ const HeroSection = () => {
             </div>
 
             {/* Metrics Cards Section */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-[800px] mx-auto lg:mx-0 metrics-cards">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full metrics-cards">
               {/* Card 1 */}
               <div className="bg-white border border-[#E5E5E5] rounded-[16px] px-6 py-8 text-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] cursor-pointer">
                 <div className="font-inter font-bold text-[36px] text-[#FF4444] leading-none mb-2">40%+</div>
