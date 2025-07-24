@@ -13,25 +13,25 @@ const processSteps: ProcessStep[] = [
     id: 1,
     title: "Discovery",
     icon: <Search className="h-5 w-5" />,
-    description: "Understand your business needs"
+    description: ""
   },
   {
     id: 2,
     title: "Strategy", 
     icon: <Target className="h-5 w-5" />,
-    description: "Design custom AI solution"
+    description: ""
   },
   {
     id: 3,
     title: "Implementation",
     icon: <Rocket className="h-5 w-5" />,
-    description: "Deploy and integrate AI"
+    description: ""
   },
   {
     id: 4,
     title: "Results",
     icon: <TrendingUp className="h-5 w-5" />,
-    description: "Monitor and optimize performance"
+    description: ""
   }
 ];
 
@@ -68,13 +68,13 @@ const ProcessDiagram4Step: React.FC = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="w-full max-w-sm mx-auto">
+    <div ref={containerRef} className="w-full max-w-[280px] mx-auto">
       <div className="relative">
         {/* SVG Process Map - Square Layout */}
         <svg 
-          width="320" 
-          height="320" 
-          viewBox="0 0 320 320" 
+          width="280" 
+          height="280" 
+          viewBox="0 0 280 280" 
           className="w-full h-auto"
           aria-label="GigaRev implementation process: Discovery, Strategy, Implementation, Results"
         >
@@ -97,37 +97,33 @@ const ProcessDiagram4Step: React.FC = () => {
             <>
               {/* Discovery to Strategy (top horizontal) */}
               <path
-                d="M85,80 L235,80"
-                stroke="hsl(var(--ink))"
-                strokeWidth="2"
-                markerEnd="url(#arrow)"
+                d="M70,70 L210,70"
+                stroke="#000000"
+                strokeWidth="1.5"
                 className="line-path"
                 style={{ animationDelay: '0s' }}
               />
               {/* Strategy to Implementation (right vertical) */}
               <path
-                d="M240,85 L240,235"
-                stroke="hsl(var(--ink))"
-                strokeWidth="2"
-                markerEnd="url(#arrow)"
+                d="M210,70 L210,210"
+                stroke="#000000"
+                strokeWidth="1.5"
                 className="line-path"
                 style={{ animationDelay: '0.1s' }}
               />
               {/* Implementation to Results (bottom horizontal) */}
               <path
-                d="M235,240 L85,240"
-                stroke="hsl(var(--ink))"
-                strokeWidth="2"
-                markerEnd="url(#arrow)"
+                d="M210,210 L70,210"
+                stroke="#000000"
+                strokeWidth="1.5"
                 className="line-path"
                 style={{ animationDelay: '0.2s' }}
               />
               {/* Results to Discovery (left vertical) */}
               <path
-                d="M80,235 L80,85"
-                stroke="hsl(var(--ink))"
-                strokeWidth="2"
-                markerEnd="url(#arrow)"
+                d="M70,210 L70,70"
+                stroke="#000000"
+                strokeWidth="1.5"
                 className="line-path"
                 style={{ animationDelay: '0.3s' }}
               />
@@ -139,10 +135,10 @@ const ProcessDiagram4Step: React.FC = () => {
             const isVisible = visibleSteps.has(step.id);
             // Square positions: TL, TR, BR, BL
             const positions = [
-              { x: 80, y: 80 },   // Discovery - Top Left
-              { x: 240, y: 80 },  // Strategy - Top Right  
-              { x: 240, y: 240 }, // Implementation - Bottom Right
-              { x: 80, y: 240 }   // Results - Bottom Left
+              { x: 70, y: 70 },   // Discovery - Top Left
+              { x: 210, y: 70 },  // Strategy - Top Right  
+              { x: 210, y: 210 }, // Implementation - Bottom Right
+              { x: 70, y: 210 }   // Results - Bottom Left
             ];
             const { x, y } = positions[index];
             
@@ -151,10 +147,8 @@ const ProcessDiagram4Step: React.FC = () => {
                 <circle
                   cx={x}
                   cy={y}
-                  r="5"
-                  fill="hsl(var(--ink))"
-                  stroke="hsl(var(--ink))"
-                  strokeWidth="2"
+                  r="6"
+                  fill="#000000"
                   className={isVisible ? 'circle-pop' : 'opacity-0'}
                   style={{ animationDelay: `${index * 0.15}s` }}
                 />
@@ -163,37 +157,21 @@ const ProcessDiagram4Step: React.FC = () => {
           })}
         </svg>
 
-        {/* Step Labels and Icons */}
+        {/* Step Labels */}
         <div className="absolute inset-0 pointer-events-none">
           {processSteps.map((step, index) => {
             const isVisible = visibleSteps.has(step.id);
             // Positions for square layout
             const positions = [
-              { x: 80, y: 80, labelX: 'left-2', labelY: 'top-14' },     // Discovery - TL
-              { x: 240, y: 80, labelX: 'right-2', labelY: 'top-14' },   // Strategy - TR
-              { x: 240, y: 240, labelX: 'right-2', labelY: 'bottom-14' }, // Implementation - BR
-              { x: 80, y: 240, labelX: 'left-2', labelY: 'bottom-14' }   // Results - BL
+              { x: 70, y: 70, labelX: 'left-2', labelY: 'top-12' },     // Discovery - TL
+              { x: 210, y: 70, labelX: 'right-2', labelY: 'top-12' },   // Strategy - TR
+              { x: 210, y: 210, labelX: 'right-2', labelY: 'bottom-12' }, // Implementation - BR
+              { x: 70, y: 210, labelX: 'left-2', labelY: 'bottom-12' }   // Results - BL
             ];
             const position = positions[index];
             
             return (
               <div key={step.id}>
-                {/* Icon inside circle */}
-                <div
-                  className={`absolute transform -translate-x-1/2 -translate-y-1/2 text-white transition-all duration-300 ${
-                    isVisible ? 'opacity-100' : 'opacity-0'
-                  }`}
-                  style={{ 
-                    left: `${position.x}px`,
-                    top: `${position.y}px`,
-                    animationDelay: `${index * 0.15 + 0.1}s`
-                  }}
-                >
-                  <div className="w-2.5 h-2.5 flex items-center justify-center">
-                    {React.cloneElement(step.icon as React.ReactElement, { className: "h-2.5 w-2.5" })}
-                  </div>
-                </div>
-                
                 {/* Label outside circle */}
                 <div
                   className={`absolute ${position.labelX} ${position.labelY} transition-all duration-300 ${
@@ -202,12 +180,9 @@ const ProcessDiagram4Step: React.FC = () => {
                   style={{ animationDelay: `${index * 0.15 + 0.2}s` }}
                 >
                   <div className={`flex flex-col ${index === 1 || index === 2 ? 'items-end' : 'items-start'}`}>
-                    <h3 className="font-sora font-bold text-base text-foreground whitespace-nowrap">
+                    <h3 className="font-sora font-semibold text-sm text-foreground whitespace-nowrap">
                       {step.title}
                     </h3>
-                    <h4 className="text-sm text-muted-foreground mt-1 max-w-20 leading-tight font-medium">
-                      {step.description}
-                    </h4>
                   </div>
                 </div>
               </div>

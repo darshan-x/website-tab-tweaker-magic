@@ -35,10 +35,10 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
     <section className="section-padding bg-background">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-sora font-extrabold text-foreground mb-4">
+          <h2 className="text-2xl lg:text-3xl font-sora font-extrabold text-foreground mb-4">
             Our Service Hubs
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Choose your path to AI transformation with our specialized service offerings
           </p>
         </div>
@@ -64,10 +64,10 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
               {/* Tech Services */}
               <div className="space-y-6">
                 <div className="mb-8">
-                  <h3 className="text-2xl font-sora font-semibold text-foreground mb-4">
+                  <h3 className="text-xl font-sora font-semibold text-foreground mb-4">
                     Tech Services Hub
                   </h3>
-                  <p className="text-muted-foreground text-lg">
+                  <p className="text-muted-foreground text-base">
                     Cutting-edge technical solutions to power your AI transformation.
                   </p>
                 </div>
@@ -76,7 +76,7 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
                   {techServices.map((service, index) => (
                     <Card key={index} className="border-stroke/10 card-hover-enhanced">
                       <CardContent className="p-6">
-                        <h4 className="font-sora font-semibold text-lg text-foreground mb-2">
+                        <h4 className="font-sora font-semibold text-base text-foreground mb-2">
                           {service.title}
                         </h4>
                         <p className="text-muted-foreground mb-4">
@@ -119,10 +119,10 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
               {/* Revenue Services */}
               <div className="space-y-6">
                 <div className="mb-8">
-                  <h3 className="text-2xl font-sora font-semibold text-foreground mb-4">
+                  <h3 className="text-xl font-sora font-semibold text-foreground mb-4">
                     Revenue Services Hub
                   </h3>
-                  <p className="text-muted-foreground text-lg">
+                  <p className="text-muted-foreground text-base">
                     AI-powered solutions to optimize every stage of your customer journey.
                   </p>
                 </div>
@@ -131,7 +131,7 @@ const ServiceHubTabs: React.FC<ServiceHubTabsProps> = ({
                   {revenueServices.map((service, index) => (
                     <Card key={index} className="border-stroke/10 card-hover-enhanced">
                       <CardContent className="p-6">
-                        <h4 className="font-sora font-semibold text-lg text-foreground mb-2">
+                        <h4 className="font-sora font-semibold text-base text-foreground mb-2">
                           {service.title}
                         </h4>
                         <p className="text-muted-foreground mb-4">

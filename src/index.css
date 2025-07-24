@@ -61,13 +61,17 @@
   }
   
   body {
-    @apply bg-background text-foreground font-sora antialiased;
+    @apply bg-background text-foreground font-sora antialiased leading-relaxed;
     font-feature-settings: "rlig" 1, "calt" 1;
     letter-spacing: -0.01em; /* Custom -1% letter spacing */
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-sora;
+    @apply font-sora leading-tight;
+  }
+
+  p {
+    @apply max-w-[560px] leading-relaxed;
   }
 }
 
@@ -115,7 +119,7 @@
 
   /* Section Padding */
   .section-padding {
-    @apply py-8 lg:py-12;
+    @apply py-6 lg:py-10;
   }
 
   /* Container */

@@ -52,10 +52,10 @@ const KeyMetricsSection = () => {
               viewport={{ once: true }}
               className="text-center bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl hover:scale-105 transition-all duration-300"
             >
-              <div className={`text-5xl lg:text-6xl font-sora font-extrabold mb-4 ${metric.color}`}>
+              <div className={`text-4xl lg:text-5xl font-sora font-extrabold mb-4 ${metric.color}`}>
                 {metric.value}
               </div>
-              <div className="text-xl font-sora font-semibold text-foreground mb-2">
+              <div className="text-lg font-sora font-semibold text-foreground mb-2">
                 {metric.label}
               </div>
               <div className="text-sm text-muted-foreground">

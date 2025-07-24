@@ -22,30 +22,30 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="hero" className="section-padding bg-background">
+    <section id="hero" className="section-padding pt-16 lg:pt-20 bg-background">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="order-2 lg:order-1">
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-sora font-extrabold text-foreground mb-6 leading-tight">
-              AI solutions that{' '}
-              <span id="verb-rotator" className="hero-verb" key={currentTextIndex}>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-sora font-semibold text-foreground mb-6 leading-tight">
+              AI solutions that<br />
+              <span id="verb-rotator" className="hero-verb text-brand font-extrabold" key={currentTextIndex}>
                 {rotatingTexts[currentTextIndex]}
               </span>
             </h1>
 
-            <p className="text-lg lg:text-xl text-foreground/80 mb-8 leading-relaxed max-w-lg">
+            <p className="text-base lg:text-lg text-foreground/80 mb-8 leading-relaxed max-w-[560px]">
               We help businesses implement custom AI, develop intelligent applications, and drive revenue growth with our specialized expertise.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="btn-hover text-lg px-8 py-4 h-14 w-full sm:w-auto">
+            <div className="flex flex-col sm:flex-row gap-3 space-y-4 sm:space-y-0">
+              <Button asChild className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full min-h-[44px] w-full sm:w-auto">
                 <Link to="/contact">
-                  Talk to an AI Advisor <ArrowRight className="ml-2 w-5 h-5" />
+                  Talk to an AI Advisor <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
               
-              <Button asChild size="lg" variant="outline" className="btn-hover text-lg px-8 py-4 h-14 w-full sm:w-auto">
+              <Button asChild variant="outline" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full min-h-[44px] w-full sm:w-auto">
                 <Link to="/ai-use-cases">
                   Explore AI Use Cases
                 </Link>

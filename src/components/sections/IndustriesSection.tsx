@@ -23,10 +23,10 @@ const IndustriesSection = () => {
     <section id="industries" className="section-padding bg-background">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-sora font-extrabold text-foreground mb-4">
+          <h2 className="text-3xl font-sora font-extrabold text-foreground mb-4">
             Domain Expertise
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Deep industry knowledge across key verticals
           </p>
         </div>

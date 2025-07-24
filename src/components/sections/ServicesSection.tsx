@@ -71,10 +71,10 @@ const ServicesSection = () => {
     <section id="services" className="section-padding bg-secondary/20">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-sora font-extrabold text-foreground mb-4">
+          <h2 className="text-3xl font-sora font-extrabold text-foreground mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             We help businesses implement AI, slash costs, and accelerate revenue with our comprehensive suite of services.
           </p>
         </div>
