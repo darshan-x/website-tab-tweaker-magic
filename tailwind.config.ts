@@ -22,7 +22,7 @@ export default {
 			fontFamily: {
 				'sans': ['Sora', 'ui-sans-serif', 'system-ui'],
 				'sora': ['Sora', 'sans-serif'],
-				'inter': ['Inter', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif', 'ui-sans-serif', 'system-ui'],
 			},
 			letterSpacing: {
 				'tightest': '-.04em',
@@ -112,9 +112,17 @@ export default {
 					}
 				},
 				'textRotation': {
-					'0%, 8%': { opacity: '0', transform: 'translateY(20%)' },
-					'10%, 40%': { opacity: '1', transform: 'translateY(0)' },
-					'42%, 100%': { opacity: '0', transform: 'translateY(-20%)' }
+					'0%, 11.4%': { opacity: '0', transform: 'translateY(20%)' },
+					'11.4%, 22.8%': { opacity: '1', transform: 'translateY(0)' },
+					'34.2%, 45.6%': { opacity: '0', transform: 'translateY(-20%)' },
+					'45.6%, 57%': { opacity: '1', transform: 'translateY(0)' },
+					'68.4%, 79.8%': { opacity: '0', transform: 'translateY(-20%)' },
+					'79.8%, 91.2%': { opacity: '1', transform: 'translateY(0)' },
+					'100%': { opacity: '0', transform: 'translateY(-20%)' }
+				},
+				'pulse-scale': {
+					'0%, 100%': { transform: 'scale(1)' },
+					'50%': { transform: 'scale(1.05)' }
 				},
 				'lineDraw': {
 					'to': { 'stroke-dashoffset': '0' }
@@ -124,6 +132,7 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'textRotation': 'textRotation 10.5s infinite ease-in-out',
+				'pulse-scale': 'pulse-scale 2s infinite ease-in-out',
 				'lineDraw': 'lineDraw 0.5s forwards ease-in-out'
 			}
 		}

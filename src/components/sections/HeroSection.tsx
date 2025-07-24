@@ -1,8 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
-import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 import ProcessDiagram4Step from '@/components/shared/ProcessDiagram4Step';
 
 const HeroSection = () => {
@@ -16,46 +13,89 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTextIndex((prev) => (prev + 1) % rotatingTexts.length);
-    }, 3000); // 3s cycle as per spec
+    }, 3500); // 3.5s cycle as per spec
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section id="hero" className="section-padding pt-16 lg:pt-20 bg-background">
-      <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left Column - Content */}
-          <div className="order-2 lg:order-1">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-sora font-semibold text-foreground mb-6 leading-tight">
-              AI solutions that<br />
-              <span id="verb-rotator" className="hero-verb text-brand font-extrabold" key={currentTextIndex}>
-                {rotatingTexts[currentTextIndex]}
-              </span>
-            </h1>
+    <section id="hero" className="h-[85vh] md:h-[75vh] lg:h-[85vh] pt-20 px-5 lg:px-10 bg-white hero-section">
+      {/* Custom container with 1200px max-width */}
+      <div className="mx-auto max-w-[1200px]">
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 h-full">
+          {/* Left Column - Content (60%) */}
+          <div className="flex flex-col justify-start pt-8">
+            {/* Main Headline */}
+            <div className="mb-8">
+              {/* Static Text */}
+              <h1 className="font-inter font-semibold text-[36px] md:text-[48px] lg:text-[64px] text-[#030303] leading-[1.1] tracking-[-0.01em] mb-0 hero-text">
+                AI solutions that
+              </h1>
+              
+              {/* Dynamic Rotating Text */}
+              <div className="font-inter font-semibold text-[36px] md:text-[48px] lg:text-[64px] text-[#FF4444] leading-[1.1] tracking-[-0.01em] mb-8 hero-text">
+                <span 
+                  key={currentTextIndex} 
+                  className="hero-verb"
+                  style={{ 
+                    animation: 'heroTextRotation 3.5s infinite ease-in-out',
+                    animationDelay: '0s'
+                  }}
+                >
+                  {rotatingTexts[currentTextIndex]}
+                </span>
+              </div>
+            </div>
 
-            <p className="text-base lg:text-lg text-foreground/80 mb-8 leading-relaxed max-w-[560px]">
+            {/* Description Text */}
+            <p className="font-inter text-[16px] md:text-[18px] lg:text-[20px] text-[#5A5A5A] leading-[1.6] tracking-[-0.005em] max-w-[520px] mb-10 hero-description">
               We help businesses implement custom AI, develop intelligent applications, and drive revenue growth with our specialized expertise.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-2 space-y-4 sm:space-y-0">
-              <Button asChild className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full min-h-[44px] w-full sm:w-auto">
-                <Link to="/contact">
-                  Talk to an AI Advisor <ArrowRight className="w-4 h-4" />
-                </Link>
-              </Button>
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-4 mb-20 hero-buttons">
+              {/* Primary CTA Button */}
+              <Link 
+                to="/contact"
+                className="inline-flex items-center justify-center font-inter font-semibold text-[16px] bg-[#2ECC71] text-white px-8 py-4 rounded-[12px] border-none min-w-[200px] h-[52px] transition-all duration-200 ease-in-out hover:bg-[#27AE60] hover:scale-[1.02] hover:shadow-lg cursor-pointer"
+              >
+                Talk to an AI Advisor
+              </Link>
               
-              <Button asChild variant="outline" className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full min-h-[44px] w-full sm:w-auto">
-                <Link to="/ai-use-cases">
-                  Explore AI Use Cases
-                </Link>
-              </Button>
+              {/* Secondary CTA Button */}
+              <Link 
+                to="/ai-use-cases"
+                className="inline-flex items-center justify-center font-inter font-semibold text-[16px] bg-transparent text-[#FF4444] px-8 py-[14px] rounded-[12px] border-2 border-[#FF4444] min-w-[200px] h-[52px] transition-all duration-200 ease-in-out hover:bg-[#FF4444] hover:text-white hover:scale-[1.02] hover:shadow-lg cursor-pointer"
+              >
+                Explore AI Use Cases
+              </Link>
+            </div>
+
+            {/* Metrics Cards Section */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-[800px] mx-auto lg:mx-0 metrics-cards">
+              {/* Card 1 */}
+              <div className="bg-white border border-[#E5E5E5] rounded-[16px] px-6 py-8 text-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] cursor-pointer">
+                <div className="font-inter font-bold text-[36px] text-[#FF4444] leading-none mb-2">40%+</div>
+                <div className="font-inter font-medium text-[14px] text-[#5A5A5A] leading-[1.4]">Cost Reduction</div>
+              </div>
+              
+              {/* Card 2 */}
+              <div className="bg-white border border-[#E5E5E5] rounded-[16px] px-6 py-8 text-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] cursor-pointer">
+                <div className="font-inter font-bold text-[36px] text-[#FF4444] leading-none mb-2">2-6 Weeks</div>
+                <div className="font-inter font-medium text-[14px] text-[#5A5A5A] leading-[1.4]">Implementation Time</div>
+              </div>
+              
+              {/* Card 3 */}
+              <div className="bg-white border border-[#E5E5E5] rounded-[16px] px-6 py-8 text-center transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] cursor-pointer">
+                <div className="font-inter font-bold text-[36px] text-[#FF4444] leading-none mb-2">3-5x</div>
+                <div className="font-inter font-medium text-[14px] text-[#5A5A5A] leading-[1.4]">ROI (First Year)</div>
+              </div>
             </div>
           </div>
 
-          {/* Right Column - Process SVG */}
-          <div className="order-1 lg:order-2 flex justify-center">
-            <div className="w-full max-w-sm lg:max-w-md">
+          {/* Right Column - Process Flow Diagram (40%) */}
+          <div className="flex items-center justify-center">
+            <div className="w-full max-w-[400px] h-[400px]">
               <ProcessDiagram4Step />
             </div>
           </div>

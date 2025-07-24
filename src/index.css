@@ -4,6 +4,7 @@
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* Updated Color System - Red: #FF4444, Ink: #030303, Canvas: #FDFDFD */
 @layer base {
@@ -74,13 +75,19 @@
   }
 }
 
-/* Hero rotating verbs - 3s cycle with 0.35s transitions */
-@keyframes textRotation {
-  0% { opacity: 0; transform: translateY(6px); }
-  16.67% { opacity: 1; transform: translateY(0); }
-  33.33% { opacity: 1; transform: translateY(0); }
-  50% { opacity: 0; transform: translateY(-6px); }
-  100% { opacity: 0; transform: translateY(-6px); }
+/* Hero rotating verbs - 3.5s cycle with fade out/in transitions */
+@keyframes heroTextRotation {
+  0% { opacity: 0; }
+  14.3% { opacity: 1; }
+  28.6% { opacity: 1; }
+  33.3% { opacity: 0; }
+  47.6% { opacity: 0; }
+  52.4% { opacity: 1; }
+  66.7% { opacity: 1; }
+  71.4% { opacity: 0; }
+  85.7% { opacity: 0; }
+  90.5% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 /* SVG process line draw */
@@ -150,11 +157,12 @@
     background-color: #FF4444;
   }
 
-  /* Hero Rotating Verbs - 3s cycle with proper timing */
+  /* Hero Rotating Verbs - 3.5s cycle with proper timing */
   .hero-verb {
     color: #FF4444;
-    font-weight: 800;
-    animation: textRotation 3s infinite ease-in-out;
+    font-weight: 600;
+    animation: heroTextRotation 3.5s infinite ease-in-out;
+    transition: opacity 400ms ease-in-out;
   }
 
   /* SVG Circle Pop Animation */
@@ -179,6 +187,63 @@
     }
     100% {
       stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes draw-line {
+    0% {
+      stroke-dasharray: 0 1000;
+    }
+    100% {
+      stroke-dasharray: 1000 0;
+    }
+  }
+
+  /* Responsive Hero Section */
+  @media (max-width: 1024px) {
+    .hero-section {
+      height: 75vh;
+    }
+    
+    .hero-text {
+      font-size: 48px;
+    }
+    
+    .hero-description {
+      font-size: 18px;
+    }
+    
+    .process-diagram {
+      transform: scale(0.8);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      height: auto;
+      min-height: 100vh;
+    }
+    
+    .hero-text {
+      font-size: 36px;
+    }
+    
+    .hero-description {
+      font-size: 16px;
+    }
+    
+    .hero-buttons {
+      flex-direction: column;
+      gap: 12px;
+    }
+    
+    .hero-buttons button {
+      width: 100%;
+    }
+    
+    .metrics-cards {
+      grid-template-columns: 1fr;
+      gap: 16px;
     }
   }
 

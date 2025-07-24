@@ -85,27 +85,6 @@ export default function Index() {
         <Navbar />
         <HeroSection />
       
-      {/* Key Metrics Section */}
-      <section id="home-kpis" className="py-12 lg:py-16 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-5 lg:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-3">
-            <div role="group" aria-label="Cost Reduction Metric" className="text-center bg-white rounded-xl px-4 py-4 sm:px-3 sm:py-3">
-              <div className="text-3xl md:text-4xl font-sora font-extrabold text-brand leading-tight tracking-tight">40%+</div>
-              <div className="text-sm md:text-base text-ink/90 leading-snug tracking-tight mt-0.5">Cost Reduction</div>
-            </div>
-            
-            <div role="group" aria-label="Implementation Time Metric" className="text-center bg-white rounded-xl px-4 py-4 sm:px-3 sm:py-3">
-              <div className="text-3xl md:text-4xl font-sora font-extrabold text-brand leading-tight tracking-tight">2-6 Weeks</div>
-              <div className="text-sm md:text-base text-ink/90 leading-snug tracking-tight mt-0.5">Implementation Time</div>
-            </div>
-            
-            <div role="group" aria-label="ROI (First Year) Metric" className="text-center bg-white rounded-xl px-4 py-4 sm:px-3 sm:py-3">
-              <div className="text-3xl md:text-4xl font-sora font-extrabold text-brand leading-tight tracking-tight">3-5x</div>
-              <div className="text-sm md:text-base text-ink/90 leading-snug tracking-tight mt-0.5">ROI (First Year)</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <ServicesSection />
       
