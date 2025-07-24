@@ -17,11 +17,11 @@ const SpecialOfferBanner = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-brand text-white py-1">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-brand text-white py-0.5">
       <div className="container">
         <div className="flex items-center justify-center gap-2">
           <p 
-            className="text-sm font-medium cursor-pointer flex items-center gap-2 hover:opacity-80 transition-opacity"
+            className="text-sm font-medium cursor-pointer flex items-center gap-2 hover:opacity-80 transition-opacity whitespace-nowrap"
             onClick={scrollToContact}
           >
             <span className="font-semibold">Special offer:</span> Get one AI workflow automated for free when you schedule a consultation!
