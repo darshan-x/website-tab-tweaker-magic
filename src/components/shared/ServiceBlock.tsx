@@ -1,84 +1,77 @@
 import React, { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
 
 interface ServiceBlockProps {
-  icon: React.ComponentType<{ className?: string }>;
   title: string;
+  description: string;
   bullets: string[];
-  hoverContent: {
-    title: string;
-    description: string;
-    benefits: string[];
-  };
+  expandedDescription: string;
+  benefits: string[];
   link: string;
 }
 
 const ServiceBlock: React.FC<ServiceBlockProps> = ({
-  icon: Icon,
   title,
+  description,
   bullets,
-  hoverContent,
+  expandedDescription,
+  benefits,
   link
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   return (
-    <div className="relative">
-      <Card 
-        className="px-4 py-4 cursor-pointer transition-all duration-200 hover:shadow-lg"
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <CardContent className="p-0">
-           <div className="flex items-start space-x-3">
-            <div className="flex-shrink-0">
-              <Icon className="w-10 h-10 text-primary" />
-            </div>
-            <div className="flex-1">
-               <h3 className="text-xl font-semibold text-foreground mb-3">{title}</h3>
-               <ul className="space-y-1 mb-3">
-                {bullets.map((bullet, index) => (
-                  <li key={index} className="text-muted-foreground flex items-start">
-                    <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-2 flex-shrink-0" />
-                    {bullet}
-                  </li>
-                ))}
-              </ul>
-              <p className="text-sm text-muted-foreground mb-3">Hover to learn more</p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+    <div 
+      className="service-card bg-white rounded-xl p-8 lg:p-7 sm:p-6 border border-[#E5E5E5] shadow-[0_2px_8px_rgba(0,0,0,0.06)] cursor-pointer min-h-[280px] lg:min-h-auto relative overflow-hidden"
+      onMouseEnter={() => setIsExpanded(true)}
+      onMouseLeave={() => setIsExpanded(false)}
+      onClick={handleToggle}
+      style={{ willChange: 'transform' }}
+    >
+      {/* Default Content */}
+      <div className="service-card-content absolute inset-0 p-8 lg:p-7 sm:p-6">
+        <h3 className="font-sora font-semibold text-[22px] lg:text-xl sm:text-lg text-[#030303] leading-[1.3] mb-3">
+          {title}
+        </h3>
+        <p className="font-sora text-base lg:text-[15px] sm:text-sm text-[#5A5A5A] leading-[1.5] mb-5">
+          {description}
+        </p>
+        <ul className="list-none p-0 mb-5">
+          {bullets.map((bullet, index) => (
+            <li key={index} className="font-sora text-sm lg:text-[13px] sm:text-xs text-[#030303] leading-[1.6] mb-1.5 relative pl-4">
+              <span className="absolute left-0 top-0 text-[#FF4444] font-bold">•</span>
+              {bullet}
+            </li>
+          ))}
+        </ul>
+        <p className="font-sora font-medium text-xs text-[#FF4444] absolute bottom-6 left-6 opacity-70">
+          Hover to learn more
+        </p>
+      </div>
 
-      {/* Hover Content Overlay */}
-      {isHovered && (
-        <div className="absolute inset-0 bg-background border border-border rounded-xl shadow-xl z-10 px-4 py-4">
-          <div className="flex items-start space-x-4">
-            <div className="flex-shrink-0">
-              <Icon className="w-10 h-10 text-primary" />
-            </div>
-            <div className="flex-1">
-              <h3 className="text-xl font-semibold text-foreground mb-2">{hoverContent.title}</h3>
-              <p className="text-muted-foreground mb-4">{hoverContent.description}</p>
-              <div className="mb-4">
-                <h4 className="font-medium text-foreground mb-2">Key Benefits:</h4>
-                <ul className="space-y-1">
-                  {hoverContent.benefits.map((benefit, index) => (
-                    <li key={index} className="text-muted-foreground flex items-start">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 mr-2 flex-shrink-0" />
-                      {benefit}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <Button asChild className="red-button">
-                <a href={link}>Learn More</a>
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Expanded Content */}
+      <div className="service-card-expanded absolute inset-0 p-8 lg:p-7 sm:p-6">
+        <h3 className="font-sora font-semibold text-[22px] lg:text-xl sm:text-lg text-[#030303] leading-[1.3] mb-3">
+          {title}
+        </h3>
+        <p className="font-sora text-base lg:text-[15px] sm:text-sm text-[#030303] leading-[1.6] mb-5">
+          {expandedDescription}
+        </p>
+        <h4 className="font-sora font-semibold text-base lg:text-[15px] sm:text-sm text-[#030303] mb-3">
+          Key Benefits:
+        </h4>
+        <ul className="list-none p-0">
+          {benefits.map((benefit, index) => (
+            <li key={index} className="font-sora font-medium text-sm lg:text-[13px] sm:text-xs text-[#FF4444] leading-[1.5] mb-1.5 relative pl-4">
+              <span className="absolute left-0 top-0 text-[#FF4444] font-bold">•</span>
+              {benefit}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
