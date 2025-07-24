@@ -58,8 +58,9 @@
   }
   
   body {
-    @apply bg-background text-foreground font-sora antialiased tracking-tighter;
+    @apply bg-background text-foreground font-sora antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
+    letter-spacing: -0.01em; /* Custom -1% letter spacing */
   }
 
   h1, h2, h3, h4, h5, h6 {
